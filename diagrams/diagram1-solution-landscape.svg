@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bluelightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="clientGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8E8E8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="firsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    Bluelight E-Invoicing Solution Landscape
+  </text>
+  
+  <!-- Left Side: Client Solutions -->
+  <text x="150" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#555">
+    Client Solutions
+  </text>
+  
+  <!-- SmartAPI -->
+  <g id="smartapi">
+    <rect x="50" y="120" width="200" height="80" rx="8" fill="url(#clientGradient)" stroke="#CCC" stroke-width="2"/>
+    <rect x="60" y="130" width="24" height="20" fill="#666" rx="2"/>
+    <rect x="90" y="135" width="16" height="10" fill="#888" rx="1"/>
+    <rect x="90" y="145" width="12" height="3" fill="#AAA" rx="1"/>
+    <text x="120" y="145" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">SmartAPI</text>
+    <text x="120" y="160" font-family="Arial, sans-serif" font-size="12" fill="#666">(ERP Integration)</text>
+    <text x="150" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">Deep ERP Integration</text>
+  </g>
+  
+  <!-- BlueInvoice -->
+  <g id="blueinvoice">
+    <rect x="50" y="220" width="200" height="80" rx="8" fill="url(#clientGradient)" stroke="#CCC" stroke-width="2"/>
+    <circle cx="72" cy="245" r="12" fill="#4A90E2" opacity="0.3"/>
+    <rect x="66" y="250" width="12" height="8" fill="#4A90E2" rx="1"/>
+    <text x="120" y="245" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">BlueInvoice</text>
+    <text x="120" y="260" font-family="Arial, sans-serif" font-size="12" fill="#666">(Web Application)</text>
+    <text x="150" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">Browser-based SaaS</text>
+  </g>
+  
+  <!-- Email Connector -->
+  <g id="email-connector">
+    <rect x="50" y="320" width="200" height="80" rx="8" fill="url(#clientGradient)" stroke="#CCC" stroke-width="2"/>
+    <path d="M60,340 L84,340 L72,350 Z" fill="#666"/>
+    <rect x="60" y="340" width="24" height="16" fill="none" stroke="#666" stroke-width="1.5"/>
+    <text x="120" y="345" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Email Connector</text>
+    <text x="120" y="360" font-family="Arial, sans-serif" font-size="12" fill="#666">(Email-based Submission)</text>
+    <text x="150" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">Send Invoices by Email</text>
+  </g>
+  
+  <!-- BlueBox -->
+  <g id="bluebox">
+    <rect x="50" y="420" width="200" height="80" rx="8" fill="url(#clientGradient)" stroke="#CCC" stroke-width="2"/>
+    <rect x="60" y="435" width="20" height="15" fill="#666" rx="2"/>
+    <rect x="62" y="445" width="16" height="2" fill="#AAA"/>
+    <rect x="62" y="448" width="16" height="2" fill="#AAA"/>
+    <text x="120" y="445" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">BlueBox</text>
+    <text x="120" y="460" font-family="Arial, sans-serif" font-size="12" fill="#666">(Capture Technology)</text>
+    <text x="150" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">Capture from Print/File</text>
+  </g>
+  
+  <!-- Middle Layer: Bluelight SmartAPI Core -->
+  <rect x="400" y="200" width="400" height="300" rx="12" fill="url(#bluelightGradient)" stroke="#357ABD" stroke-width="3"/>
+  <text x="600" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    Bluelight SmartAPI Compliance Core
+  </text>
+  
+  <!-- Core Functions -->
+  <g fill="white" font-family="Arial, sans-serif" font-size="12">
+    <text x="430" y="260">• Transformation</text>
+    <text x="430" y="280">• Validation</text>
+    <text x="430" y="300">• Signing</text>
+    <text x="430" y="320">• QR Generation</text>
+    <text x="430" y="340">• Submission</text>
+    <text x="430" y="360">• Archiving</text>
+    <text x="430" y="380">• Monitoring &amp; Reconciliation</text>
+  </g>
+  
+  <!-- Right Side: FIRS MBS -->
+  <rect x="950" y="280" width="240" height="140" rx="8" fill="url(#firsGradient)" stroke="#27AE60" stroke-width="2"/>
+  
+  <!-- Government building icon -->
+  <g fill="white">
+    <rect x="1050" y="300" width="40" height="25" fill="white"/>
+    <polygon points="1045,300 1070,285 1095,300" fill="white"/>
+    <rect x="1055" y="305" width="6" height="15" fill="#27AE60"/>
+    <rect x="1065" y="305" width="6" height="15" fill="#27AE60"/>
+    <rect x="1075" y="305" width="6" height="15" fill="#27AE60"/>
+    <rect x="1085" y="305" width="6" height="15" fill="#27AE60"/>
+  </g>
+  
+  <text x="1070" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    FIRS MBS Platform
+  </text>
+  <text x="1070" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Clearance Authority
+  </text>
+  
+  <!-- Arrows from client solutions to SmartAPI Core -->
+  <line x1="250" y1="160" x2="400" y2="250" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="260" x2="400" y2="300" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="360" x2="400" y2="350" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="460" x2="400" y2="450" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Arrow from SmartAPI Core to FIRS -->
+  <line x1="800" y1="340" x2="950" y2="340" stroke="#4A90E2" stroke-width="4" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Return arrows from FIRS to SmartAPI with better visibility -->
+  <line x1="950" y1="305" x2="800" y2="305" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="820" y="285" width="90" height="18" fill="white" stroke="#DDD" stroke-width="1" rx="3"/>
+  <text x="865" y="297" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2ECC40" font-weight="bold">
+    Clearance Receipt
+  </text>
+  
+  <line x1="950" y1="375" x2="800" y2="375" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="835" y="380" width="80" height="18" fill="white" stroke="#DDD" stroke-width="1" rx="3"/>
+  <text x="875" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2ECC40" font-weight="bold">
+    IRN &amp; QR Code
+  </text>
+  
+  <!-- Return flow labels -->
+  <text x="300" y="540" font-family="Arial, sans-serif" font-size="12" fill="#2ECC40">
+    ← Clearance receipts, IRN, and QR codes flow back to client solutions
+  </text>
+  
+  <!-- Compliance Assurance Banner -->
+  <rect x="150" y="720" width="1100" height="60" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="700" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4A90E2">
+    Secure, Compliant, Future-Proof Integration with FIRS MBS
+  </text>
+  <text x="700" y="765" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    End-to-end compliance assurance for Nigerian e-invoicing requirements
+  </text>
+</svg>

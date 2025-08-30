@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <!-- Gradients for lifecycle stages -->
+    <linearGradient id="submissionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FF5252;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="clearanceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#26A69A;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="archiveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#45B7D1;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#2196F3;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="retrievalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#96CEB4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="auditGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFEAA7;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FDCB6E;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="circularArrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto">
+      <polygon points="2 2, 10 6, 2 10" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="800" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    Compliance Assurance Lifecycle
+  </text>
+  <text x="400" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    End-to-End Invoice Compliance Process
+  </text>
+  
+  <!-- Central circle showing continuous flow -->
+  <circle cx="400" cy="400" r="300" fill="none" stroke="#E0E0E0" stroke-width="2" stroke-dasharray="10,5"/>
+  
+  <!-- Stage 1: Submission (Top) -->
+  <circle cx="400" cy="150" r="60" fill="url(#submissionGradient)" stroke="#FF5252" stroke-width="3"/>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    1. SUBMISSION
+  </text>
+  <text x="400" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Multi-channel Input
+  </text>
+  <text x="400" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    ERP/BlueInvoice/Email/BlueBox
+  </text>
+  <text x="400" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    submits to SmartAPI
+  </text>
+  
+  <!-- Stage 2: Clearance (Top Right) -->
+  <circle cx="612" cy="262" r="60" fill="url(#clearanceGradient)" stroke="#26A69A" stroke-width="3"/>
+  <text x="612" y="257" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    2. CLEARANCE
+  </text>
+  <text x="612" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    FIRS Validation
+  </text>
+  <text x="680" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    SmartAPI sends to FIRS MBS
+  </text>
+  <text x="680" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    receives IRN/QR
+  </text>
+  
+  <!-- Stage 3: Archive (Bottom Right) -->
+  <circle cx="612" cy="538" r="60" fill="url(#archiveGradient)" stroke="#2196F3" stroke-width="3"/>
+  <text x="612" y="533" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    3. ARCHIVE
+  </text>
+  <text x="612" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Immutable Storage
+  </text>
+  <text x="680" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    Evidence bundles stored
+  </text>
+  <text x="680" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    in WORM archive
+  </text>
+  
+  <!-- Stage 4: Retrieval (Bottom Left) -->
+  <circle cx="188" cy="538" r="60" fill="url(#retrievalGradient)" stroke="#4CAF50" stroke-width="3"/>
+  <text x="188" y="533" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    4. RETRIEVAL
+  </text>
+  <text x="188" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Dashboard Access
+  </text>
+  <text x="120" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    Finance and Compliance
+  </text>
+  <text x="120" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    dashboards access evidence
+  </text>
+  
+  <!-- Stage 5: Audit (Top Left) -->
+  <circle cx="188" cy="262" r="60" fill="url(#auditGradient)" stroke="#FDCB6E" stroke-width="3"/>
+  <text x="188" y="257" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    5. AUDIT
+  </text>
+  <text x="188" y="272" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Verification Ready
+  </text>
+  <text x="120" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    Auditors and regulators
+  </text>
+  <text x="120" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#333">
+    verify evidence bundle
+  </text>
+  
+  <!-- Connecting arrows showing circular flow -->
+  <path d="M 450,180 Q 520,200 570,230" fill="none" stroke="#4A90E2" stroke-width="4" marker-end="url(#circularArrow)"/>
+  <path d="M 642,320 Q 650,400 620,490" fill="none" stroke="#4A90E2" stroke-width="4" marker-end="url(#circularArrow)"/>
+  <path d="M 560,560 Q 400,600 240,560" fill="none" stroke="#4A90E2" stroke-width="4" marker-end="url(#circularArrow)"/>
+  <path d="M 158,480 Q 150,400 180,310" fill="none" stroke="#4A90E2" stroke-width="4" marker-end="url(#circularArrow)"/>
+  <path d="M 230,230 Q 300,200 350,180" fill="none" stroke="#4A90E2" stroke-width="4" marker-end="url(#circularArrow)"/>
+  
+  <!-- Center text emphasizing continuous flow -->
+  <circle cx="400" cy="400" r="80" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="400" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    Continuous
+  </text>
+  <text x="400" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    Compliance
+  </text>
+  <text x="400" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Always Audit-Ready
+  </text>
+  
+  <!-- Key features callout -->
+  <rect x="250" y="680" width="300" height="40" rx="8" fill="#F0F8FF" stroke="#4A90E2" stroke-width="1"/>
+  <text x="400" y="695" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A90E2">
+    Immutable Archive • Audit-Ready Exports
+  </text>
+  <text x="400" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Complete evidence chain with cryptographic integrity
+  </text>
+  
+  <!-- Bottom banner -->
+  <rect x="100" y="740" width="600" height="40" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="400" y="755" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    End-to-End Compliance Assurance: No Invoice Lost, Always Audit-Ready
+  </text>
+  <text x="400" y="770" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Complete lifecycle management with regulatory compliance guarantee
+  </text>
+</svg>

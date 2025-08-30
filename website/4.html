@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Requirements and Compatibility - FIRS Nigeria E-Invoicing Enablement for Enterprises | Bluelight</title>
+    <meta name="description" content="Comprehensive systems requirements and ERP compatibility matrix for FIRS e-invoicing integration.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-file-invoice-dollar me-2"></i>
+                FIRS Nigeria E-Invoicing Enablement
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-list me-2"></i>Document Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance Assurance</a></li>
+                            <li><a class="dropdown-item active" href="4.html">4. Systems Requirements and Compatibility</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item" href="6.html">6. Data Mapping and Schema</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Capabilities and Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Methods of Receipt Processing and Submission to FIRS</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking, Monitoring, and Audit</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Delivery and Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Scope of Work</a></li>
+                            <li><a class="dropdown-item" href="13.html">13. Key Technical Requirements Coverage</a></li>
+                            <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item" href="16.html">16. Commercial Summary and Options</a></li>
+                            <li><a class="dropdown-item" href="17.html">17. Support and SLA Overview</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Case Studies and References</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Proposal Requirements Mapping</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Appendices</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">4. Systems Requirements and Compatibility</h1>
+                    <p class="lead">Comprehensive technical specifications covering ERP compatibility, integration endpoints, hosting options, and system prerequisites for seamless FIRS e-invoicing compliance.</p>
+                    <div class="mt-4">
+                        <a href="#integration-formats" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-exchange-alt me-2"></i>
+                            Integration Formats
+                        </a>
+                        <a href="#erp-compatibility" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-server me-2"></i>
+                            ERP Compatibility
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-cogs fa-8x text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- 4.1 Supported Integration Endpoints and Formats -->
+            <section id="integration-formats" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-exchange-alt text-primary me-3"></i>4.1 Supported Integration Endpoints and Formats</h2>
+                    <p class="section-subtitle">Our platform is designed to integrate with a wide range of enterprise systems, from Tier-1 ERPs to homegrown billing solutions. All methods converge on &lt;BluelightSmartAPI&gt;, which provides a canonical compliance layer.</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Supported Input Formats</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Structured Data:</strong> JSON, XML, CSV</li>
+                                <li><strong>ERP Documents:</strong> SAP IDoc INVOIC02, Oracle EBS XML, Microsoft Dynamics export formats</li>
+                                <li><strong>Unstructured Documents:</strong> PDF (via BlueBox or Email Connector parsing)</li>
+                                <li><strong>Hybrid:</strong> Mixed batch files, compressed packages (ZIP), or direct email attachments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Output to FIRS</h4>
+                            <ul class="benefits-list">
+                                <li>Fully aligned with FIRS MBS schema, including all mandatory fields, signatures, and QR payloads.</li>
+                                <li>Submission over HTTPS with TLS 1.3, with fallback retry mechanisms for FIRS outages.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Input formats from ERP → SmartAPI canonical → FIRS MBS</div>
+                    <img src="../diagrams/diagram9-input-canonical-schema.svg" alt="Input Format Schema Mapping" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 4.2 ERP and Billing System Compatibility -->
+            <section id="erp-compatibility" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-server text-primary me-3"></i>4.2 ERP and Billing System Compatibility</h2>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fab fa-sap text-primary"></i>
+                            </div>
+                            <h4>SAP</h4>
+                            <ul class="benefits-list">
+                                <li>ECC 6.0 (IDoc INVOIC02 via PI/PO)</li>
+                                <li>S4/HANA (Integration Suite CPI iFlows via Billing Document API)</li>
+                                <li>Compatibility tested in hybrid dual-stack environments (ECC for Finance, S4 for Logistics)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-database text-primary"></i>
+                            </div>
+                            <h4>Oracle</h4>
+                            <ul class="benefits-list">
+                                <li>E-Business Suite (XML/flat file adapters)</li>
+                                <li>Fusion Applications via REST and SOAP APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fab fa-microsoft text-primary"></i>
+                            </div>
+                            <h4>Microsoft Dynamics</h4>
+                            <ul class="benefits-list">
+                                <li>AX and NAV via batch exports</li>
+                                <li>Dynamics 365 Finance & Operations via OData/REST</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Others</h4>
+                            <ul class="benefits-list">
+                                <li>Sage, QuickBooks, Tally, or custom systems via JSON REST, CSV, SFTP, or BlueBox capture at print/file level</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Legacy Environments</h4>
+                            <ul class="benefits-list">
+                                <li>BlueBox ensures compliance without upgrades or invasive modifications. It intercepts print jobs or folder drops and transforms them automatically.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Compatibility matrix ERP vs SmartAPI vs BlueInvoice vs BlueBox</div>
+                    <img src="../diagrams/diagram10-erp-compatibility.svg" alt="ERP Compatibility Matrix" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 4.3 Network and Hosting Considerations -->
+            <section id="network-hosting" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-network-wired text-primary me-3"></i>4.3 Network and Hosting Considerations</h2>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-wifi text-accent"></i>
+                            </div>
+                            <h4>Connectivity Options</h4>
+                            <ul class="benefits-list">
+                                <li>Direct HTTPS over internet with mTLS (client certificates)</li>
+                                <li>VPN tunnel into SmartAPI endpoints</li>
+                                <li>Dedicated leased line or private interconnect (for Tier-1 clients with higher security policies)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-cloud text-accent"></i>
+                            </div>
+                            <h4>Hosting and Residency</h4>
+                            <ul class="benefits-list">
+                                <li>Default hosting within NG OPCO server when mandated</li>
+                                <li>Option for Bluelight-managed secure cloud tenancy (AWS, Azure, GCP) with region lock to Nigeria</li>
+                                <li>Dedicated VPC (Virtual Private Cloud) available for Platinum tier clients</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-tachometer-alt text-accent"></i>
+                            </div>
+                            <h4>Latency and Throughput</h4>
+                            <ul class="benefits-list">
+                                <li>Median submission latency: &lt; 500 ms inside SmartAPI</li>
+                                <li>P95 latency: &lt; 1.5s excluding FIRS response time</li>
+                                <li>Scale tested for &gt; 500,000 invoices per day per tenant</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Hosting topology – client ERP on-prem/cloud → SmartAPI tenancy → FIRS MBS</div>
+                    <img src="../diagrams/diagram11-hosting-topology.svg" alt="Hosting Topology" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 4.4 Customer Prerequisites and System Readiness -->
+            <section id="prerequisites" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-clipboard-check text-primary me-3"></i>4.4 Customer Prerequisites and System Readiness</h2>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Minimum Client Requirements</h4>
+                            <ul class="benefits-list">
+                                <li>Active ERP or billing system with export capability (file, API, print, or email)</li>
+                                <li>Network connectivity to SmartAPI endpoints (whitelisted IPs, open ports 443)</li>
+                                <li>Valid digital certificate or key pair (client-provided PKI or Bluelight-issued PKI)</li>
+                                <li>Service account for integration (SAP RFC user, Oracle integration user, etc.)</li>
+                                <li>Test data set with valid TINs, HS codes, and tax codes for SIT and UAT</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Optional Enhancements</h4>
+                            <ul class="benefits-list">
+                                <li>SAP CPI tenant for future S4/HANA migrations</li>
+                                <li>SIEM integration for security teams</li>
+                                <li>SFTP server access for batch fallback scenarios</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Prerequisites checklist mapped to ERP, Network, Security, and Data readiness</div>
+                    <img src="../diagrams/diagram12-prerequisites-checklist.svg" alt="Prerequisites Checklist" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 4.5 Integration Options by Client Profile -->
+            <section id="integration-options" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-users-cog text-primary me-3"></i>4.5 Integration Options by Client Profile</h2>
+                </div>
+
+                <div class="table-responsive mb-4">
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Client Profile</th>
+                                <th>Recommended Integration Path</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Large enterprise on SAP ECC</td>
+                                <td>SmartAPI via PI/PO with IDoc INVOIC02</td>
+                                <td>Future-safe, minimal ECC disruption</td>
+                            </tr>
+                            <tr>
+                                <td>Large enterprise on SAP S4</td>
+                                <td>SmartAPI via CPI iFlows with Billing Document API</td>
+                                <td>Migration ready, native API support</td>
+                            </tr>
+                            <tr>
+                                <td>Oracle EBS or Fusion</td>
+                                <td>SmartAPI via XML/REST adapter</td>
+                                <td>Direct mapping, proven flows</td>
+                            </tr>
+                            <tr>
+                                <td>Dynamics AX/NAV</td>
+                                <td>SmartAPI via OData or batch CSV</td>
+                                <td>Mid-market ERP compatibility</td>
+                            </tr>
+                            <tr>
+                                <td>Legacy ERP with no APIs</td>
+                                <td>BlueBox capture at print or file output</td>
+                                <td>Zero system modification required</td>
+                            </tr>
+                            <tr>
+                                <td>Small business unit / standalone</td>
+                                <td>BlueInvoice SaaS or Email Connector</td>
+                                <td>Fastest path to compliance</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 4.6 Why This Matters to IT Leaders -->
+            <section id="it-leaders" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-user-tie text-primary me-3"></i>4.6 Why This Matters to IT Leaders</h2>
+                </div>
+                
+                <div class="key-points">
+                    <p>Where competitors might tell clients "we support SAP," we demonstrate in detail exactly how the integration occurs, what formats are accepted, what hosting constraints apply, and what prerequisites the client must meet. <strong>This eliminates hidden costs, reduces risk, and allows CIOs and CTOs to sign off with confidence.</strong></p>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-4">
+                        <div class="stat-card">
+                            <span class="stat-number">&lt;500ms</span>
+                            <span class="stat-label">Median API Response</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="stat-card">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-label">Daily Invoice Capacity</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="stat-card">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Platform Availability</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3><i class="fas fa-rocket me-3"></i>Ready for Technical Assessment?</h3>
+                        <p class="mb-0">Let our technical architects evaluate your current ERP landscape and design the optimal integration pathway for your FIRS compliance requirements.</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <a href="#technical-assessment" class="btn btn-cta btn-lg">
+                            <i class="fas fa-clipboard-list me-2"></i>
+                            Technical Assessment
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>&copy; 2025 Bluelight Technologies. FIRS E-Invoicing Compliance Solution. All rights reserved.</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <p>Professional Enterprise Solution | Authorized FIRS Partner</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

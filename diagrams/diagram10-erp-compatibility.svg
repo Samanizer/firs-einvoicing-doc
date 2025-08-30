@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <!-- Checkmark symbol -->
+    <g id="checkmark">
+      <circle cx="0" cy="0" r="12" fill="#4CAF50"/>
+      <path d="M-6,-2 L-2,4 L6,-4" stroke="white" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Partial support symbol -->
+    <g id="partial">
+      <circle cx="0" cy="0" r="12" fill="#FF9800"/>
+      <rect x="-8" y="-2" width="16" height="4" fill="white" rx="2"/>
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    ERP Compatibility Matrix
+  </text>
+  <text x="600" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    Integration Options by ERP Platform
+  </text>
+  
+  <!-- Matrix Header -->
+  <rect x="100" y="100" width="200" height="60" fill="#4A90E2" stroke="#357ABD" stroke-width="2"/>
+  <text x="200" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    ERP Systems
+  </text>
+  
+  <!-- Column Headers -->
+  <rect x="300" y="100" width="200" height="60" fill="#E3F2FD" stroke="#4A90E2" stroke-width="1"/>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    SmartAPI
+  </text>
+  <text x="400" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Direct Integration
+  </text>
+  
+  <rect x="500" y="100" width="200" height="60" fill="#E8F5E8" stroke="#4CAF50" stroke-width="1"/>
+  <text x="600" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    BlueInvoice
+  </text>
+  <text x="600" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Web Application
+  </text>
+  
+  <rect x="700" y="100" width="200" height="60" fill="#FFF3E0" stroke="#FF9800" stroke-width="1"/>
+  <text x="800" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    BlueBox
+  </text>
+  <text x="800" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Capture Agent
+  </text>
+  
+  <rect x="900" y="100" width="200" height="60" fill="#FFF8E1" stroke="#FFC107" stroke-width="1"/>
+  <text x="1000" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Email Connector
+  </text>
+  <text x="1000" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Email Submission
+  </text>
+  
+  <!-- Row 1: SAP ECC -->
+  <rect x="100" y="160" width="200" height="50" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    SAP ECC
+  </text>
+  <text x="200" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    6.0 EhP7+
+  </text>
+  
+  <rect x="300" y="160" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="400" y="185"/>
+  <text x="400" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    PI/PO IDoc
+  </text>
+  
+  <rect x="500" y="160" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="600" y="185"/>
+  
+  <rect x="700" y="160" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="800" y="185"/>
+  <text x="800" y="205" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    Spool capture
+  </text>
+  
+  <rect x="900" y="160" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#partial" x="1000" y="185"/>
+  
+  <!-- Row 2: SAP S4/HANA -->
+  <rect x="100" y="210" width="200" height="50" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    SAP S4/HANA
+  </text>
+  <text x="200" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    2020+
+  </text>
+  
+  <rect x="300" y="210" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="400" y="235"/>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    CPI/API
+  </text>
+  
+  <rect x="500" y="210" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="600" y="235"/>
+  
+  <rect x="700" y="210" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="800" y="235"/>
+  
+  <rect x="900" y="210" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="1000" y="235"/>
+  
+  <!-- Row 3: Oracle EBS/Fusion -->
+  <rect x="100" y="260" width="200" height="50" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Oracle EBS/Fusion
+  </text>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    12.2+/Cloud
+  </text>
+  
+  <rect x="300" y="260" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="400" y="285"/>
+  <text x="400" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    REST/XML
+  </text>
+  
+  <rect x="500" y="260" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="600" y="285"/>
+  
+  <rect x="700" y="260" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="800" y="285"/>
+  
+  <rect x="900" y="260" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="1000" y="285"/>
+  
+  <!-- Row 4: Dynamics -->
+  <rect x="100" y="310" width="200" height="50" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="330" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Dynamics AX/NAV
+  </text>
+  <text x="200" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    2012+/365
+  </text>
+  
+  <rect x="300" y="310" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="400" y="335"/>
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    OData/CSV
+  </text>
+  
+  <rect x="500" y="310" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="600" y="335"/>
+  
+  <rect x="700" y="310" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="800" y="335"/>
+  
+  <rect x="900" y="310" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="1000" y="335"/>
+  
+  <!-- Row 5: Legacy ERPs -->
+  <rect x="100" y="360" width="200" height="50" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Legacy ERPs
+  </text>
+  <text x="200" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Various platforms
+  </text>
+  
+  <rect x="300" y="360" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#partial" x="400" y="385"/>
+  <text x="400" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    Custom dev
+  </text>
+  
+  <rect x="500" y="360" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="600" y="385"/>
+  
+  <rect x="700" y="360" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="800" y="385"/>
+  <text x="800" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    Preferred
+  </text>
+  
+  <rect x="900" y="360" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="1000" y="385"/>
+  
+  <!-- Row 6: Small Businesses -->
+  <rect x="100" y="410" width="200" height="50" fill="#F5F5F5" stroke="#CCC" stroke-width="1"/>
+  <text x="200" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Small Businesses
+  </text>
+  <text x="200" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    No ERP/Manual
+  </text>
+  
+  <rect x="300" y="410" width="200" height="50" fill="#F0F0F0" stroke="#DDD"/>
+  <text x="400" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999">
+    N/A
+  </text>
+  
+  <rect x="500" y="410" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="600" y="435"/>
+  <text x="600" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    Preferred
+  </text>
+  
+  <rect x="700" y="410" width="200" height="50" fill="#F0F0F0" stroke="#DDD"/>
+  <text x="800" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#999">
+    N/A
+  </text>
+  
+  <rect x="900" y="410" width="200" height="50" fill="white" stroke="#DDD"/>
+  <use href="#checkmark" x="1000" y="435"/>
+  <text x="1000" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#333">
+    Simple option
+  </text>
+  
+  <!-- Legend -->
+  <rect x="200" y="500" width="800" height="80" rx="8" fill="#F8F9FA" stroke="#DDD" stroke-width="1"/>
+  <text x="600" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+    Legend
+  </text>
+  
+  <use href="#checkmark" x="300" y="545"/>
+  <text x="320" y="550" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Full Support - Recommended integration method
+  </text>
+  
+  <use href="#partial" x="300" y="565"/>
+  <text x="320" y="570" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Partial Support - Custom development required
+  </text>
+  
+  <rect x="600" y="540" width="20" height="20" fill="#F0F0F0" stroke="#DDD"/>
+  <text x="630" y="555" font-family="Arial, sans-serif" font-size="12" fill="#333">
+    Not Applicable - Solution not suitable for this ERP type
+  </text>
+  
+  <!-- Bottom banner -->
+  <rect x="150" y="620" width="900" height="50" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="600" y="640" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    Every ERP and Environment Has a Compliance Path
+  </text>
+  <text x="600" y="655" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Universal compatibility ensures no business is left without FIRS compliance options
+  </text>
+</svg>

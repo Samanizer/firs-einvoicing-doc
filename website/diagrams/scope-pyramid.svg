@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c5aa0; }
+      .layer-title { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: white; }
+      .layer-desc { font-family: 'Arial', sans-serif; font-size: 12px; fill: white; }
+      .deliverable-text { font-family: 'Arial', sans-serif; font-size: 11px; fill: #28a745; font-weight: bold; }
+      .foundation-text { font-family: 'Arial', sans-serif; font-size: 14px; fill: #2c5aa0; font-weight: bold; }
+      
+      .layer-5 { fill: url(#layer5Gradient); stroke: #2c5aa0; stroke-width: 2; }
+      .layer-4 { fill: url(#layer4Gradient); stroke: #17a2b8; stroke-width: 2; }
+      .layer-3 { fill: url(#layer3Gradient); stroke: #ffc107; stroke-width: 2; }
+      .layer-2 { fill: url(#layer2Gradient); stroke: #28a745; stroke-width: 2; }
+      .layer-1 { fill: url(#layer1Gradient); stroke: #6f42c1; stroke-width: 2; }
+    </style>
+    
+    <!-- Gradients for pyramid layers -->
+    <linearGradient id="layer5Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5aa0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer4Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#20c997;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#17a2b8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer3Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffda6a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffc107;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer2Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#51cf66;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#28a745;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="layer1Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9775fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6f42c1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">Scope Pyramid</text>
+  
+  <!-- Layer 5: Deployment, Training & Support -->
+  <polygon points="400,80 600,80 550,140 450,140" class="layer-5"/>
+  <circle cx="450" cy="100" r="12" fill="white" opacity="0.8"/>
+  <path d="M442 95 L448 100 L458 90" stroke="#2c5aa0" stroke-width="2" fill="none"/>
+  <text x="500" y="108" text-anchor="middle" class="layer-title">Deployment, Training &amp; Support</text>
+  <text x="500" y="125" text-anchor="middle" class="layer-desc">Production cutover, training, knowledge transfer</text>
+  
+  <!-- Layer 4: Testing -->
+  <polygon points="350,140 650,140 580,200 420,200" class="layer-4"/>
+  <circle cx="420" cy="160" r="12" fill="white" opacity="0.8"/>
+  <circle cx="415" cy="155" r="3" fill="#17a2b8"/>
+  <circle cx="425" cy="155" r="3" fill="#17a2b8"/>
+  <circle cx="415" cy="165" r="3" fill="#17a2b8"/>
+  <circle cx="425" cy="165" r="3" fill="#17a2b8"/>
+  <text x="500" y="168" text-anchor="middle" class="layer-title">Testing</text>
+  <text x="500" y="185" text-anchor="middle" class="layer-desc">Unit, SIT, UAT, performance, security testing</text>
+  
+  <!-- Layer 3: Development & Configuration -->
+  <polygon points="300,200 700,200 610,260 390,260" class="layer-3"/>
+  <circle cx="390" cy="220" r="12" fill="white" opacity="0.8"/>
+  <rect x="385" y="215" width="10" height="10" fill="#ffc107"/>
+  <text x="500" y="228" text-anchor="middle" class="layer-title">Development &amp; Configuration</text>
+  <text x="500" y="245" text-anchor="middle" class="layer-desc">SmartAPI tenant config, ERP adapters, BlueBox setup</text>
+  
+  <!-- Layer 2: Solution Design -->
+  <polygon points="250,260 750,260 640,320 360,320" class="layer-2"/>
+  <circle cx="360" cy="280" r="12" fill="white" opacity="0.8"/>
+  <path d="M350 275 L360 290 L370 275 M360 280 L360 290" stroke="#28a745" stroke-width="2" fill="none"/>
+  <text x="500" y="288" text-anchor="middle" class="layer-title">Solution Design</text>
+  <text x="500" y="305" text-anchor="middle" class="layer-desc">Target architecture, data mapping, security model</text>
+  
+  <!-- Layer 1: Requirements Gathering & Analysis -->
+  <polygon points="200,320 800,320 670,380 330,380" class="layer-1"/>
+  <circle cx="330" cy="340" r="12" fill="white" opacity="0.8"/>
+  <path d="M322 335 L328 340 L338 330" stroke="#6f42c1" stroke-width="2" fill="none"/>
+  <text x="500" y="348" text-anchor="middle" class="layer-title">Requirements Gathering &amp; Analysis</text>
+  <text x="500" y="365" text-anchor="middle" class="layer-desc">Stakeholder workshops, ERP landscape, compliance traceability</text>
+  
+  <!-- Deliverables -->
+  <text x="650" y="105" class="deliverable-text">Go-Live Record</text>
+  <text x="650" y="118" class="deliverable-text">Training Completion</text>
+  <text x="650" y="131" class="deliverable-text">SLA-based support</text>
+  
+  <text x="620" y="168" class="deliverable-text">Test Reports</text>
+  <text x="620" y="181" class="deliverable-text">UAT Sign-off</text>
+  
+  <text x="640" y="228" class="deliverable-text">Configured services</text>
+  <text x="640" y="241" class="deliverable-text">ready for SIT</text>
+  
+  <text x="680" y="288" class="deliverable-text">Solution Architecture</text>
+  <text x="680" y="301" class="deliverable-text">Document, ICD</text>
+  
+  <text x="700" y="348" class="deliverable-text">Requirements</text>
+  <text x="700" y="361" class="deliverable-text">Specification</text>
+  
+  <!-- Foundation text -->
+  <text x="500" y="420" text-anchor="middle" class="foundation-text">Strong foundations ensure long-term compliance and stability</text>
+  
+  <!-- Connecting lines showing dependencies -->
+  <path d="M500 140 L500 200" stroke="#666" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <path d="M500 200 L500 260" stroke="#666" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <path d="M500 260 L500 320" stroke="#666" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <path d="M500 320 L500 380" stroke="#666" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  
+  <!-- Side note -->
+  <text x="50" y="200" class="foundation-text">Each layer outputs</text>
+  <text x="50" y="220" class="foundation-text">deliverables feeding</text>
+  <text x="50" y="240" class="foundation-text">into next phase</text>
+</svg>

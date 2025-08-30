@@ -1,0 +1,121 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .timeline-header { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #2c5aa0; }
+      .phase-title { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #2c5aa0; }
+      .phase-subtitle { font-family: 'Arial', sans-serif; font-size: 11px; fill: #666; }
+      .deliverable { font-family: 'Arial', sans-serif; font-size: 10px; fill: #28a745; font-weight: bold; }
+      .gate { stroke: #ffc107; stroke-width: 3; fill: none; }
+      .phase-bg { fill: #f8f9fa; stroke: #e9ecef; stroke-width: 2; }
+      .hypercare-bg { fill: #fff3cd; stroke: #ffeaa7; stroke-width: 2; }
+      .timeline-arrow { stroke: #2c5aa0; stroke-width: 2; fill: #2c5aa0; }
+    </style>
+  </defs>
+  
+  <!-- Timeline header -->
+  <text x="600" y="30" text-anchor="middle" class="timeline-header">Predictable, Step-by-Step Transition (10-12 Weeks)</text>
+  
+  <!-- Phase 1: Discovery & Blueprint -->
+  <rect x="50" y="60" width="140" height="280" rx="8" class="phase-bg"/>
+  <circle cx="120" cy="90" r="20" fill="#007bff"/>
+  <path d="M112 82 L118 88 L128 78" stroke="white" stroke-width="2" fill="none"/>
+  <text x="120" y="125" text-anchor="middle" class="phase-title">Discovery &amp;</text>
+  <text x="120" y="140" text-anchor="middle" class="phase-title">Blueprint</text>
+  <text x="120" y="165" text-anchor="middle" class="phase-subtitle">Requirements, system</text>
+  <text x="120" y="178" text-anchor="middle" class="phase-subtitle">landscape, blueprint</text>
+  <text x="120" y="210" text-anchor="middle" class="deliverable">Blueprint Document</text>
+  <line x1="120" y1="240" x2="120" y2="260" class="gate"/>
+  <circle cx="120" cy="265" r="8" fill="#ffc107"/>
+  
+  <!-- Phase 2: Solution Design -->
+  <rect x="210" y="60" width="140" height="280" rx="8" class="phase-bg"/>
+  <circle cx="280" cy="90" r="20" fill="#17a2b8"/>
+  <path d="M270 80 L280 95 L290 80 M280 85 L280 95" stroke="white" stroke-width="2" fill="none"/>
+  <text x="280" y="125" text-anchor="middle" class="phase-title">Solution Design</text>
+  <text x="280" y="165" text-anchor="middle" class="phase-subtitle">Data mapping, ICD,</text>
+  <text x="280" y="178" text-anchor="middle" class="phase-subtitle">security model</text>
+  <text x="280" y="210" text-anchor="middle" class="deliverable">Design Package</text>
+  <line x1="280" y1="240" x2="280" y2="260" class="gate"/>
+  <circle cx="280" cy="265" r="8" fill="#ffc107"/>
+  
+  <!-- Phase 3: Build & SIT -->
+  <rect x="370" y="60" width="140" height="280" rx="8" class="phase-bg"/>
+  <circle cx="440" cy="90" r="20" fill="#ffc107"/>
+  <circle cx="435" cy="85" r="3" fill="white"/>
+  <circle cx="445" cy="85" r="3" fill="white"/>
+  <circle cx="435" cy="95" r="3" fill="white"/>
+  <circle cx="445" cy="95" r="3" fill="white"/>
+  <text x="440" y="125" text-anchor="middle" class="phase-title">Build &amp; SIT</text>
+  <text x="440" y="165" text-anchor="middle" class="phase-subtitle">Configure SmartAPI,</text>
+  <text x="440" y="178" text-anchor="middle" class="phase-subtitle">adapters, testing</text>
+  <text x="440" y="210" text-anchor="middle" class="deliverable">SIT Report</text>
+  <line x1="440" y1="240" x2="440" y2="260" class="gate"/>
+  <circle cx="440" cy="265" r="8" fill="#ffc107"/>
+  
+  <!-- Phase 4: UAT -->
+  <rect x="530" y="60" width="140" height="280" rx="8" class="phase-bg"/>
+  <circle cx="600" cy="90" r="20" fill="#28a745"/>
+  <circle cx="590" cy="85" r="4" fill="white"/>
+  <circle cx="600" cy="85" r="4" fill="white"/>
+  <circle cx="610" cy="85" r="4" fill="white"/>
+  <path d="M590 95 L600 95 L610 95" stroke="white" stroke-width="2" fill="none"/>
+  <text x="600" y="125" text-anchor="middle" class="phase-title">User Acceptance</text>
+  <text x="600" y="140" text-anchor="middle" class="phase-title">Testing</text>
+  <text x="600" y="165" text-anchor="middle" class="phase-subtitle">Finance &amp; Compliance</text>
+  <text x="600" y="178" text-anchor="middle" class="phase-subtitle">validate flows</text>
+  <text x="600" y="210" text-anchor="middle" class="deliverable">UAT Sign-off</text>
+  <line x1="600" y1="240" x2="600" y2="260" class="gate"/>
+  <circle cx="600" cy="265" r="8" fill="#ffc107"/>
+  
+  <!-- Phase 5: Cutover & Go-Live -->
+  <rect x="690" y="60" width="140" height="280" rx="8" class="phase-bg"/>
+  <circle cx="760" cy="90" r="20" fill="#dc3545"/>
+  <path d="M750 85 L770 90 L750 95 M755 90 L770 90" stroke="white" stroke-width="2" fill="none"/>
+  <text x="760" y="125" text-anchor="middle" class="phase-title">Cutover &amp;</text>
+  <text x="760" y="140" text-anchor="middle" class="phase-title">Go-Live</text>
+  <text x="760" y="165" text-anchor="middle" class="phase-subtitle">Controlled production</text>
+  <text x="760" y="178" text-anchor="middle" class="phase-subtitle">switch, rollback plan</text>
+  <text x="760" y="210" text-anchor="middle" class="deliverable">Cutover Record</text>
+  <line x1="760" y1="240" x2="760" y2="260" class="gate"/>
+  <circle cx="760" cy="265" r="8" fill="#ffc107"/>
+  
+  <!-- Phase 6: Hypercare (highlighted) -->
+  <rect x="850" y="60" width="140" height="280" rx="8" class="hypercare-bg"/>
+  <circle cx="920" cy="90" r="20" fill="#fd7e14"/>
+  <path d="M910 80 L920 90 L930 80 M910 100 L920 90 L930 100" stroke="white" stroke-width="2" fill="none"/>
+  <text x="920" y="125" text-anchor="middle" class="phase-title">Hypercare</text>
+  <text x="920" y="165" text-anchor="middle" class="phase-subtitle">Intensive support,</text>
+  <text x="920" y="178" text-anchor="middle" class="phase-subtitle">24x7 monitoring</text>
+  <text x="920" y="210" text-anchor="middle" class="deliverable">Hypercare Closure</text>
+  <text x="920" y="223" text-anchor="middle" class="deliverable">Report</text>
+  <line x1="920" y1="240" x2="920" y2="260" class="gate"/>
+  <circle cx="920" cy="265" r="8" fill="#ffc107"/>
+  
+  <!-- Phase 7: Steady State -->
+  <rect x="1010" y="60" width="140" height="280" rx="8" class="phase-bg"/>
+  <circle cx="1080" cy="90" r="20" fill="#6c757d"/>
+  <path d="M1070 85 L1075 90 L1085 80 M1075 90 L1090 90" stroke="white" stroke-width="2" fill="none"/>
+  <text x="1080" y="125" text-anchor="middle" class="phase-title">Steady State</text>
+  <text x="1080" y="165" text-anchor="middle" class="phase-subtitle">Knowledge transfer,</text>
+  <text x="1080" y="178" text-anchor="middle" class="phase-subtitle">governance, reviews</text>
+  <text x="1080" y="210" text-anchor="middle" class="deliverable">Operations</text>
+  <text x="1080" y="223" text-anchor="middle" class="deliverable">Sign-off</text>
+  
+  <!-- Flow arrows -->
+  <path d="M190 170 L210 170" class="timeline-arrow"/>
+  <path d="M350 170 L370 170" class="timeline-arrow"/>
+  <path d="M510 170 L530 170" class="timeline-arrow"/>
+  <path d="M670 170 L690 170" class="timeline-arrow"/>
+  <path d="M830 170 L850 170" class="timeline-arrow"/>
+  <path d="M990 170 L1010 170" class="timeline-arrow"/>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c5aa0"/>
+    </marker>
+  </defs>
+  <style>
+    .timeline-arrow { marker-end: url(#arrowhead); }
+  </style>
+</svg>

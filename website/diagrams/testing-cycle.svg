@@ -1,0 +1,109 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c5aa0; }
+      .center-title { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #2c5aa0; }
+      .center-subtitle { font-family: 'Arial', sans-serif; font-size: 12px; fill: #666; }
+      .stage-title { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #2c5aa0; }
+      .stage-desc { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .deliverable-text { font-family: 'Arial', sans-serif; font-size: 9px; fill: #28a745; font-weight: bold; }
+      
+      .center-circle { fill: #f8f9fa; stroke: #2c5aa0; stroke-width: 3; }
+      .stage-circle { fill: #ffffff; stroke: #dee2e6; stroke-width: 2; }
+      .stage-icon-bg { fill: #e9ecef; stroke: #adb5bd; stroke-width: 1; }
+      .flow-arrow { stroke: #28a745; stroke-width: 3; fill: none; marker-end: url(#greenArrow); }
+      .feedback-arrow { stroke: #dc3545; stroke-width: 2; fill: none; marker-end: url(#redArrow); stroke-dasharray: "5,5"; }
+    </style>
+    
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#28a745"/>
+    </marker>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc3545"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title-text">Comprehensive Testing Cycle</text>
+  
+  <!-- Center Circle -->
+  <circle cx="400" cy="300" r="80" class="center-circle"/>
+  <text x="400" y="290" text-anchor="middle" class="center-title">Comprehensive Testing</text>
+  <text x="400" y="310" text-anchor="middle" class="center-subtitle">for Assurance</text>
+  
+  <!-- Stage 1: Unit Testing (top) -->
+  <circle cx="400" cy="120" r="50" class="stage-circle"/>
+  <circle cx="400" cy="100" r="15" class="stage-icon-bg"/>
+  <circle cx="395" cy="95" r="3" fill="#007bff"/>
+  <circle cx="405" cy="95" r="3" fill="#007bff"/>
+  <circle cx="395" cy="105" r="3" fill="#007bff"/>
+  <circle cx="405" cy="105" r="3" fill="#007bff"/>
+  <text x="400" y="135" text-anchor="middle" class="stage-title">Unit Testing</text>
+  <text x="400" y="150" text-anchor="middle" class="stage-desc">Field mappings, transformation</text>
+  <text x="400" y="162" text-anchor="middle" class="stage-desc">functions, validation rules</text>
+  <text x="400" y="180" text-anchor="middle" class="deliverable-text">Unit Test Logs</text>
+  
+  <!-- Stage 2: SIT (top-right) -->
+  <circle cx="600" cy="200" r="50" class="stage-circle"/>
+  <circle cx="600" cy="180" r="15" class="stage-icon-bg"/>
+  <circle cx="590" cy="175" r="4" fill="#17a2b8"/>
+  <circle cx="600" cy="175" r="4" fill="#17a2b8"/>
+  <circle cx="610" cy="175" r="4" fill="#17a2b8"/>
+  <path d="M590 185 L610 185" stroke="#17a2b8" stroke-width="2" fill="none"/>
+  <text x="600" y="215" text-anchor="middle" class="stage-title">System Integration</text>
+  <text x="600" y="230" text-anchor="middle" class="stage-desc">End-to-end flow ERP →</text>
+  <text x="600" y="242" text-anchor="middle" class="stage-desc">SmartAPI → FIRS Sandbox</text>
+  <text x="600" y="260" text-anchor="middle" class="deliverable-text">SIT Report</text>
+  
+  <!-- Stage 3: UAT (bottom-right) -->
+  <circle cx="600" cy="400" r="50" class="stage-circle"/>
+  <circle cx="600" cy="380" r="15" class="stage-icon-bg"/>
+  <circle cx="590" cy="375" r="3" fill="#28a745"/>
+  <circle cx="600" cy="375" r="3" fill="#28a745"/>
+  <circle cx="610" cy="375" r="3" fill="#28a745"/>
+  <path d="M590 385 L600 385 L610 385" stroke="#28a745" stroke-width="2" fill="none"/>
+  <text x="600" y="415" text-anchor="middle" class="stage-title">User Acceptance</text>
+  <text x="600" y="430" text-anchor="middle" class="stage-desc">Finance &amp; Compliance validate</text>
+  <text x="600" y="442" text-anchor="middle" class="stage-desc">real business scenarios</text>
+  <text x="600" y="460" text-anchor="middle" class="deliverable-text">UAT Sign-off</text>
+  
+  <!-- Stage 4: Performance Testing (bottom-left) -->
+  <circle cx="200" cy="400" r="50" class="stage-circle"/>
+  <circle cx="200" cy="380" r="15" class="stage-icon-bg"/>
+  <rect x="192" y="372" width="16" height="16" fill="#ffc107"/>
+  <rect x="194" y="374" width="3" height="12" fill="white"/>
+  <rect x="198" y="376" width="3" height="10" fill="white"/>
+  <rect x="202" y="374" width="3" height="12" fill="white"/>
+  <rect x="206" y="372" width="3" height="14" fill="white"/>
+  <text x="200" y="415" text-anchor="middle" class="stage-title">Performance Testing</text>
+  <text x="200" y="430" text-anchor="middle" class="stage-desc">High-volume submissions,</text>
+  <text x="200" y="442" text-anchor="middle" class="stage-desc">latency, throughput stress</text>
+  <text x="200" y="460" text-anchor="middle" class="deliverable-text">Performance Test Report</text>
+  
+  <!-- Stage 5: Security Testing (top-left) -->
+  <circle cx="200" cy="200" r="50" class="stage-circle"/>
+  <circle cx="200" cy="180" r="15" class="stage-icon-bg"/>
+  <path d="M190 170 L200 180 L210 170 M190 190 L200 180 L210 190" stroke="#dc3545" stroke-width="2" fill="none"/>
+  <text x="200" y="215" text-anchor="middle" class="stage-title">Security Testing</text>
+  <text x="200" y="230" text-anchor="middle" class="stage-desc">Authentication, authorization,</text>
+  <text x="200" y="242" text-anchor="middle" class="stage-desc">penetration, certificate checks</text>
+  <text x="200" y="260" text-anchor="middle" class="deliverable-text">Security Test Certificate</text>
+  
+  <!-- Flow arrows (clockwise) -->
+  <path d="M 440 140 Q 520 120 560 160" class="flow-arrow"/>
+  <path d="M 620 240 Q 640 320 620 360" class="flow-arrow"/>
+  <path d="M 560 420 Q 400 460 240 420" class="flow-arrow"/>
+  <path d="M 180 360 Q 160 280 180 240" class="flow-arrow"/>
+  <path d="M 240 180 Q 320 160 360 140" class="flow-arrow"/>
+  
+  <!-- Feedback arrows back to center -->
+  <path d="M 360 160 L 360 240" class="feedback-arrow"/>
+  <path d="M 540 230 L 480 270" class="feedback-arrow"/>
+  <path d="M 540 370 L 480 330" class="feedback-arrow"/>
+  <path d="M 260 370 L 320 330" class="feedback-arrow"/>
+  <path d="M 260 230 L 320 270" class="feedback-arrow"/>
+  
+  <!-- Framework label -->
+  <text x="400" y="530" text-anchor="middle" class="center-title">SmartAPI Testing Framework</text>
+  <text x="400" y="550" text-anchor="middle" class="stage-desc">Ensures consistency across all testing stages with formal deliverables</text>
+</svg>

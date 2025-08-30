@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Technical Requirements Coverage - FIRS Nigeria E-Invoicing Enablement for Enterprises | Bluelight</title>
+    <meta name="description" content="Comprehensive technical capabilities ensuring complete regulatory compliance with detailed performance metrics, security controls, and integration readiness.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-file-invoice-dollar me-2"></i>
+                FIRS Nigeria E-Invoicing Enablement
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-list me-2"></i>Document Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance</a></li>
+                            <li><a class="dropdown-item" href="4.html">4. Systems Architecture Overview</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item" href="6.html">6. Data Mapping and Transformation</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Receipt Processing and Validation</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking and Monitoring</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support and Training</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Detailed Scope of Work</a></li>
+                            <li><a class="dropdown-item active" href="13.html">13. Key Technical Requirements Coverage</a></li>
+                            <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item" href="16.html">16. Delivery and Cutover Plan</a></li>
+                            <li><a class="dropdown-item" href="17.html">17. Operations Runbook</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Case Studies</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Proposal Requirements Mapping</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Appendices</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">13. Key Technical Requirements Coverage</h1>
+                    <p class="lead">Comprehensive technical capabilities ensuring complete regulatory compliance with detailed performance metrics, security controls, and integration readiness for all enterprise environments.</p>
+                    <div class="mt-4">
+                        <a href="#compliance-artifacts" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-cogs me-2"></i>
+                            Compliance APIs
+                        </a>
+                        <a href="#integration-readiness" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-plug me-2"></i>
+                            Integration Matrix
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-server fa-8x text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- 13.1 APIs for Compliance Artifacts -->
+            <section id="compliance-artifacts" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs text-primary me-3"></i>13.1 APIs for Compliance Artifacts</h2>
+                    <p class="section-subtitle">Complete suite of APIs providing all mandatory compliance artifacts including IRN generation, QR codes, digital signatures, and comprehensive archiving capabilities.</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-hashtag fa-2x text-primary mb-3"></i>
+                            <h5>Invoice Reference Number (IRN)</h5>
+                            <p>Generated automatically by BluelightSmartAPI as part of clearance cycle, ensuring unique identification for every invoice submitted to FIRS.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-qrcode fa-2x text-success mb-3"></i>
+                            <h5>QR Codes</h5>
+                            <p>Embedded in invoice PDF or XML, returned as base64 image and stored in archive for compliance verification and audit readiness.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-signature fa-2x text-warning mb-3"></i>
+                            <h5>Digital Signatures</h5>
+                            <p>PKCS#7 signatures created for every payload, ensuring non-repudiation and integrity of invoice data throughout the compliance lifecycle.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-plug fa-2x text-info mb-3"></i>
+                            <h5>RESTful API Endpoints</h5>
+                            <p>Comprehensive APIs available for submission, status retrieval, archive fetch, and reconciliation operations with full OpenAPI specification.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SmartAPI Services Lifecycle Diagram -->
+                <div class="diagram-container">
+                    <div class="diagram-title">
+                        <i class="fas fa-project-diagram me-2"></i>
+                        SmartAPI Services Lifecycle - Complete Invoice Processing Pipeline
+                    </div>
+                    <img src="diagrams/smartapi-services-lifecycle.svg" alt="SmartAPI Services Lifecycle" class="img-fluid">
+                    <p class="diagram-subtitle">End-to-end invoice processing from submission to archive, covering all FIRS compliance requirements</p>
+                </div>
+            </section>
+
+            <!-- 13.2 Data Resource Libraries -->
+            <section id="data-libraries" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-database text-primary me-3"></i>13.2 Data Resource Libraries</h2>
+                    <p class="section-subtitle">Comprehensive data libraries ensuring accurate mapping and synchronization with FIRS reference data for seamless compliance validation.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-cubes fa-2x text-primary mb-3"></i>
+                            <h5>Product Library</h5>
+                            <p>Client product catalog mapped to HS (Harmonized System) codes as per FIRS reference tables with automatic updates.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-users fa-2x text-success mb-3"></i>
+                            <h5>Customer Library</h5>
+                            <p>Stores customer master data with validated TINs, synchronized with FIRS registry for real-time accuracy verification.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-calculator fa-2x text-warning mb-3"></i>
+                            <h5>Tax Code Library</h5>
+                            <p>Maps client ERP tax codes (e.g., SAP condition records) to FIRS tax codes with configurable business rules.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-cog fa-2x text-info mb-3"></i>
+                            <h5>Service Codes</h5>
+                            <p>Configurable library for industry-specific service codes, aligned to regulator references with automated validation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-sync-alt fa-2x text-secondary mb-3"></i>
+                            <h5>Reference Synchronization</h5>
+                            <p>Automatic refresh from FIRS resource APIs (where available), with client override controls and conflict resolution.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13.3 Hosting and Residency Options -->
+            <section id="hosting-options" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cloud text-primary me-3"></i>13.3 Hosting and Residency Options</h2>
+                    <p class="section-subtitle">Flexible hosting models meeting local residency requirements with enterprise-grade disaster recovery and high availability options.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                            <h5>Default NG OPCO Hosting</h5>
+                            <p>Services hosted in NG OPCO server when regulator mandates local residency requirements, ensuring full compliance with data sovereignty.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-cloud fa-2x text-success mb-3"></i>
+                            <h5>Bluelight Managed Cloud</h5>
+                            <p>Private tenants on AWS, Azure, or GCP with region lock to Nigeria for optimal performance and scalability.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt fa-2x text-warning mb-3"></i>
+                            <h5>Dedicated VPC</h5>
+                            <p>Available for Platinum tier clients needing isolation, network controls, and BYO (Bring Your Own) security stack integration.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-life-ring fa-2x text-danger mb-3"></i>
+                            <h5>Disaster Recovery</h5>
+                            <p>Active-passive failover across regions within Nigeria, with RPO 15 minutes and RTO 2 hours for business continuity.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13.4 Performance and Throughput Targets -->
+            <section id="performance-targets" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tachometer-alt text-primary me-3"></i>13.4 Performance and Throughput Targets</h2>
+                    <p class="section-subtitle">Enterprise-grade performance metrics designed to handle high-volume invoice processing with consistent low-latency response times.</p>
+                </div>
+                
+                <div class="row g-4 text-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-bolt fa-2x text-primary mb-3"></i>
+                            <div class="stat-number">< 500ms</div>
+                            <div class="stat-label">Median processing latency within SmartAPI</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-clock fa-2x text-success mb-3"></i>
+                            <div class="stat-number">< 1.5s</div>
+                            <div class="stat-label">P95 latency excluding regulator response time</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-chart-line fa-2x text-warning mb-3"></i>
+                            <div class="stat-number">500K+</div>
+                            <div class="stat-label">Invoices per day per tenant with autoscaling</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-bell fa-2x text-info mb-3"></i>
+                            <div class="stat-number">< 2s</div>
+                            <div class="stat-label">Webhook callbacks median delivery time</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-file-alt fa-2x text-secondary mb-3"></i>
+                            <div class="stat-number">50K</div>
+                            <div class="stat-label">Invoices per batch with checksum validation</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13.5 High Availability and Reliability -->
+            <section id="availability-reliability" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-shield-alt text-primary me-3"></i>13.5 High Availability and Reliability</h2>
+                    <p class="section-subtitle">Tiered SLA commitments with comprehensive reliability features ensuring zero invoice loss and maximum uptime for business-critical operations.</p>
+                </div>
+                
+                <div class="row g-4 text-center mb-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-card highlight">
+                            <i class="fas fa-crown fa-2x text-warning mb-3"></i>
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Gold/Platinum SLA</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-medal fa-2x text-info mb-3"></i>
+                            <div class="stat-number">99.5%</div>
+                            <div class="stat-label">Silver Tier SLA</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-award fa-2x text-secondary mb-3"></i>
+                            <div class="stat-number">99.0%</div>
+                            <div class="stat-label">Bronze Tier SLA</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-card highlight">
+                            <i class="fas fa-check-circle fa-2x text-success mb-3"></i>
+                            <div class="stat-number">Zero</div>
+                            <div class="stat-label">Invoice Loss Guarantee</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <h4><i class="fas fa-heartbeat me-2"></i>Reliability Features</h4>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-balance-scale text-primary me-2"></i>SmartAPI endpoints load balanced and geo-redundant</li>
+                        <li><i class="fas fa-heartbeat text-success me-2"></i>Daily health checks and synthetic monitoring from multiple regions</li>
+                        <li><i class="fas fa-redo text-warning me-2"></i>Queuing and replay mechanisms ensure zero invoice loss during regulator downtime</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 13.6 Security Controls -->
+            <section id="security-controls" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-lock text-primary me-3"></i>13.6 Security Controls (Summary)</h2>
+                    <p class="section-subtitle">Multi-layered security architecture with enterprise-grade controls ensuring data protection, authentication, and continuous monitoring.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-lock fa-2x text-primary mb-3"></i>
+                            <h5>Transport Security</h5>
+                            <p>TLS 1.3 with mTLS or OAuth2 for secure data transmission and authentication between all system components.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-key fa-2x text-success mb-3"></i>
+                            <h5>Authentication</h5>
+                            <p>OAuth2 JWT, client certificates, or both for robust identity verification with multi-factor authentication support.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-user-shield fa-2x text-warning mb-3"></i>
+                            <h5>Authorization</h5>
+                            <p>RBAC and MFA for dashboard access with granular permission controls and audit logging capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-database fa-2x text-info mb-3"></i>
+                            <h5>Data Protection</h5>
+                            <p>AES-256 encryption at rest, tamper-evident logs, immutable WORM archive ensuring data integrity and compliance.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-eye fa-2x text-danger mb-3"></i>
+                            <h5>Monitoring</h5>
+                            <p>SIEM integration, anomaly detection, real-time alerts for security events with automated response capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-gavel fa-2x text-secondary mb-3"></i>
+                            <h5>Governance</h5>
+                            <p>Certificate expiry monitoring, quarterly security audits, semi-annual penetration testing with compliance reporting.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13.7 Integration Readiness -->
+            <section id="integration-readiness" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-plug text-primary me-3"></i>13.7 Integration Readiness</h2>
+                    <p class="section-subtitle">"No ERP left behind" - comprehensive integration capabilities covering modern APIs to legacy print spoolers with proven methodologies and templates.</p>
+                </div>
+                
+                <!-- ERP Integration Decision Tree Diagram -->
+                <div class="diagram-container mb-4">
+                    <div class="diagram-title">
+                        <i class="fas fa-sitemap me-2"></i>
+                        ERP Integration Decision Tree - Universal Compatibility Matrix
+                    </div>
+                    <img src="diagrams/erp-integration-decision-tree.svg" alt="ERP Integration Decision Tree" class="img-fluid">
+                    <p class="diagram-subtitle">Flexible integration paths for all enterprise environments ensuring seamless connectivity regardless of ERP maturity</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fab fa-sap fa-2x text-primary mb-3"></i>
+                            <h5>SAP ECC 6.0</h5>
+                            <p>IDoc INVOIC02 via PI/PO integration templates with proven methodology and migration-safe architecture for S4 transition.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fab fa-sap fa-2x text-success mb-3"></i>
+                            <h5>SAP S4/HANA</h5>
+                            <p>CPI iFlows using Billing Document API for modern SAP environments with cloud-native integration patterns.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-circle fa-2x text-warning mb-3"></i>
+                            <h5>Oracle EBS/Fusion</h5>
+                            <p>XML adapters for EBS, REST for Fusion with comprehensive data mapping and transformation capabilities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fab fa-microsoft fa-2x text-info mb-3"></i>
+                            <h5>Microsoft Dynamics</h5>
+                            <p>OData integration and CSV batch support for seamless data flow with Power Platform integration options.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-print fa-2x text-secondary mb-3"></i>
+                            <h5>Legacy ERPs</h5>
+                            <p>BlueBox capture from print spool, folders, or network ports - achieving compliance with zero ERP changes required.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-globe fa-2x text-primary mb-3"></i>
+                            <h5>No ERP Environments</h5>
+                            <p>BlueInvoice SaaS or Email Connector plug-and-play solutions for subsidiaries and small business units.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13.8 & 13.9 Combined -->
+            <section id="reconciliation-changes" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-sync-alt text-primary me-3"></i>13.8 Reconciliation and Regulatory Change Management</h2>
+                    <p class="section-subtitle">Automated reconciliation processes and adaptive architecture ensuring continuous compliance as regulations evolve.</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="feature-card h-100">
+                            <h5><i class="fas fa-calendar-day text-primary me-2"></i>Reconciliation & Reporting</h5>
+                            <ul class="benefits-list">
+                                <li>Daily and intraday reconciliation across ERP, SmartAPI, and FIRS</li>
+                                <li>Exception queues for mismatches with Finance workflows for correction</li>
+                                <li>Digitally signed reconciliation reports archived alongside invoice evidence</li>
+                                <li>Dashboards for Finance, IT, and Compliance with drill-down and export options</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="feature-card h-100">
+                            <h5><i class="fas fa-rocket text-success me-2"></i>Regulatory Change Absorption</h5>
+                            <ul class="benefits-list">
+                                <li>Schema versioning and backward compatibility built into SmartAPI</li>
+                                <li>Feature flags enable rapid rollout of regulator changes without ERP disruption</li>
+                                <li>Hotfix deployment pipeline ensures compliance updates within days, not months</li>
+                                <li>Client systems continue submitting canonical payloads unaffected</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13.10 Why Clients Benefit -->
+            <section id="client-benefits" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy text-primary me-3"></i>13.10 Why Clients Benefit</h2>
+                    <p class="section-subtitle">Four key promises that ensure your technical investment delivers lasting value and competitive advantage.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-check-double fa-2x text-success mb-3"></i>
+                            <h5>No Gaps</h5>
+                            <p>Every regulator requirement is covered, down to HS codes and QR codes - complete compliance assurance with audit-ready evidence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-recycle fa-2x text-info mb-3"></i>
+                            <h5>No Rework</h5>
+                            <p>SmartAPI absorbs regulator changes centrally - your systems remain stable and unchanged while staying compliant.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-forward fa-2x text-warning mb-3"></i>
+                            <h5>No Disruption</h5>
+                            <p>Works with ECC today, S4 tomorrow, and legacy forever - future-proof integration protecting your IT investments.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-search fa-2x text-primary mb-3"></i>
+                            <h5>Audit Ready</h5>
+                            <p>Evidence bundles and signed reports at the click of a button - compliance made simple for Finance teams.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points mt-4">
+                    <h4><i class="fas fa-star me-2"></i>Technical Excellence Promise</h4>
+                    <p class="fs-5">Complete technical coverage of every FIRS requirement with enterprise-grade performance, security, and reliability that evolves with regulatory changes while protecting your existing IT investments.</p>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="section-navigation">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="12.html" class="btn btn-outline-primary">
+                            <i class="fas fa-chevron-left me-2"></i>Previous: Scope of Work
+                        </a>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="14.html" class="btn btn-primary">
+                            Next: Systems Requirements<i class="fas fa-chevron-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Bluelight Consulting Limited. All rights reserved. | FIRS Nigeria E-Invoicing Enablement for Enterprises</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

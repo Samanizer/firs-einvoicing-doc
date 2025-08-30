@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700">
+  <defs>
+    <!-- Gradients for quadrants -->
+    <linearGradient id="emailGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE5B4;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="blueboxGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5DEB3;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#DDD8C7;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="blueinvoiceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E6F3FF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#B3D9FF;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="smartapiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    Product Capability Matrix
+  </text>
+  <text x="500" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    Solution Fit by Client Profile
+  </text>
+  
+  <!-- Axes -->
+  <!-- X-axis (horizontal) -->
+  <line x1="150" y1="550" x2="850" y2="550" stroke="#333" stroke-width="2"/>
+  <polygon points="845,545 860,550 845,555" fill="#333"/>
+  <text x="500" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    ERP/IT Maturity Level
+  </text>
+  <text x="200" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Low
+  </text>
+  <text x="800" y="600" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    High
+  </text>
+  
+  <!-- Y-axis (vertical) -->
+  <line x1="150" y1="550" x2="150" y2="150" stroke="#333" stroke-width="2"/>
+  <polygon points="145,155 150,140 155,155" fill="#333"/>
+  <text x="80" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333" transform="rotate(-90 80,350)">
+    Invoice Volume
+  </text>
+  <text x="120" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Low
+  </text>
+  <text x="120" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    High
+  </text>
+  
+  <!-- Grid lines -->
+  <line x1="500" y1="150" x2="500" y2="550" stroke="#DDD" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="150" y1="350" x2="850" y2="350" stroke="#DDD" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Quadrant 1: Low Maturity / Low Volume - Email Connector -->
+  <rect x="150" y="350" width="350" height="200" fill="url(#emailGradient)" stroke="#DAA520" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Email Connector Icon and Label -->
+  <g transform="translate(280,430)">
+    <path d="M0,10 L40,10 L20,25 Z" fill="#B8860B"/>
+    <rect x="0" y="10" width="40" height="25" fill="none" stroke="#B8860B" stroke-width="2"/>
+    <text x="20" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#B8860B">
+      Email Connector
+    </text>
+    <text x="20" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#8B7355">
+      Simple email submission
+    </text>
+  </g>
+  
+  <!-- Quadrant 2: High Maturity / Low Volume - BlueInvoice -->
+  <rect x="500" y="350" width="350" height="200" fill="url(#blueinvoiceGradient)" stroke="#4A90E2" stroke-width="2" opacity="0.3"/>
+  
+  <!-- BlueInvoice Icon and Label -->
+  <g transform="translate(630,430)">
+    <circle cx="20" cy="15" r="12" fill="#4A90E2" opacity="0.3"/>
+    <rect x="14" y="20" width="12" height="8" fill="#4A90E2" rx="1"/>
+    <text x="20" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+      BlueInvoice
+    </text>
+    <text x="20" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#357ABD">
+      Browser-based SaaS
+    </text>
+  </g>
+  
+  <!-- Quadrant 3: Low Maturity / High Volume - BlueBox -->
+  <rect x="150" y="150" width="350" height="200" fill="url(#blueboxGradient)" stroke="#B8860B" stroke-width="2" opacity="0.3"/>
+  
+  <!-- BlueBox Icon and Label -->
+  <g transform="translate(280,230)">
+    <rect x="0" y="5" width="20" height="15" fill="#8B7355" rx="2"/>
+    <rect x="2" y="15" width="16" height="2" fill="#A0A0A0"/>
+    <rect x="2" y="18" width="16" height="2" fill="#A0A0A0"/>
+    <text x="20" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#8B7355">
+      BlueBox
+    </text>
+    <text x="20" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#654321">
+      Capture technology
+    </text>
+  </g>
+  
+  <!-- Quadrant 4: High Maturity / High Volume - SmartAPI -->
+  <rect x="500" y="150" width="350" height="200" fill="url(#smartapiGradient)" stroke="#357ABD" stroke-width="2" opacity="0.3"/>
+  
+  <!-- SmartAPI Icon and Label -->
+  <g transform="translate(630,230)">
+    <rect x="0" y="0" width="24" height="20" fill="white" stroke="#4A90E2" stroke-width="2" rx="2"/>
+    <rect x="10" y="5" width="16" height="10" fill="#4A90E2" rx="1"/>
+    <rect x="10" y="15" width="12" height="3" fill="#357ABD" rx="1"/>
+    <text x="20" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+      SmartAPI
+    </text>
+    <text x="20" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+      Deep ERP integration
+    </text>
+  </g>
+  
+  <!-- Quadrant labels -->
+  <text x="325" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">
+    Legacy Systems
+  </text>
+  <text x="325" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#777">
+    High Volume
+  </text>
+  
+  <text x="675" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Enterprise Systems
+  </text>
+  <text x="675" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#555">
+    High Volume
+  </text>
+  
+  <text x="325" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">
+    Small Business
+  </text>
+  <text x="325" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#777">
+    Low Volume
+  </text>
+  
+  <text x="675" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">
+    Modern Business
+  </text>
+  <text x="675" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#777">
+    Low Volume
+  </text>
+  
+  <!-- Convergence note -->
+  <rect x="200" y="630" width="600" height="50" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="500" y="650" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    All solutions converge into SmartAPI Core for compliance and monitoring
+  </text>
+  <text x="500" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Universal compliance assurance regardless of chosen solution path
+  </text>
+</svg>

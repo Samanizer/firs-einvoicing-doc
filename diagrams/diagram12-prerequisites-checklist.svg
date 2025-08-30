@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 800" width="1400" height="800">
+  <defs>
+    <!-- Gradients for each category -->
+    <linearGradient id="erpGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="networkGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8F5E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C8E6C9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="securityGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE0B2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3E5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E1BEE7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Checkbox icon -->
+    <g id="checkbox">
+      <rect x="-8" y="-8" width="16" height="16" fill="white" stroke="#4CAF50" stroke-width="2" rx="2"/>
+      <path d="M-4,-1 L-1,3 L5,-5" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Category icons -->
+    <g id="erpIcon">
+      <rect x="-12" y="-8" width="24" height="16" fill="#1976D2" rx="2"/>
+      <rect x="-10" y="-6" width="20" height="2" fill="white"/>
+      <rect x="-10" y="-2" width="20" height="2" fill="white"/>
+      <rect x="-10" y="2" width="20" height="2" fill="white"/>
+    </g>
+    
+    <g id="networkIcon">
+      <circle cx="-8" cy="0" r="4" fill="none" stroke="#4CAF50" stroke-width="2"/>
+      <circle cx="8" cy="0" r="4" fill="none" stroke="#4CAF50" stroke-width="2"/>
+      <circle cx="0" cy="-8" r="4" fill="none" stroke="#4CAF50" stroke-width="2"/>
+      <line x1="-4" y1="-2" x2="4" y2="2" stroke="#4CAF50" stroke-width="2"/>
+      <line x1="4" y1="-2" x2="-4" y2="2" stroke="#4CAF50" stroke-width="2"/>
+      <line x1="0" y1="-4" x2="0" y2="4" stroke="#4CAF50" stroke-width="2"/>
+    </g>
+    
+    <g id="securityIcon">
+      <path d="M0,-10 L8,-5 L8,5 L0,10 L-8,5 L-8,-5 Z" fill="none" stroke="#FF9800" stroke-width="2"/>
+      <circle cx="0" cy="0" r="3" fill="#FF9800"/>
+    </g>
+    
+    <g id="dataIcon">
+      <rect x="-8" y="-6" width="16" height="12" fill="none" stroke="#9C27B0" stroke-width="2" rx="2"/>
+      <line x1="-4" y1="-2" x2="4" y2="-2" stroke="#9C27B0" stroke-width="1"/>
+      <line x1="-4" y1="0" x2="4" y2="0" stroke="#9C27B0" stroke-width="1"/>
+      <line x1="-4" y1="2" x2="4" y2="2" stroke="#9C27B0" stroke-width="1"/>
+    </g>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="800" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    Prerequisites Checklist for FIRS E-Invoicing Compliance
+  </text>
+  <text x="700" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    Client Readiness Assessment for Smooth Onboarding
+  </text>
+  
+  <!-- Column 1: ERP Requirements -->
+  <rect x="50" y="100" width="300" height="350" rx="12" fill="url(#erpGradient)" stroke="#1976D2" stroke-width="3"/>
+  
+  <!-- Column header with icon -->
+  <use href="#erpIcon" x="200" y="130"/>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#1976D2">
+    ERP Requirements
+  </text>
+  
+  <!-- Checklist items -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#1565C0">
+    <use href="#checkbox" x="80" y="190"/>
+    <text x="100" y="195">Invoice export capability</text>
+    <text x="100" y="210" font-size="10" fill="#1976D2">• IDoc, API, file export, or print spool</text>
+    
+    <use href="#checkbox" x="80" y="240"/>
+    <text x="100" y="245">Service account user</text>
+    <text x="100" y="260" font-size="10" fill="#1976D2">• Dedicated system user for integration</text>
+    
+    <use href="#checkbox" x="80" y="290"/>
+    <text x="100" y="295">System documentation</text>
+    <text x="100" y="310" font-size="10" fill="#1976D2">• Current version, modules, customizations</text>
+    
+    <use href="#checkbox" x="80" y="340"/>
+    <text x="100" y="345">IT admin access</text>
+    <text x="100" y="360" font-size="10" fill="#1976D2">• Configuration and deployment support</text>
+    
+    <use href="#checkbox" x="80" y="390"/>
+    <text x="100" y="395">Testing environment</text>
+    <text x="100" y="410" font-size="10" fill="#1976D2">• Sandbox for integration testing</text>
+  </g>
+  
+  <!-- Column 2: Network Requirements -->
+  <rect x="375" y="100" width="300" height="350" rx="12" fill="url(#networkGradient)" stroke="#4CAF50" stroke-width="3"/>
+  
+  <!-- Column header with icon -->
+  <use href="#networkIcon" x="525" y="130"/>
+  <text x="525" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    Network Requirements
+  </text>
+  
+  <!-- Checklist items -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#2E7D32">
+    <use href="#checkbox" x="405" y="190"/>
+    <text x="425" y="195">HTTPS (Port 443) access</text>
+    <text x="425" y="210" font-size="10" fill="#388E3C">• Outbound internet connectivity required</text>
+    
+    <use href="#checkbox" x="405" y="240"/>
+    <text x="425" y="245">IP allowlisting capability</text>
+    <text x="425" y="260" font-size="10" fill="#388E3C">• Firewall configuration for SmartAPI IPs</text>
+    
+    <use href="#checkbox" x="405" y="290"/>
+    <text x="425" y="295">SSL/TLS 1.3 support</text>
+    <text x="425" y="310" font-size="10" fill="#388E3C">• Modern encryption protocols</text>
+    
+    <use href="#checkbox" x="405" y="340"/>
+    <text x="425" y="345">VPN setup (optional)</text>
+    <text x="425" y="360" font-size="10" fill="#388E3C">• Private connectivity for enhanced security</text>
+    
+    <use href="#checkbox" x="405" y="390"/>
+    <text x="425" y="395">Proxy configuration</text>
+    <text x="425" y="410" font-size="10" fill="#388E3C">• Corporate proxy settings if applicable</text>
+  </g>
+  
+  <!-- Column 3: Security Requirements -->
+  <rect x="700" y="100" width="300" height="350" rx="12" fill="url(#securityGradient)" stroke="#FF9800" stroke-width="3"/>
+  
+  <!-- Column header with icon -->
+  <use href="#securityIcon" x="850" y="130"/>
+  <text x="850" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#E65100">
+    Security Requirements
+  </text>
+  
+  <!-- Checklist items -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#E65100">
+    <use href="#checkbox" x="730" y="190"/>
+    <text x="750" y="195">Digital certificate (PKI)</text>
+    <text x="750" y="210" font-size="10" fill="#F57C00">• X.509 certificate for invoice signing</text>
+    
+    <use href="#checkbox" x="730" y="240"/>
+    <text x="750" y="245">OAuth2 credentials</text>
+    <text x="750" y="260" font-size="10" fill="#F57C00">• If using OAuth2 authentication method</text>
+    
+    <use href="#checkbox" x="730" y="290"/>
+    <text x="750" y="295">API key management</text>
+    <text x="750" y="310" font-size="10" fill="#F57C00">• Secure storage and rotation policies</text>
+    
+    <use href="#checkbox" x="730" y="340"/>
+    <text x="750" y="345">Security officer approval</text>
+    <text x="750" y="360" font-size="10" fill="#F57C00">• Compliance and security sign-off</text>
+    
+    <use href="#checkbox" x="730" y="390"/>
+    <text x="750" y="395">Audit logging enabled</text>
+    <text x="750" y="410" font-size="10" fill="#F57C00">• System-level transaction logging</text>
+  </g>
+  
+  <!-- Column 4: Data Requirements -->
+  <rect x="1025" y="100" width="300" height="350" rx="12" fill="url(#dataGradient)" stroke="#9C27B0" stroke-width="3"/>
+  
+  <!-- Column header with icon -->
+  <use href="#dataIcon" x="1175" y="130"/>
+  <text x="1175" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#7B1FA2">
+    Data Requirements
+  </text>
+  
+  <!-- Checklist items -->
+  <g font-family="Arial, sans-serif" font-size="12" fill="#7B1FA2">
+    <use href="#checkbox" x="1055" y="190"/>
+    <text x="1075" y="195">TINs and tax codes</text>
+    <text x="1075" y="210" font-size="10" fill="#8E24AA">• Nigerian tax identification numbers loaded</text>
+    
+    <use href="#checkbox" x="1055" y="240"/>
+    <text x="1075" y="245">HS codes database</text>
+    <text x="1075" y="260" font-size="10" fill="#8E24AA">• Harmonized System codes for products</text>
+    
+    <use href="#checkbox" x="1055" y="290"/>
+    <text x="1075" y="295">Customer master data</text>
+    <text x="1075" y="310" font-size="10" fill="#8E24AA">• Complete customer information</text>
+    
+    <use href="#checkbox" x="1055" y="340"/>
+    <text x="1075" y="345">Test dataset prepared</text>
+    <text x="1075" y="360" font-size="10" fill="#8E24AA">• Sample invoices for integration testing</text>
+    
+    <use href="#checkbox" x="1055" y="390"/>
+    <text x="1075" y="395">Data validation rules</text>
+    <text x="1075" y="410" font-size="10" fill="#8E24AA">• Business rules and validation logic</text>
+  </g>
+  
+  <!-- Readiness assessment section -->
+  <rect x="100" y="500" width="1200" height="120" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="700" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4A90E2">
+    Readiness Assessment Process
+  </text>
+  
+  <g font-family="Arial, sans-serif" font-size="12" fill="#333">
+    <text x="150" y="550" font-weight="bold">Step 1:</text>
+    <text x="200" y="550">Complete this checklist with your IT and Finance teams</text>
+    
+    <text x="150" y="570" font-weight="bold">Step 2:</text>
+    <text x="200" y="570">Schedule readiness review with Bluelight implementation team</text>
+    
+    <text x="150" y="590" font-weight="bold">Step 3:</text>
+    <text x="200" y="590">Address any gaps identified during the assessment</text>
+    
+    <text x="750" y="550" font-weight="bold">Step 4:</text>
+    <text x="800" y="550">Begin technical integration and testing phase</text>
+    
+    <text x="750" y="570" font-weight="bold">Step 5:</text>
+    <text x="800" y="570">Conduct user acceptance testing with sample data</text>
+    
+    <text x="750" y="590" font-weight="bold">Step 6:</text>
+    <text x="800" y="590">Deploy to production and monitor initial submissions</text>
+  </g>
+  
+  <!-- Success metrics -->
+  <rect x="200" y="650" width="1000" height="100" rx="8" fill="#E8F5E8" stroke="#4CAF50" stroke-width="2"/>
+  <text x="700" y="675" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E7D32">
+    Success Indicators: Readiness Ensures Smooth Onboarding
+  </text>
+  
+  <g font-family="Arial, sans-serif" font-size="11" fill="#2E7D32">
+    <text x="250" y="700">✓ <tspan font-weight="bold">Complete checklist:</tspan> Reduces implementation time by 60%</text>
+    <text x="250" y="715">✓ <tspan font-weight="bold">Proper preparation:</tspan> Eliminates surprises and delays during deployment</text>
+    <text x="250" y="730">✓ <tspan font-weight="bold">Team alignment:</tspan> Ensures all stakeholders are ready for go-live</text>
+  </g>
+  
+  <!-- Bottom banner -->
+  <rect x="150" y="770" width="1100" height="25" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="1"/>
+  <text x="700" y="785" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A90E2">
+    Comprehensive Readiness Assessment: Foundation for Successful FIRS Compliance Implementation
+  </text>
+</svg>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systems Requirements by Option - FIRS Nigeria E-Invoicing Enablement for Enterprises | Bluelight</title>
+    <meta name="description" content="Detailed system requirements for each solution option, from SmartAPI enterprise integration to Email Connector simplicity, ensuring perfect fit for every client environment.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-file-invoice-dollar me-2"></i>
+                FIRS Nigeria E-Invoicing Enablement
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-list me-2"></i>Document Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance</a></li>
+                            <li><a class="dropdown-item" href="4.html">4. Systems Architecture Overview</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item" href="6.html">6. Data Mapping and Transformation</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Receipt Processing and Validation</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking and Monitoring</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support and Training</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Detailed Scope of Work</a></li>
+                            <li><a class="dropdown-item" href="13.html">13. Key Technical Requirements Coverage</a></li>
+                            <li><a class="dropdown-item active" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item" href="16.html">16. Delivery and Cutover Plan</a></li>
+                            <li><a class="dropdown-item" href="17.html">17. Operations Runbook</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Case Studies</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Proposal Requirements Mapping</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Appendices</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">14. Systems Requirements by Option</h1>
+                    <p class="lead">Transparent, detailed requirements for each solution option ensuring perfect fit-for-purpose deployment with no surprises during implementation.</p>
+                    <div class="mt-4">
+                        <a href="#smartapi-requirements" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-server me-2"></i>
+                            SmartAPI Requirements
+                        </a>
+                        <a href="#compatibility-matrix" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-table me-2"></i>
+                            Compatibility Matrix
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-cogs fa-8x text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- 14.1 SmartAPI Integration Requirements -->
+            <section id="smartapi-requirements" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-server text-primary me-3"></i>14.1 SmartAPI Integration Requirements</h2>
+                    <p class="section-subtitle">Enterprise-grade integration requirements for high-volume, real-time ERP connectivity with comprehensive security and operational controls.</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card h-100">
+                            <i class="fas fa-database fa-2x text-primary mb-3"></i>
+                            <h5>ERP/Client System Prerequisites</h5>
+                            <ul class="benefits-list">
+                                <li>Export invoice data in JSON, XML, CSV, or IDoc formats</li>
+                                <li>SAP ECC: PI/PO middleware with IDoc INVOIC02 adapter</li>
+                                <li>SAP S4/HANA: CPI tenant with Billing Document API access</li>
+                                <li>Oracle, Dynamics, Sage: export APIs or batch interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card h-100">
+                            <i class="fas fa-shield-alt fa-2x text-success mb-3"></i>
+                            <h5>Network & Security</h5>
+                            <ul class="benefits-list">
+                                <li>HTTPS (port 443) connectivity to SmartAPI endpoints</li>
+                                <li>Mutual TLS (client certificate) or OAuth 2.0 credentials</li>
+                                <li>Firewall/IP allowlisting for SmartAPI IP ranges</li>
+                                <li>Optional VPN or private interconnect for high-security</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card h-100">
+                            <i class="fas fa-users-cog fa-2x text-warning mb-3"></i>
+                            <h5>Operational Requirements</h5>
+                            <ul class="benefits-list">
+                                <li>Service account credentials provisioned in ERP</li>
+                                <li>Finance/IT user access to SmartAPI dashboards</li>
+                                <li>Optional log forwarding integration to client SIEM</li>
+                                <li>Integration testing and approval workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 14.2 BlueInvoice Requirements -->
+            <section id="blueinvoice-requirements" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-globe text-primary me-3"></i>14.2 BlueInvoice Requirements</h2>
+                    <p class="section-subtitle">Browser-based SaaS solution requirements for subsidiaries and standalone entities requiring minimal IT dependency with maximum compliance assurance.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-browser fa-2x text-primary mb-3"></i>
+                            <h5>User Environment</h5>
+                            <ul class="benefits-list">
+                                <li>Latest Chrome, Edge, or Firefox browsers</li>
+                                <li>Stable internet with HTTPS access</li>
+                                <li>Optional corporate SSO via SAML or OAuth</li>
+                                <li>Multi-device responsive access</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-upload fa-2x text-success mb-3"></i>
+                            <h5>Data Requirements</h5>
+                            <ul class="benefits-list">
+                                <li>Customer list with validated TINs</li>
+                                <li>Product catalog with HS codes</li>
+                                <li>Tax codes mapped to FIRS equivalents</li>
+                                <li>CSV/Excel import capability for bulk entry</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-user-graduate fa-2x text-warning mb-3"></i>
+                            <h5>Operational Requirements</h5>
+                            <ul class="benefits-list">
+                                <li>Finance users with Admin/Approver/Operator roles</li>
+                                <li>Training session with Finance/Compliance teams</li>
+                                <li>Optional ERP reconciliation via CSV/API</li>
+                                <li>Change management and adoption support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 14.3 Email Connector Requirements -->
+            <section id="email-requirements" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope text-primary me-3"></i>14.3 Email Connector Requirements</h2>
+                    <p class="section-subtitle">Simplest deployment option with email-based invoice submission for distributed teams and small business units requiring immediate compliance.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-mail-bulk fa-2x text-primary mb-3"></i>
+                            <h5>User Environment</h5>
+                            <ul class="benefits-list">
+                                <li>Valid email client or ERP email integration</li>
+                                <li>Allowed sender domain(s) whitelisted</li>
+                                <li>DKIM/SPF alignment for corporate mail servers</li>
+                                <li>Email security and authentication compliance</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-file-pdf fa-2x text-success mb-3"></i>
+                            <h5>Invoice Format Support</h5>
+                            <ul class="benefits-list">
+                                <li>Attachments: PDF, XML, CSV accepted</li>
+                                <li>File size limit: 5MB per attachment (configurable)</li>
+                                <li>Multiple invoices per email supported</li>
+                                <li>ZIP bundle support for batch submissions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="key-points mt-4">
+                    <h4><i class="fas fa-cog me-2"></i>Operational Requirements</h4>
+                    <ul class="benefits-list">
+                        <li><i class="fas fa-at text-primary me-2"></i>Client-provided email addresses configured as authorized senders</li>
+                        <li><i class="fas fa-list text-success me-2"></i>Distribution list for receiving acknowledgements and cleared invoices</li>
+                        <li><i class="fas fa-inbox text-warning me-2"></i>Optional integration of cleared invoices into ERP mailboxes</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 14.4 BlueBox Capture Requirements -->
+            <section id="bluebox-requirements" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-print text-primary me-3"></i>14.4 BlueBox Capture Requirements</h2>
+                    <p class="section-subtitle">Legacy ERP capture solution enabling compliance with zero ERP modifications through intelligent print and file capture technology.</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-server fa-2x text-primary mb-3"></i>
+                            <h5>System Environment</h5>
+                            <p>Windows Server or Linux server to host BlueBox capture agent with access to ERP print spooler, file drop folder, or network port monitoring.</p>
+                            <div class="stat-card mt-3">
+                                <div class="stat-number">4 CPU / 8GB RAM / 100GB</div>
+                                <div class="stat-label">Minimum Hardware Requirements</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-cogs fa-2x text-success mb-3"></i>
+                            <h5>Integration Setup</h5>
+                            <ul class="benefits-list">
+                                <li>Printer redirection or file watcher configured</li>
+                                <li>Rules defined for invoice recognition patterns</li>
+                                <li>Document type, format, and folder path mapping</li>
+                                <li>Secure connection to SmartAPI for submission</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <i class="fas fa-shield-alt fa-2x text-warning mb-3"></i>
+                            <h5>Operational Requirements</h5>
+                            <ul class="benefits-list">
+                                <li>Service account with spooler/folder read permissions</li>
+                                <li>Firewall rules opened for HTTPS SmartAPI channel</li>
+                                <li>Dashboard access for monitoring captured invoices</li>
+                                <li>Error handling and retry mechanisms configured</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 14.5 Compatibility Matrix -->
+            <section id="compatibility-matrix" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-table text-primary me-3"></i>14.5 Compatibility Matrix</h2>
+                    <p class="section-subtitle">Visual mapping of solution options against ERP maturity and invoice volume, ensuring perfect fit-for-purpose selection for every client environment.</p>
+                </div>
+                
+                <!-- Compatibility Matrix Diagram -->
+                <div class="diagram-container mb-4">
+                    <div class="diagram-title">
+                        <i class="fas fa-sitemap me-2"></i>
+                        ERP Integration Compatibility Matrix - Solution Selection Guide
+                    </div>
+                    <img src="diagrams/compatibility-matrix.svg" alt="ERP Integration Compatibility Matrix" class="img-fluid">
+                    <p class="diagram-subtitle">Quadrant-based selection matrix showing optimal solution fit based on ERP maturity and invoice volume requirements</p>
+                </div>
+
+                <!-- Matrix Table -->
+                <div class="row g-4">
+                    <div class="col-12">
+                        <div class="feature-card">
+                            <h5><i class="fas fa-chart-bar text-primary me-2"></i>Solution Comparison Summary</h5>
+                            <div class="table-responsive mt-3">
+                                <table class="table table-striped">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Option</th>
+                                            <th>ERP Dependency</th>
+                                            <th>Integration Effort</th>
+                                            <th>Best Fit Use Case</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>SmartAPI</strong></td>
+                                            <td><span class="badge bg-warning">High</span> (ERP API or middleware)</td>
+                                            <td><span class="badge bg-secondary">Medium to High</span></td>
+                                            <td>Large enterprises with SAP, Oracle, Dynamics</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>BlueInvoice</strong></td>
+                                            <td><span class="badge bg-success">None</span></td>
+                                            <td><span class="badge bg-success">Low</span></td>
+                                            <td>Subsidiaries, standalone entities, quick pilots</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Email Connector</strong></td>
+                                            <td><span class="badge bg-success">None</span></td>
+                                            <td><span class="badge bg-success">Very Low</span></td>
+                                            <td>Small business units, contractors, distributed teams</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>BlueBox</strong></td>
+                                            <td><span class="badge bg-info">Legacy ERP print/file</span></td>
+                                            <td><span class="badge bg-secondary">Medium</span></td>
+                                            <td>Legacy or inflexible ERPs where no API is possible</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 14.6 Why Clients Benefit from This Clarity -->
+            <section id="client-benefits" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy text-primary me-3"></i>14.6 Why Clients Benefit from This Clarity</h2>
+                    <p class="section-subtitle">Transparent requirements and flexible migration paths ensure successful deployments with predictable outcomes and future scalability.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-eye fa-2x text-primary mb-3"></i>
+                            <h5>No Surprises</h5>
+                            <p>Requirements are transparent before onboarding with detailed technical specifications, ensuring accurate project scoping and resource planning.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-bullseye fa-2x text-success mb-3"></i>
+                            <h5>Tailored Fit</h5>
+                            <p>Each option matches client maturity and ERP environment perfectly, avoiding over-engineering or under-capability scenarios.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-shield-alt fa-2x text-warning mb-3"></i>
+                            <h5>Risk Control</h5>
+                            <p>Firewall, certificate, and data readiness addressed upfront with comprehensive security and operational checklists.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-arrows-alt fa-2x text-info mb-3"></i>
+                            <h5>Migration Flexibility</h5>
+                            <p>Clients can start with Email Connector or BlueBox and seamlessly migrate to SmartAPI or BlueInvoice as business needs evolve.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points mt-4">
+                    <h4><i class="fas fa-star me-2"></i>Implementation Confidence</h4>
+                    <p class="fs-5">Clear requirements matrix eliminates guesswork, enables accurate budgeting, and ensures smooth deployment with predictable timelines and outcomes for every client environment.</p>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="section-navigation">
+                <div class="row">
+                    <div class="col-6">
+                        <a href="13.html" class="btn btn-outline-primary">
+                            <i class="fas fa-chevron-left me-2"></i>Previous: Technical Requirements Coverage
+                        </a>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="15.html" class="btn btn-primary">
+                            Next: Risk Management Approach<i class="fas fa-chevron-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 Bluelight Consulting Limited. All rights reserved. | FIRS Nigeria E-Invoicing Enablement for Enterprises</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

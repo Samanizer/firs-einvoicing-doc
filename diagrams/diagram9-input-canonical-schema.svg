@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="1400" height="600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="inputGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE0B2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="canonicalGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="firsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2" />
+    </marker>
+    <marker id="arrowheadGreen" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2ECC40" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    Input Formats Pipeline: Normalization to FIRS Compliance
+  </text>
+  <text x="700" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    Universal Format Support Through Canonical Schema Transformation
+  </text>
+  
+  <!-- Left Side: Input Formats -->
+  <rect x="50" y="100" width="300" height="400" rx="12" fill="url(#inputGradient)" stroke="#FF9800" stroke-width="3"/>
+  <text x="200" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#E65100">
+    Supported Input Formats
+  </text>
+  <text x="200" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#BF360C">
+    ERP/Client Data Sources
+  </text>
+  
+  <!-- Format boxes -->
+  <!-- JSON -->
+  <rect x="70" y="170" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="130" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">JSON</text>
+  <text x="130" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">REST APIs</text>
+  
+  <!-- XML -->
+  <rect x="210" y="170" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="270" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">XML</text>
+  <text x="270" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">SOAP/Web Services</text>
+  
+  <!-- CSV -->
+  <rect x="70" y="230" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="130" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">CSV</text>
+  <text x="130" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">Batch Exports</text>
+  
+  <!-- PDF -->
+  <rect x="210" y="230" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="270" y="245" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">PDF</text>
+  <text x="270" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">BlueBox capture</text>
+  
+  <!-- SAP IDoc -->
+  <rect x="70" y="290" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="130" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">SAP IDoc</text>
+  <text x="130" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">INVOIC02</text>
+  
+  <!-- Oracle XML -->
+  <rect x="210" y="290" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="270" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">Oracle XML</text>
+  <text x="270" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">AR Interface</text>
+  
+  <!-- Dynamics OData -->
+  <rect x="70" y="350" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="130" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">Dynamics</text>
+  <text x="130" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">OData/CSV</text>
+  
+  <!-- Custom/Legacy -->
+  <rect x="210" y="350" width="120" height="40" rx="5" fill="white" stroke="#FF9800" stroke-width="1"/>
+  <text x="270" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#E65100">Custom</text>
+  <text x="270" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FF6F00">Legacy formats</text>
+  
+  <text x="200" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#BF360C">
+    Any format, any ERP system
+  </text>
+  
+  <!-- Middle: Canonical Schema -->
+  <rect x="450" y="150" width="350" height="200" rx="12" fill="url(#canonicalGradient)" stroke="#357ABD" stroke-width="3"/>
+  <text x="625" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    SmartAPI Canonical Schema
+  </text>
+  <text x="625" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Universal Data Model
+  </text>
+  
+  <!-- Schema features -->
+  <g fill="white" font-family="Arial, sans-serif" font-size="11">
+    <text x="480" y="230">• Stable, versioned structure</text>
+    <text x="480" y="250">• Comprehensive field mapping</text>
+    <text x="480" y="270">• Business rule validation</text>
+    <text x="480" y="290">• Data enrichment capabilities</text>
+    <text x="480" y="310">• Multi-currency support</text>
+  </g>
+  
+  <rect x="500" y="380" width="250" height="40" rx="8" fill="white" stroke="#4A90E2" stroke-width="2"/>
+  <text x="625" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A90E2">
+    Insulates ERP from Regulator Changes
+  </text>
+  <text x="625" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Future-proof architecture
+  </text>
+  
+  <!-- Right Side: FIRS Schema -->
+  <rect x="900" y="150" width="350" height="200" rx="12" fill="url(#firsGradient)" stroke="#27AE60" stroke-width="3"/>
+  
+  <!-- Government building icon -->
+  <g fill="white">
+    <rect x="950" y="170" width="40" height="25" fill="white"/>
+    <polygon points="945,170 970,155 995,170" fill="white"/>
+    <rect x="955" y="173" width="6" height="15" fill="#27AE60"/>
+    <rect x="965" y="173" width="6" height="15" fill="#27AE60"/>
+    <rect x="975" y="173" width="6" height="15" fill="#27AE60"/>
+    <rect x="985" y="173" width="6" height="15" fill="#27AE60"/>
+  </g>
+  
+  <text x="1075" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    FIRS MBS Schema
+  </text>
+  <text x="1075" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">
+    Government Required Format
+  </text>
+  
+  <!-- FIRS requirements -->
+  <g fill="white" font-family="Arial, sans-serif" font-size="11">
+    <text x="930" y="230">• Nigerian tax code compliance</text>
+    <text x="930" y="250">• Mandatory field validation</text>
+    <text x="930" y="270">• Digital signature requirements</text>
+    <text x="930" y="290">• QR code specifications</text>
+    <text x="930" y="310">• Audit trail standards</text>
+  </g>
+  
+  <!-- Transform arrows -->
+  <line x1="350" y1="250" x2="450" y2="250" stroke="#4A90E2" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="400" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A90E2" font-weight="bold">
+    Transform &amp;
+  </text>
+  <text x="400" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A90E2" font-weight="bold">
+    Normalize
+  </text>
+  
+  <line x1="800" y1="250" x2="900" y2="250" stroke="#4A90E2" stroke-width="4" marker-end="url(#arrowhead)"/>
+  <text x="850" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A90E2" font-weight="bold">
+    Adapt &amp;
+  </text>
+  <text x="850" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#4A90E2" font-weight="bold">
+    Submit
+  </text>
+  
+  <!-- Return arrow -->
+  <line x1="900" y1="300" x2="800" y2="300" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowheadGreen)"/>
+  <rect x="820" y="280" width="60" height="16" fill="white" stroke="#DDD" stroke-width="1" rx="3"/>
+  <text x="850" y="291" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2ECC40" font-weight="bold">
+    IRN, QR, Receipt
+  </text>
+  
+  <!-- Flow labels -->
+  <text x="200" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#E65100" font-weight="bold">
+    Input: Any Format
+  </text>
+  <text x="625" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#4A90E2" font-weight="bold">
+    Processing: Universal Schema
+  </text>
+  <text x="1075" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2ECC40" font-weight="bold">
+    Output: FIRS Compliant
+  </text>
+  
+  <!-- Bottom banner -->
+  <rect x="100" y="540" width="1200" height="50" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="700" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    Universal Format Support: From Any ERP Format to FIRS Compliance
+  </text>
+  <text x="700" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Seamless transformation pipeline ensures compatibility with all business systems
+  </text>
+</svg>

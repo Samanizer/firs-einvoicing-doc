@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="1400" height="600">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bluelightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="userGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E6F3FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="firsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="600" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    BlueInvoice SaaS Application Flow
+  </text>
+  
+  <!-- Left Side: Users -->
+  <text x="150" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#555">
+    Finance Users
+  </text>
+  
+  <!-- Finance User -->
+  <rect x="50" y="120" width="200" height="120" rx="8" fill="url(#userGradient)" stroke="#4A90E2" stroke-width="2"/>
+  
+  <!-- Browser icon -->
+  <rect x="70" y="140" width="50" height="35" rx="5" fill="white" stroke="#4A90E2" stroke-width="2"/>
+  <circle cx="80" cy="150" r="3" fill="#4A90E2"/>
+  <circle cx="90" cy="150" r="3" fill="#4A90E2"/>
+  <circle cx="100" cy="150" r="3" fill="#4A90E2"/>
+  <rect x="75" y="158" width="40" height="12" fill="#E6F3FF"/>
+  
+  <!-- User icon -->
+  <circle cx="180" cy="150" r="15" fill="#4A90E2" opacity="0.3"/>
+  <circle cx="180" cy="145" r="8" fill="#4A90E2"/>
+  <path d="M165,165 Q180,155 195,165" fill="#4A90E2"/>
+  
+  <text x="150" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Finance User</text>
+  <text x="150" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Web Browser</text>
+  <text x="150" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">Create, manage, submit invoices</text>
+  
+  <!-- Center: BlueInvoice Application -->
+  <rect x="350" y="150" width="350" height="200" rx="12" fill="url(#bluelightGradient)" stroke="#357ABD" stroke-width="3"/>
+  <text x="525" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    BlueInvoice Web Application
+  </text>
+  
+  <!-- Application Features -->
+  <g fill="white" font-family="Arial, sans-serif" font-size="12">
+    <text x="380" y="210">• Invoice Creation &amp; Management</text>
+    <text x="380" y="230">• Customer/Product Library</text>
+    <text x="380" y="250">• Multi-user Workflows</text>
+    <text x="380" y="270">• Role-based Access Control</text>
+    <text x="380" y="290">• Real-time Submission Status</text>
+    <text x="380" y="310">• Compliance Dashboard</text>
+  </g>
+  
+  <!-- Backend Connection -->
+  <rect x="800" y="200" width="200" height="100" rx="8" fill="url(#bluelightGradient)" stroke="#357ABD" stroke-width="2"/>
+  <text x="900" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    SmartAPI Core
+  </text>
+  <text x="900" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Processing Engine</text>
+  <text x="900" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Validation &amp; Submission</text>
+  
+  <!-- Right Side: FIRS MBS -->
+  <rect x="1100" y="200" width="220" height="100" rx="8" fill="url(#firsGradient)" stroke="#27AE60" stroke-width="2"/>
+  
+  <!-- Government building icon -->
+  <g fill="white">
+    <rect x="1130" y="215" width="30" height="20" fill="white"/>
+    <polygon points="1125,215 1145,205 1165,215" fill="white"/>
+    <rect x="1133" y="218" width="4" height="12" fill="#27AE60"/>
+    <rect x="1140" y="218" width="4" height="12" fill="#27AE60"/>
+    <rect x="1147" y="218" width="4" height="12" fill="#27AE60"/>
+    <rect x="1154" y="218" width="4" height="12" fill="#27AE60"/>
+  </g>
+  
+  <text x="1210" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    FIRS MBS
+  </text>
+  <text x="1210" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    Clearance Platform
+  </text>
+  
+  <!-- Arrows -->
+  <line x1="250" y1="200" x2="350" y2="220" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="700" y1="250" x2="800" y2="250" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="1000" y1="250" x2="1100" y2="250" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Return flow -->
+  <line x1="1100" y1="230" x2="1000" y2="230" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="230" x2="700" y2="230" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="280" x2="250" y2="260" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Return flow labels -->
+  <rect x="720" y="205" width="140" height="16" fill="white" stroke="#DDD" stroke-width="1" rx="3"/>
+  <text x="790" y="216" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#2ECC40" font-weight="bold">
+    Receipts, QR codes, status
+  </text>
+  
+  <!-- Features callouts -->
+  <rect x="100" y="380" width="1200" height="40" rx="8" fill="#F0F8FF" stroke="#4A90E2" stroke-width="1"/>
+  <text x="700" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#4A90E2">
+    Key Benefits: Multi-tenant SaaS • Role-based access • Real-time compliance • No IT infrastructure required
+  </text>
+  <text x="700" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    Perfect for medium-sized businesses requiring browser-based invoice management with full FIRS compliance
+  </text>
+  
+  <!-- Bottom banner -->
+  <rect x="150" y="480" width="1100" height="50" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="700" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    Cloud-First Solution: Accessible Anywhere, Always Compliant
+  </text>
+  <text x="700" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Web-based invoice management with enterprise-grade compliance assurance
+  </text>
+</svg>

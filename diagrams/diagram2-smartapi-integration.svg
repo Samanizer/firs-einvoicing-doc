@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 700" width="1400" height="700">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bluelightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="erpGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8E8E8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="firsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1400" height="700" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    SmartAPI Integration Pattern
+  </text>
+  
+  <!-- Left Side: ERP Systems -->
+  <text x="150" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#555">
+    ERP Systems
+  </text>
+  
+  <!-- SAP ECC -->
+  <rect x="50" y="100" width="200" height="70" rx="8" fill="url(#erpGradient)" stroke="#CCC" stroke-width="2"/>
+  <text x="150" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">SAP ECC</text>
+  <text x="150" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">IDoc INVOIC02</text>
+  <text x="150" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">→ PI/PO middleware</text>
+  
+  <!-- SAP S4/HANA -->
+  <rect x="50" y="190" width="200" height="70" rx="8" fill="url(#erpGradient)" stroke="#CCC" stroke-width="2"/>
+  <text x="150" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">SAP S4/HANA</text>
+  <text x="150" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">Billing Document API</text>
+  <text x="150" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">→ CPI iFlows</text>
+  
+  <!-- Oracle EBS/Fusion -->
+  <rect x="50" y="280" width="200" height="70" rx="8" fill="url(#erpGradient)" stroke="#CCC" stroke-width="2"/>
+  <text x="150" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Oracle EBS/Fusion</text>
+  <text x="150" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">XML/REST</text>
+  
+  <!-- Dynamics -->
+  <rect x="50" y="370" width="200" height="70" rx="8" fill="url(#erpGradient)" stroke="#CCC" stroke-width="2"/>
+  <text x="150" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Dynamics</text>
+  <text x="150" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">OData/CSV export</text>
+  
+  <!-- Custom/Legacy -->
+  <rect x="50" y="460" width="200" height="70" rx="8" fill="url(#erpGradient)" stroke="#CCC" stroke-width="2"/>
+  <text x="150" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Custom/Legacy</text>
+  <text x="150" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">JSON/CSV</text>
+  
+  <!-- Middle Layer: SmartAPI Core -->
+  <rect x="400" y="200" width="400" height="250" rx="12" fill="url(#bluelightGradient)" stroke="#357ABD" stroke-width="3"/>
+  <text x="600" y="230" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    Bluelight SmartAPI Compliance Core
+  </text>
+  
+  <!-- Core Functions -->
+  <g fill="white" font-family="Arial, sans-serif" font-size="12">
+    <text x="430" y="260">• Transformation</text>
+    <text x="430" y="280">• Validation</text>
+    <text x="430" y="300">• Signing</text>
+    <text x="430" y="320">• QR Generation</text>
+    <text x="430" y="340">• Submission</text>
+    <text x="430" y="360">• Archiving</text>
+    <text x="430" y="380">• Monitoring</text>
+  </g>
+  
+  <!-- Right Side: FIRS MBS -->
+  <rect x="950" y="260" width="240" height="120" rx="8" fill="url(#firsGradient)" stroke="#27AE60" stroke-width="2"/>
+  
+  <!-- Government building icon -->
+  <g fill="white">
+    <rect x="1050" y="280" width="40" height="25" fill="white"/>
+    <polygon points="1045,280 1070,265 1095,280" fill="white"/>
+    <rect x="1055" y="285" width="6" height="15" fill="#27AE60"/>
+    <rect x="1065" y="285" width="6" height="15" fill="#27AE60"/>
+    <rect x="1075" y="285" width="6" height="15" fill="#27AE60"/>
+    <rect x="1085" y="285" width="6" height="15" fill="#27AE60"/>
+  </g>
+  
+  <text x="1070" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    FIRS MBS
+  </text>
+  
+  <!-- Arrows from ERP systems to SmartAPI -->
+  <line x1="250" y1="135" x2="400" y2="250" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="225" x2="400" y2="290" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="315" x2="400" y2="325" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="405" x2="400" y2="360" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="250" y1="495" x2="400" y2="400" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Arrow from SmartAPI to FIRS -->
+  <line x1="800" y1="325" x2="950" y2="320" stroke="#4A90E2" stroke-width="4" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Return flow from FIRS -->
+  <line x1="950" y1="300" x2="800" y2="305" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <rect x="820" y="280" width="110" height="18" fill="white" stroke="#DDD" stroke-width="1" rx="3"/>
+  <text x="875" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#2ECC40" font-weight="bold">
+    IRN + QR + Receipt
+  </text>
+  
+  <!-- Return flow label -->
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2ECC40">
+    SmartAPI → ERP: Clearance receipts and compliance confirmation
+  </text>
+  
+  <!-- Bottom banner -->
+  <rect x="150" y="580" width="1100" height="50" rx="8" fill="#F8F9FA" stroke="#4A90E2" stroke-width="2"/>
+  <text x="700" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#4A90E2">
+    Universal ERP Integration: Any System, Complete Compliance
+  </text>
+  <text x="700" y="620" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Seamless integration regardless of ERP platform or data format
+  </text>
+</svg>

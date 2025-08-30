@@ -1,0 +1,212 @@
+<svg viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c5aa0; }
+      .label-text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .step-text { font-family: 'Arial', sans-serif; font-size: 11px; font-weight: bold; fill: #2c5aa0; }
+      .desc-text { font-family: 'Arial', sans-serif; font-size: 9px; fill: #666; }
+      .small-text { font-family: 'Arial', sans-serif; font-size: 8px; fill: #888; }
+      .security-badge { font-family: 'Arial', sans-serif; font-size: 8px; fill: white; font-weight: bold; }
+      
+      .input-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .smartapi-container { fill: #f8f9fa; stroke: #007bff; stroke-width: 3; }
+      .process-step { fill: #ffffff; stroke: #007bff; stroke-width: 2; }
+      .regulator-box { fill: #e8f5e8; stroke: #28a745; stroke-width: 2; }
+      .archive-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .flow-arrow { stroke: #007bff; stroke-width: 2; fill: none; marker-end: url(#blueArrow); }
+      .return-arrow { stroke: #28a745; stroke-width: 2; fill: none; marker-end: url(#greenArrow); stroke-dasharray: "5,5"; }
+    </style>
+    
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#007bff"/>
+    </marker>
+    <marker id="greenArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#28a745"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" class="title-text">SmartAPI Services Lifecycle</text>
+  
+  <!-- Input Sources (Left) -->
+  <rect x="50" y="100" width="200" height="400" rx="10" class="input-box"/>
+  <text x="150" y="125" text-anchor="middle" class="step-text">Invoice Input Sources</text>
+  
+  <!-- ERP Icons and Labels -->
+  <circle cx="100" cy="160" r="15" fill="#0078d4"/>
+  <text x="100" y="166" text-anchor="middle" class="security-badge">SAP</text>
+  <text x="180" y="165" class="desc-text">SAP ECC/S4</text>
+  
+  <circle cx="100" cy="200" r="15" fill="#ff5722"/>
+  <text x="100" y="206" text-anchor="middle" class="security-badge">ORC</text>
+  <text x="180" y="205" class="desc-text">Oracle EBS/Fusion</text>
+  
+  <circle cx="100" cy="240" r="15" fill="#00bcf2"/>
+  <text x="100" y="246" text-anchor="middle" class="security-badge">D365</text>
+  <text x="180" y="245" class="desc-text">Dynamics 365</text>
+  
+  <circle cx="100" cy="280" r="15" fill="#4caf50"/>
+  <text x="100" y="286" text-anchor="middle" class="security-badge">WEB</text>
+  <text x="180" y="285" class="desc-text">BlueInvoice SaaS</text>
+  
+  <circle cx="100" cy="320" r="15" fill="#ff9800"/>
+  <text x="100" y="326" text-anchor="middle" class="security-badge">@</text>
+  <text x="180" y="325" class="desc-text">Email Connector</text>
+  
+  <circle cx="100" cy="360" r="15" fill="#9c27b0"/>
+  <text x="100" y="366" text-anchor="middle" class="security-badge">BOX</text>
+  <text x="180" y="365" class="desc-text">BlueBox Capture</text>
+  
+  <text x="150" y="420" text-anchor="middle" class="desc-text">Invoice Payload</text>
+  <text x="150" y="435" text-anchor="middle" class="desc-text">(JSON, XML, IDoc, PDF)</text>
+  
+  <!-- SmartAPI Compliance Core Container -->
+  <rect x="300" y="80" width="800" height="300" rx="15" class="smartapi-container"/>
+  <text x="700" y="105" text-anchor="middle" class="step-text">SmartAPI Compliance Core</text>
+  
+  <!-- Processing Steps -->
+  <!-- Step 1: Transformation -->
+  <rect x="320" y="130" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="350" cy="150" r="8" fill="#007bff"/>
+  <path d="M345 145 L355 155 M355 145 L345 155" stroke="white" stroke-width="2"/>
+  <text x="370" y="155" class="step-text">Transformation</text>
+  <text x="370" y="170" class="desc-text">Normalize to</text>
+  <text x="370" y="180" class="desc-text">canonical schema</text>
+  
+  <!-- Step 2: Validation -->
+  <rect x="440" y="130" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="470" cy="150" r="8" fill="#17a2b8"/>
+  <path d="M465 145 L470 155 L480 140" stroke="white" stroke-width="2" fill="none"/>
+  <text x="490" y="155" class="step-text">Validation</text>
+  <text x="490" y="170" class="desc-text">Schema &amp; business</text>
+  <text x="490" y="180" class="desc-text">rule checks</text>
+  
+  <!-- Step 3: Reference Mapping -->
+  <rect x="560" y="130" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="590" cy="150" r="8" fill="#28a745"/>
+  <rect x="586" y="146" width="8" height="8" fill="white"/>
+  <text x="610" y="155" class="step-text">Reference</text>
+  <text x="610" y="167" class="step-text">Mapping</text>
+  <text x="610" y="180" class="desc-text">TIN, HS, tax codes</text>
+  
+  <!-- Step 4: Digital Signing -->
+  <rect x="680" y="130" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="710" cy="150" r="8" fill="#ffc107"/>
+  <path d="M702 145 L710 155 L718 145 M710 150 L710 155" stroke="#333" stroke-width="2" fill="none"/>
+  <text x="730" y="155" class="step-text">Digital Signing</text>
+  <text x="730" y="170" class="desc-text">PKCS7 with</text>
+  <text x="730" y="180" class="desc-text">HSM keys</text>
+  
+  <!-- Step 5: QR Generation -->
+  <rect x="320" y="210" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="350" cy="230" r="8" fill="#e91e63"/>
+  <rect x="344" y="224" width="12" height="12" fill="white"/>
+  <rect x="346" y="226" width="2" height="2" fill="#e91e63"/>
+  <rect x="350" y="226" width="2" height="2" fill="#e91e63"/>
+  <rect x="354" y="226" width="2" height="2" fill="#e91e63"/>
+  <text x="370" y="235" class="step-text">QR Generation</text>
+  <text x="370" y="250" class="desc-text">IRN + QR</text>
+  <text x="370" y="260" class="desc-text">payload created</text>
+  
+  <!-- Step 6: Submission -->
+  <rect x="440" y="210" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="470" cy="230" r="8" fill="#9c27b0"/>
+  <path d="M462 225 L478 235 M462 235 L478 225" stroke="white" stroke-width="2" fill="none"/>
+  <text x="490" y="235" class="step-text">Submission</text>
+  <text x="490" y="250" class="desc-text">TLS 1.3 secure</text>
+  <text x="490" y="260" class="desc-text">to FIRS MBS</text>
+  
+  <!-- Step 7: Response Handling -->
+  <rect x="560" y="210" width="100" height="60" rx="5" class="process-step"/>
+  <circle cx="590" cy="230" r="8" fill="#795548"/>
+  <circle cx="586" cy="226" r="2" fill="white"/>
+  <circle cx="594" cy="226" r="2" fill="white"/>
+  <path d="M585 235 Q590 240 595 235" stroke="white" stroke-width="2" fill="none"/>
+  <text x="610" y="235" class="step-text">Response</text>
+  <text x="610" y="247" class="step-text">Handling</text>
+  <text x="610" y="260" class="desc-text">ACK/Clearance/Reject</text>
+  
+  <!-- Side label for idempotency -->
+  <text x="700" y="310" class="desc-text">Idempotency + Replay Queue ensure zero invoice loss</text>
+  
+  <!-- Flow arrows between steps -->
+  <path d="M420 160 L440 160" class="flow-arrow"/>
+  <path d="M540 160 L560 160" class="flow-arrow"/>
+  <path d="M660 160 L680 160" class="flow-arrow"/>
+  <path d="M730 190 L730 200 L350 200 L350 210" class="flow-arrow"/>
+  <path d="M420 240 L440 240" class="flow-arrow"/>
+  <path d="M540 240 L560 240" class="flow-arrow"/>
+  
+  <!-- Input to SmartAPI arrow -->
+  <path d="M250 300 L300 240" class="flow-arrow"/>
+  
+  <!-- FIRS Regulator (Right) -->
+  <rect x="1150" y="150" width="200" height="120" rx="10" class="regulator-box"/>
+  <text x="1250" y="180" text-anchor="middle" class="step-text">FIRS MBS</text>
+  <text x="1250" y="200" text-anchor="middle" class="step-text">Regulator</text>
+  
+  <text x="1170" y="225" class="desc-text">Returns:</text>
+  <text x="1170" y="240" class="desc-text">• IRN</text>
+  <text x="1170" y="250" class="desc-text">• QR Code</text>
+  <text x="1170" y="260" class="desc-text">• Clearance Receipt</text>
+  
+  <!-- Submission arrow to FIRS -->
+  <path d="M660 240 L1150 210" class="flow-arrow"/>
+  
+  <!-- Response arrow back -->
+  <path d="M1150 240 L660 270" class="return-arrow"/>
+  
+  <!-- Archive Section (Bottom) -->
+  <rect x="450" y="450" width="500" height="200" rx="10" class="archive-box"/>
+  <text x="700" y="480" text-anchor="middle" class="step-text">Evidence Bundle Archive</text>
+  
+  <!-- Archive contents -->
+  <circle cx="500" cy="520" r="12" fill="#ff9800"/>
+  <text x="500" y="526" text-anchor="middle" class="security-badge">JSON</text>
+  <text x="530" y="525" class="desc-text">Canonical JSON</text>
+  
+  <circle cx="500" cy="560" r="12" fill="#4caf50"/>
+  <text x="500" y="566" text-anchor="middle" class="security-badge">SIG</text>
+  <text x="530" y="565" class="desc-text">Signed Payload</text>
+  
+  <circle cx="700" cy="520" r="12" fill="#e91e63"/>
+  <text x="700" y="526" text-anchor="middle" class="security-badge">QR</text>
+  <text x="730" y="525" class="desc-text">IRN + QR Code</text>
+  
+  <circle cx="700" cy="560" r="12" fill="#2196f3"/>
+  <text x="700" y="566" text-anchor="middle" class="security-badge">RCP</text>
+  <text x="730" y="565" class="desc-text">Clearance Receipt</text>
+  
+  <circle cx="880" cy="540" r="12" fill="#9c27b0"/>
+  <text x="880" y="546" text-anchor="middle" class="security-badge">LOG</text>
+  <text x="910" y="545" class="desc-text">Audit Log Extract</text>
+  
+  <!-- WORM icon -->
+  <rect x="600" y="590" width="200" height="40" rx="5" fill="#333"/>
+  <text x="700" y="610" text-anchor="middle" class="security-badge">WORM Archive - 10 Year Retention</text>
+  <text x="700" y="625" text-anchor="middle" class="security-badge">Immutability Seal</text>
+  
+  <!-- Archive arrows -->
+  <path d="M600 270 L600 350 L700 350 L700 450" class="flow-arrow"/>
+  <path d="M1250 270 L1250 350 L700 350" class="return-arrow"/>
+  
+  <!-- Security badges -->
+  <rect x="320" y="50" width="60" height="20" rx="10" fill="#007bff"/>
+  <text x="350" y="63" text-anchor="middle" class="security-badge">TLS 1.3</text>
+  
+  <rect x="390" y="50" width="60" height="20" rx="10" fill="#28a745"/>
+  <text x="420" y="63" text-anchor="middle" class="security-badge">AES 256</text>
+  
+  <rect x="460" y="50" width="60" height="20" rx="10" fill="#ffc107"/>
+  <text x="490" y="63" text-anchor="middle" class="security-badge">PKI</text>
+  
+  <!-- Regulatory compliance labels -->
+  <text x="370" y="205" class="small-text">FIRS IRN</text>
+  <text x="370" y="215" class="small-text">Mandate</text>
+  
+  <text x="490" y="285" class="small-text">FIRS QR</text>
+  <text x="490" y="295" class="small-text">Requirement</text>
+  
+  <text x="610" y="285" class="small-text">Digital Signature</text>
+  <text x="610" y="295" class="small-text">Compliance</text>
+</svg>

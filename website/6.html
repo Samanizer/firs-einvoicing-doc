@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mapping and Schema - FIRS Nigeria E-Invoicing Enablement for Enterprises | Bluelight</title>
+    <meta name="description" content="Advanced data mapping and canonical schema architecture for seamless FIRS e-invoicing compliance across all ERP systems.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-file-invoice-dollar me-2"></i>
+                FIRS Nigeria E-Invoicing Enablement
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-list me-2"></i>Document Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance Assurance</a></li>
+                            <li><a class="dropdown-item" href="4.html">4. Systems Requirements and Compatibility</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item active" href="6.html">6. Data Mapping and Schema</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Capabilities and Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Methods of Receipt Processing and Submission to FIRS</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking, Monitoring, and Audit</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Delivery and Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Scope of Work</a></li>
+                            <li><a class="dropdown-item" href="13.html">13. Key Technical Requirements Coverage</a></li>
+                            <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item" href="16.html">16. Commercial Summary and Options</a></li>
+                            <li><a class="dropdown-item" href="17.html">17. Support and SLA Overview</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Case Studies and References</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Proposal Requirements Mapping</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Appendices</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">6. Data Mapping and Schema</h1>
+                    <p class="lead">Advanced canonical data architecture that eliminates mapping complexity, absorbs regulatory changes centrally, and ensures perfect FIRS compliance across every ERP system and data format.</p>
+                    <div class="mt-4">
+                        <a href="#canonical-model" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-sitemap me-2"></i>
+                            Canonical Model
+                        </a>
+                        <a href="#version-management" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-code-branch me-2"></i>
+                            Change Absorption
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-project-diagram fa-8x text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- 6.1 The Challenge of Data Alignment -->
+            <section id="data-challenge" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-exclamation-circle text-primary me-3"></i>6.1 The Challenge of Data Alignment</h2>
+                    <p class="section-subtitle">The FIRS MBS platform enforces strict validation on invoice payloads. Every header, line item, tax code, and reference must align precisely with regulator specifications.</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-tags text-danger"></i>
+                            </div>
+                            <h4>Field Naming Conflicts</h4>
+                            <p>ERP fields named differently from FIRS requirements, causing mapping failures and rejections.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-question-circle text-danger"></i>
+                            </div>
+                            <h4>Mandatory vs Optional</h4>
+                            <p>Optional fields in ERP that are mandatory for FIRS, creating compliance gaps.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card text-center">
+                            <div class="card-icon">
+                                <i class="fas fa-code text-danger"></i>
+                            </div>
+                            <h4>Tax Code Misalignment</h4>
+                            <p>Tax code libraries that don't align with regulator codes, causing validation errors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <h4 class="text-danger"><i class="fas fa-warning me-2"></i>Business Impact</h4>
+                    <p><strong>Failure to map correctly results in rejected invoices, delayed collections, and compliance risk.</strong></p>
+                </div>
+            </section>
+
+            <!-- 6.2 Our Canonical Data Model -->
+            <section id="canonical-model" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-sitemap text-primary me-3"></i>6.2 Our Canonical Data Model</h2>
+                    <p class="section-subtitle">To solve this, Softrust and Bluelight enforce a <strong>canonical schema</strong> within &lt;BluelightSmartAPI&gt;. This schema is stable, versioned, and designed to remain constant even as FIRS updates its rules.</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Canonical Model Features</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Header Section</strong> – document ID, invoice number, supplier TIN, buyer TIN, company code, issue date, plant, currency, totals.</li>
+                                <li><strong>Line Items</strong> – line number, description, quantity, unit price, tax code, line amount.</li>
+                                <li><strong>Taxation</strong> – VAT, zero-rated, exempt codes, mapped consistently to regulator taxonomy.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Extended Attributes</h4>
+                            <ul class="benefits-list">
+                                <li><strong>References</strong> – order numbers, delivery notes, customer IDs.</li>
+                                <li><strong>Metadata</strong> – source system identifier, correlation ID, IDoc number or API request ID.</li>
+                                <li><strong>Compliance Data</strong> – HS codes, service classifications, regulatory flags.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Canonical schema model showing ERP field → canonical JSON → FIRS schema mapping</div>
+                    <img src="../diagrams/diagram9-input-canonical-schema.svg" alt="Canonical Schema Model" class="img-fluid">
+                    <div class="diagram-description">
+                        Our canonical schema acts as a stable intermediary layer, insulating client ERPs from FIRS schema changes while ensuring perfect compliance mapping.
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6.3 Mapping from ERP and Billing Systems -->
+            <section id="erp-mapping" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-exchange-alt text-primary me-3"></i>6.3 Mapping from ERP and Billing Systems</h2>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fab fa-sap text-primary"></i>
+                            </div>
+                            <h4>SAP ECC</h4>
+                            <ul class="benefits-list">
+                                <li>IDoc INVOIC02 segments (E1EDK01, E1EDK14, E1EDP01, etc.) mapped to canonical fields</li>
+                                <li>TIN captured from master data and validated against regulator database</li>
+                                <li>Tax codes mapped using SAP condition records to FIRS equivalents</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-cloud text-primary"></i>
+                            </div>
+                            <h4>SAP S4/HANA</h4>
+                            <ul class="benefits-list">
+                                <li>API_BILLINGDOCUMENT_SRV entities mapped directly</li>
+                                <li>Company codes and plants resolved into canonical invoice header</li>
+                                <li>Customer master and product master cross-mapped to regulator TIN and HS code libraries</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-database text-primary"></i>
+                            </div>
+                            <h4>Other ERPs</h4>
+                            <ul class="benefits-list">
+                                <li>Oracle EBS XML nodes, Dynamics OData entities handled by mapping templates</li>
+                                <li>CSV exports processed through intelligent parsers</li>
+                                <li>Legacy systems handled through BlueBox capture with rules-based parsing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6.4 Mapping to FIRS MBS Schema -->
+            <section id="firs-mapping" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs text-primary me-3"></i>6.4 Mapping to FIRS MBS Schema</h2>
+                    <p class="section-subtitle">&lt;BluelightSmartAPI&gt; transforms the canonical JSON to FIRS-required schema in real time.</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-check text-accent"></i>
+                            </div>
+                            <h4>Validation & Enforcement</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Mandatory field enforcement</strong> – missing buyer TIN or invoice date rejected at SmartAPI layer before reaching FIRS</li>
+                                <li><strong>Normalization</strong> – formats normalized (e.g., dates converted to ISO 8601)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-search text-accent"></i>
+                            </div>
+                            <h4>Quality Assurance</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Validation rules</strong> – numeric fields validated, tax codes checked, HS codes cross-referenced</li>
+                                <li><strong>Error messages</strong> – structured error returned to ERP or Email Connector with root cause for correction</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6.5 Resource Library and Reference Data -->
+            <section id="resource-library" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-database text-primary me-3"></i>6.5 Resource Library and Reference Data</h2>
+                    <p class="section-subtitle">Compliance requires external data sources beyond invoices. Our system includes a comprehensive <strong>reference data library</strong>:</p>
+                </div>
+                
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-barcode text-accent"></i>
+                            </div>
+                            <h4>HS Code Library</h4>
+                            <p>Product mapping to correct HS classification with automated validation and updates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-users text-accent"></i>
+                            </div>
+                            <h4>Customer Master</h4>
+                            <p>Client-provided mapping of customer IDs to TINs and regulator IDs with validation.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-percentage text-accent"></i>
+                            </div>
+                            <h4>Tax Code Library</h4>
+                            <p>Mapping of ERP tax codes to regulator codes with automatic synchronization.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-concierge-bell text-accent"></i>
+                            </div>
+                            <h4>Service Codes</h4>
+                            <p>Library maintained and updated centrally, synced with FIRS resources automatically.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <p><strong>This ensures Finance and Compliance teams do not waste time remapping master data repeatedly.</strong></p>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Reference library architecture – master data from client + regulator codes → SmartAPI cache → invoice mapping</div>
+                    <div style="background: #f8f9fa; padding: 3rem; border: 2px dashed #dee2e6; text-align: center; border-radius: 8px;">
+                        <i class="fas fa-database fa-4x text-primary mb-3"></i>
+                        <h4>Reference Data Architecture</h4>
+                        <p class="text-muted">Intelligent reference data management combining client master data with regulator codes through SmartAPI caching for real-time invoice mapping</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6.6 Version Management and Change Absorption -->
+            <section id="version-management" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-code-branch text-primary me-3"></i>6.6 Version Management and Change Absorption</h2>
+                    <p class="section-subtitle">FIRS regularly updates schema specifications. Most vendors pass these changes back to the client ERP, causing expensive rework. <strong>Our model avoids this:</strong></p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-layer-group text-primary"></i>
+                            </div>
+                            <h4>Advanced Versioning</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Versioned Schemas</strong> – SmartAPI maintains multiple schema versions in parallel</li>
+                                <li><strong>Feature Flags</strong> – changes can be enabled or disabled without disrupting ERP integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-shield-alt text-primary"></i>
+                            </div>
+                            <h4>Zero-Impact Updates</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Backward Compatibility</strong> – client ERP continues submitting in canonical schema, even as SmartAPI adapts to new FIRS rules</li>
+                                <li><strong>Hotfix Pipeline</strong> – regulatory changes implemented in SmartAPI and deployed rapidly, without ERP modification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6.7 Error Handling and Guided Correction -->
+            <section id="error-handling" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tools text-primary me-3"></i>6.7 Error Handling and Guided Correction</h2>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">JSON</span>
+                            <span class="stat-label">Structured Responses</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">Real-time</span>
+                            <span class="stat-label">Error Notifications</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">Guided</span>
+                            <span class="stat-label">Correction Flow</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">Auto</span>
+                            <span class="stat-label">Resubmission</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points mt-4">
+                    <ul class="benefits-list">
+                        <li><strong>Validation rejects</strong> returned in structured JSON or as email notifications.</li>
+                        <li><strong>Errors logged</strong> with correlation IDs for quick traceability.</li>
+                        <li><strong>Finance users guided</strong> with reason codes (e.g., "Invalid TIN format," "HS code mismatch").</li>
+                        <li><strong>Corrected invoices</strong> automatically resubmitted through the same pipeline.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 6.8 Why This Matters -->
+            <section id="business-value" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy text-primary me-3"></i>6.8 Why This Matters</h2>
+                    <p class="section-subtitle">By insulating client ERPs from schema churn and automating mapping through libraries and canonical modeling, Softrust and Bluelight deliver:</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-rocket text-success"></i>
+                            </div>
+                            <h4>Operational Excellence</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Fewer rejections</strong> and faster clearance</li>
+                                <li><strong>Reduced IT workload</strong> during regulatory changes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="feature-card">
+                            <div class="card-icon">
+                                <i class="fas fa-check-circle text-success"></i>
+                            </div>
+                            <h4>Strategic Benefits</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Continuous compliance</strong> without costly ERP customization</li>
+                                <li><strong>Confidence for Finance and Compliance</strong> that tax codes, HS codes, and TINs are always correctly aligned</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3><i class="fas fa-lightbulb me-3"></i>Ready for Intelligent Data Mapping?</h3>
+                        <p class="mb-0">Experience the power of canonical schema architecture that eliminates mapping complexity and absorbs regulatory changes automatically, keeping your ERP systems stable and compliant.</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <a href="#schema-analysis" class="btn btn-cta btn-lg">
+                            <i class="fas fa-project-diagram me-2"></i>
+                            Schema Analysis
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>&copy; 2025 Bluelight Technologies. FIRS E-Invoicing Compliance Solution. All rights reserved.</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <p>Professional Enterprise Solution | Authorized FIRS Partner</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

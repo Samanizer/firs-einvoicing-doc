@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 550" width="1300" height="550">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bluelightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="legacyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5F5DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DDD8C7;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="firsGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC40;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27AE60;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+    <marker id="arrowheadBlue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4A90E2" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1300" height="550" fill="#FFFFFF"/>
+  
+  <!-- Title -->
+  <text x="650" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333">
+    BlueBox Capture Technology Flow
+  </text>
+  
+  <!-- Left Side: ERP/Legacy System -->
+  <rect x="50" y="120" width="250" height="200" rx="8" fill="url(#legacyGradient)" stroke="#B8860B" stroke-width="2"/>
+  
+  <!-- System icon -->
+  <rect x="70" y="140" width="60" height="40" rx="5" fill="#8B7355" stroke="#654321"/>
+  <rect x="75" y="145" width="50" height="5" fill="#A0A0A0"/>
+  <rect x="75" y="155" width="50" height="5" fill="#A0A0A0"/>
+  <rect x="75" y="165" width="50" height="5" fill="#A0A0A0"/>
+  
+  <!-- Printer icon -->
+  <rect x="150" y="140" width="40" height="30" rx="3" fill="#666"/>
+  <rect x="155" y="145" width="30" height="20" fill="#E8E8E8"/>
+  <rect x="145" y="175" width="50" height="8" fill="#666" rx="2"/>
+  
+  <!-- File folder icon -->
+  <rect x="210" y="150" width="30" height="25" rx="2" fill="#F4A460"/>
+  <rect x="210" y="150" width="8" height="5" rx="1" fill="#CD853F"/>
+  
+  <text x="175" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    ERP/Legacy System
+  </text>
+  <text x="175" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Print spool • Batch files
+  </text>
+  <text x="175" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Network ports • File folders
+  </text>
+  <text x="175" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#777">
+    Existing invoice output methods
+  </text>
+  <text x="175" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#777">
+    No system changes required
+  </text>
+  
+  <!-- Middle Layer: BlueBox Capture Agent -->
+  <rect x="400" y="160" width="250" height="120" rx="8" fill="url(#bluelightGradient)" stroke="#357ABD" stroke-width="3"/>
+  
+  <!-- BlueBox icon -->
+  <rect x="430" y="180" width="40" height="30" rx="5" fill="white" stroke="#357ABD" stroke-width="2"/>
+  <circle cx="450" cy="195" r="8" fill="#4A90E2"/>
+  <text x="450" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white" font-weight="bold">B</text>
+  
+  <text x="525" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    BlueBox Capture Agent
+  </text>
+  <text x="525" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    Intelligent Document Capture
+  </text>
+  <text x="525" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Format Recognition &amp; Transform
+  </text>
+  <text x="525" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">
+    Canonical Schema Conversion
+  </text>
+  
+  <!-- SmartAPI Core -->
+  <rect x="750" y="130" width="200" height="150" rx="8" fill="url(#bluelightGradient)" stroke="#357ABD" stroke-width="2"/>
+  <text x="850" y="160" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    SmartAPI Core
+  </text>
+  <g fill="white" font-family="Arial, sans-serif" font-size="11">
+    <text x="770" y="180">• Validation</text>
+    <text x="770" y="200">• Signing</text>
+    <text x="770" y="220">• QR Generation</text>
+    <text x="770" y="240">• FIRS Submission</text>
+    <text x="770" y="260">• Response Handling</text>
+  </g>
+  
+  <!-- Right Side: FIRS MBS -->
+  <rect x="1020" y="160" width="220" height="120" rx="8" fill="url(#firsGradient)" stroke="#27AE60" stroke-width="2"/>
+  
+  <!-- Government building icon -->
+  <g fill="white">
+    <rect x="1050" y="180" width="35" height="22" fill="white"/>
+    <polygon points="1045,180 1067.5,168 1090,180" fill="white"/>
+    <rect x="1054" y="183" width="5" height="14" fill="#27AE60"/>
+    <rect x="1062" y="183" width="5" height="14" fill="#27AE60"/>
+    <rect x="1070" y="183" width="5" height="14" fill="#27AE60"/>
+    <rect x="1078" y="183" width="5" height="14" fill="#27AE60"/>
+  </g>
+  
+  <text x="1130" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">
+    FIRS MBS
+  </text>
+  <text x="1130" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">
+    Clearance Platform
+  </text>
+  
+  <!-- Forward arrows -->
+  <line x1="300" y1="220" x2="400" y2="220" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="650" y1="220" x2="750" y2="205" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  <line x1="950" y1="205" x2="1020" y2="220" stroke="#4A90E2" stroke-width="3" marker-end="url(#arrowheadBlue)"/>
+  
+  <!-- Return arrows -->
+  <line x1="1020" y1="200" x2="950" y2="235" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="750" y1="235" x2="650" y2="240" stroke="#2ECC40" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Return path labels -->
+  <rect x="350" y="360" width="600" height="40" fill="white" stroke="#2ECC40" stroke-width="1" rx="5"/>
+  <text x="650" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#2ECC40" font-weight="bold">
+    Clearance receipts &amp; QR codes returned to ERP system (optional)
+  </text>
+  <text x="650" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#2ECC40">
+    or Finance dashboard for compliance verification
+  </text>
+  
+  <!-- Process annotations -->
+  <text x="350" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4A90E2" font-weight="bold">
+    Captures
+  </text>
+  <text x="350" y="210" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4A90E2" font-weight="bold">
+    invoices
+  </text>
+  
+  <text x="700" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4A90E2" font-weight="bold">
+    Transformed
+  </text>
+  <text x="700" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#4A90E2" font-weight="bold">
+    data
+  </text>
+  
+  <!-- Bottom banner -->
+  <rect x="100" y="460" width="1100" height="50" rx="8" fill="#F8F9FA" stroke="#B8860B" stroke-width="2"/>
+  <text x="650" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#B8860B">
+    Legacy System Integration: Capture at Source, Zero Disruption
+  </text>
+  <text x="650" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    Perfect for organizations with existing systems that cannot be modified for direct API integration
+  </text>
+</svg>

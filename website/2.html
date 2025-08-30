@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Suite Overview - FIRS Nigeria E-Invoicing Enablement for Enterprises | Bluelight</title>
+    <meta name="description" content="Detailed overview of Bluelight's four integrated FIRS e-invoicing solutions: SmartAPI, BlueInvoice, Email Connector, and BlueBox.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-file-invoice-dollar me-2"></i>
+                FIRS Nigeria E-Invoicing Enablement
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-list me-2"></i>Document Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item active" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance Assurance</a></li>
+                            <li><a class="dropdown-item" href="4.html">4. Systems Requirements and Compatibility</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item" href="6.html">6. Data Mapping and Schema</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Capabilities and Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Methods of Receipt Processing and Submission to FIRS</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking, Monitoring, and Audit</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Delivery and Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Scope of Work</a></li>
+                            <li><a class="dropdown-item" href="13.html">13. Key Technical Requirements Coverage</a></li>
+                            <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item" href="16.html">16. Commercial Summary and Options</a></li>
+                            <li><a class="dropdown-item" href="17.html">17. Support and SLA Overview</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Case Studies and References</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Proposal Requirements Mapping</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Appendices</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">2. Product Suite Overview</h1>
+                    <p class="lead">Our solutions are designed to meet enterprises wherever they are on their digital journey. Whether a client runs a Tier-1 ERP, a mid-market accounting platform, or legacy on-premise applications, Softrust and Bluelight provide a path to FIRS e-invoicing compliance that is fast, safe, and future-proof.</p>
+                    <div class="mt-4">
+                        <a href="#smartapi-integration" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-plug me-2"></i>
+                            SmartAPI Deep Dive
+                        </a>
+                        <a href="#solution-matrix" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-th-large me-2"></i>
+                            Solution Matrix
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-cubes fa-8x text-white opacity-75"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+
+            <!-- 2.1 SmartAPI -->
+            <section id="smartapi-integration" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-plug text-primary me-3"></i>2.1 SmartAPI – Enterprise Integration Backbone</h2>
+                    <p class="section-subtitle">SmartAPI is a fully featured REST API that connects ERP and billing systems directly to FIRS MBS. It is the recommended option for enterprises with IT capacity or integration partners.</p>
+                </div>
+                
+                <div class="key-points mb-4">
+                    <h4>Core Capabilities</h4>
+                    <ul class="benefits-list">
+                        <li><strong>Transformation</strong> – Converts ERP invoice data into the canonical format and maps it automatically to FIRS MBS schema.</li>
+                        <li><strong>Compliance Services</strong> – Generates IRN, QR codes, and digital signatures using PKI.</li>
+                        <li><strong>Submission</strong> – Securely transmits invoices to FIRS in real time, handles acknowledgements, rejections, and pending statuses.</li>
+                        <li><strong>Archiving</strong> – Stores evidence bundles (canonical payload, signed copy, QR, receipts, and logs) in WORM storage with 10-year retention.</li>
+                        <li><strong>Monitoring</strong> – Provides dashboards for IT, Finance, and Compliance teams with full observability.</li>
+                        <li><strong>Resilience</strong> – Includes retries, replay queues, and idempotency keys to eliminate duplication.</li>
+                    </ul>
+                </div>
+                
+                <div class="key-points mb-4">
+                    <h4>Integration Patterns</h4>
+                    <ul class="benefits-list">
+                        <li>SAP ECC (IDoc INVOIC02 via PI/PO)</li>
+                        <li>SAP S4/HANA (CPI iFlows via Billing Document API)</li>
+                        <li>Oracle, Dynamics, Sage, or custom systems (REST, SFTP, or flat file adapters)</li>
+                        <li>Non-ERP systems (direct REST calls with JSON payloads)</li>
+                    </ul>
+                </div>
+                
+                <div class="diagram-container">
+                    <div class="diagram-title">SmartAPI ERP Integration Architecture</div>
+                    <img src="../diagrams/diagram2-smartapi-integration.svg" alt="SmartAPI Integration Pattern" class="img-fluid">
+                    <div class="diagram-description">
+                        SmartAPI provides native integration with major ERP platforms, transforming diverse data formats 
+                        into FIRS-compliant submissions through our unified compliance core.
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Supported ERP Systems</h4>
+                            <ul class="benefits-list">
+                                <li><strong>SAP ECC:</strong> IDoc INVOIC02 via PI/PO middleware</li>
+                                <li><strong>SAP S4/HANA:</strong> Billing Document API via CPI iFlows</li>
+                                <li><strong>Oracle EBS/Fusion:</strong> XML/REST API integration</li>
+                                <li><strong>Microsoft Dynamics:</strong> OData/CSV export support</li>
+                                <li><strong>Custom/Legacy:</strong> JSON/CSV format compatibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="key-points">
+                            <h4>Key Technical Features</h4>
+                            <ul class="benefits-list">
+                                <li><strong>Real-time Processing:</strong> Immediate invoice validation</li>
+                                <li><strong>Error Handling:</strong> Comprehensive retry and recovery</li>
+                                <li><strong>Scalability:</strong> 500,000+ invoices per day</li>
+                                <li><strong>Monitoring:</strong> Complete audit trails and dashboards</li>
+                                <li><strong>Security:</strong> End-to-end encryption and authentication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2.2 BlueInvoice -->
+            <section id="blueinvoice-saas" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cloud text-primary me-3"></i>2.2 BlueInvoice – SaaS Web Invoicing Application</h2>
+                    <p class="section-subtitle">BlueInvoice is a fully online, browser-based invoicing platform. It allows enterprises, subsidiaries, or partners without ERP integration capability to generate, submit, and manage e-invoices quickly and independently.</p>
+                </div>
+
+                <div class="key-points mb-4">
+                    <h4>Core Capabilities</h4>
+                    <ul class="benefits-list">
+                        <li>Create invoices with customer, product, and tax data, mapped to FIRS schema.</li>
+                        <li>Maintain master data for customers, products, HS codes, and tax codes.</li>
+                        <li>Generate IRNs, QR codes, and signed invoices automatically.</li>
+                        <li>Manage incoming invoices, acknowledgements, and rejections.</li>
+                        <li>Access dashboards showing submission volume, clearance status, and audit logs.</li>
+                        <li>Multi-user roles with approval workflows.</li>
+                    </ul>
+                </div>
+                
+                <div class="key-points mb-4">
+                    <h4>Benefits</h4>
+                    <ul class="benefits-list">
+                        <li>No installation required – fully SaaS.</li>
+                        <li>Rapid onboarding – live within days.</li>
+                        <li>Ideal for entities outside the main ERP or for pilot projects.</li>
+                    </ul>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">BlueInvoice SaaS flow showing web entry, SmartAPI processing, and FIRS clearance</div>
+                    <img src="../diagrams/diagram3-blueinvoice-saas.svg" alt="BlueInvoice SaaS Flow" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 2.3 Email Connector -->
+            <section id="email-connector" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-envelope text-primary me-3"></i>2.3 Email Connector – Simplicity at Scale</h2>
+                    <p class="section-subtitle">The Email Connector is the most lightweight option for compliance. Enterprises simply send invoices as email attachments to a dedicated address.</p>
+                </div>
+
+                <div class="key-points mb-4">
+                    <h4>Core Capabilities</h4>
+                    <ul class="benefits-list">
+                        <li>Accepts common formats (PDF, XML, CSV).</li>
+                        <li>Processes invoices automatically via SmartAPI engine.</li>
+                        <li>Generates IRN, QR, and signature, submits to FIRS, and archives.</li>
+                        <li>Sends acknowledgement or rejection responses back by email.</li>
+                        <li>Handles inbound invoices in the same workflow, delivering them to client mailboxes.</li>
+                    </ul>
+                </div>
+                
+                <div class="key-points mb-4">
+                    <h4>Benefits</h4>
+                    <ul class="benefits-list">
+                        <li>Zero integration effort – plug and play.</li>
+                        <li>Works even with legacy systems without APIs.</li>
+                        <li>Simple for small subsidiaries, third-party contractors, or business units with minimal IT support.</li>
+                    </ul>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Email Connector flow from client email → SmartAPI → FIRS → return email with receipt</div>
+                    <img src="../diagrams/diagram4-email-connector.svg" alt="Email Connector Flow" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 2.4 BlueBox -->
+            <section id="bluebox-capture" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-scanner text-primary me-3"></i>2.4 BlueBox – Non-Invasive Capture Technology</h2>
+                    <p class="section-subtitle">BlueBox enables enterprises with legacy or inflexible ERP systems to achieve compliance without any system modifications. It captures invoices at the point of output (print or batch), converts them into the required format, and processes them automatically.</p>
+                </div>
+
+                <div class="key-points mb-4">
+                    <h4>Core Capabilities</h4>
+                    <ul class="benefits-list">
+                        <li>Capture invoices at print spooler, folder, or network port level.</li>
+                        <li>Transform captured files into SmartAPI canonical schema.</li>
+                        <li>Submit securely to FIRS with IRN, QR, and signature.</li>
+                        <li>Archive evidence bundles and deliver receipts back into ERP or email.</li>
+                        <li>Monitor and reconcile captured invoices through dashboards.</li>
+                    </ul>
+                </div>
+                
+                <div class="key-points mb-4">
+                    <h4>Benefits</h4>
+                    <ul class="benefits-list">
+                        <li>Zero change to ERP or billing systems.</li>
+                        <li>Works in highly restricted environments where APIs are not available.</li>
+                        <li>Fast path to compliance for legacy environments.</li>
+                    </ul>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">BlueBox capture flow showing ERP print spool → BlueBox → SmartAPI → FIRS → archive and dashboards</div>
+                    <img src="../diagrams/diagram5-bluebox-capture.svg" alt="BlueBox Capture Flow" class="img-fluid">
+                </div>
+            </section>
+
+            <!-- 2.5 Product Fit by Client Context -->
+            <section id="solution-matrix" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-th-large text-primary me-3"></i>2.5 Product Fit by Client Context</h2>
+                </div>
+
+                <div class="table-responsive mb-4">
+                    <table class="table table-bordered">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Client Context</th>
+                                <th>Recommended Solution</th>
+                                <th>Rationale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Large enterprise with SAP, Oracle, or Dynamics</td>
+                                <td><strong>SmartAPI</strong></td>
+                                <td>Deep ERP integration, automation, scalability</td>
+                            </tr>
+                            <tr>
+                                <td>Subsidiary or standalone entity without ERP</td>
+                                <td><strong>BlueInvoice</strong></td>
+                                <td>SaaS invoicing, rapid go-live, low IT requirement</td>
+                            </tr>
+                            <tr>
+                                <td>Small or distributed business units</td>
+                                <td><strong>Email Connector</strong></td>
+                                <td>Simplest method, no integration effort</td>
+                            </tr>
+                            <tr>
+                                <td>Legacy ERP with no APIs or locked down systems</td>
+                                <td><strong>BlueBox</strong></td>
+                                <td>Capture at source, no ERP changes needed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="diagram-container">
+                    <div class="diagram-title">Product capability matrix by use case and client profile</div>
+                    <img src="../diagrams/diagram6-capability-matrix.svg" alt="Product Capability Matrix" class="img-fluid">
+                </div>
+            </section>
+            
+            <!-- 2.6 Why Multiple Options Matter -->
+            <section id="why-multiple-options" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-puzzle-piece text-primary me-3"></i>2.6 Why Multiple Options Matter</h2>
+                </div>
+                
+                <div class="key-points">
+                    <p>Enterprises often have a mixed environment: SAP at headquarters, legacy systems in regional offices, small subsidiaries, and vendors without ERP. With Softrust and Bluelight, a single provider covers all scenarios through SmartAPI, BlueInvoice, Email Connector, and BlueBox. This eliminates the need to engage multiple vendors, reduces compliance risk, and simplifies governance.</p>
+                </div>
+            </section>
+
+            <!-- Unified Compliance -->
+            <section id="unified-compliance" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-shield-alt text-primary me-3"></i>Unified Compliance Architecture</h2>
+                    <p class="section-subtitle">All solutions converge through SmartAPI Core for consistent FIRS compliance</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">4</span>
+                            <span class="stat-label">Integration Pathways</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">1</span>
+                            <span class="stat-label">Unified Core Platform</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Compliance Guarantee</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="stat-card">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Monitoring & Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points mt-4">
+                    <h4>Core Platform Benefits</h4>
+                    <p>Regardless of which solution pathway you choose, all invoice processing flows through our SmartAPI Compliance Core, ensuring:</p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="benefits-list">
+                                <li>Consistent validation rules and business logic</li>
+                                <li>Uniform digital signing and QR code generation</li>
+                                <li>Standardized FIRS MBS submission protocols</li>
+                                <li>Comprehensive audit trails and evidence collection</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="benefits-list">
+                                <li>Real-time monitoring and status reporting</li>
+                                <li>Automated error handling and retry logic</li>
+                                <li>Immutable archiving for regulatory compliance</li>
+                                <li>Future-proof updates and regulatory changes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h3><i class="fas fa-compass me-3"></i>Need Help Choosing the Right Solution?</h3>
+                        <p class="mb-0">Our solution architects will assess your specific requirements and recommend the optimal pathway for your FIRS compliance journey.</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <a href="#assessment" class="btn btn-cta btn-lg">
+                            <i class="fas fa-clipboard-check me-2"></i>
+                            Request Assessment
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>&copy; 2025 Bluelight Technologies. FIRS E-Invoicing Compliance Solution. All rights reserved.</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <p>Professional Enterprise Solution | Authorized FIRS Partner</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

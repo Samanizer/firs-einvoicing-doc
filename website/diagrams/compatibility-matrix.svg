@@ -1,0 +1,143 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c5aa0; }
+      .axis-title { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #2c5aa0; }
+      .solution-title { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #2c5aa0; }
+      .solution-caption { font-family: 'Arial', sans-serif; font-size: 11px; fill: #666; }
+      .banner-text { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: white; }
+      .coverage-text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #2c5aa0; font-weight: bold; }
+      .axis-label { font-family: 'Arial', sans-serif; font-size: 12px; fill: #666; }
+      
+      .email-quadrant { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .bluebox-quadrant { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .blueinvoice-quadrant { fill: #e8f5e8; stroke: #28a745; stroke-width: 2; }
+      .smartapi-quadrant { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .core-banner { fill: #1976d2; stroke: #0d47a1; stroke-width: 2; }
+      .smartapi-core { fill: #4caf50; stroke: #2e7d32; stroke-width: 3; }
+      .convergence-arrow { stroke: #2196f3; stroke-width: 2; fill: none; marker-end: url(#blueArrow); }
+    </style>
+    
+    <marker id="blueArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#2196f3"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="700" y="30" text-anchor="middle" class="title-text">ERP Integration Compatibility Matrix</text>
+  
+  <!-- Main Grid Area -->
+  <rect x="200" y="120" width="800" height="500" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Axis Lines -->
+  <line x1="200" y1="620" x2="1000" y2="620" stroke="#333" stroke-width="2"/>
+  <line x1="200" y1="120" x2="200" y2="620" stroke="#333" stroke-width="2"/>
+  
+  <!-- Center Lines for Quadrants -->
+  <line x1="600" y1="120" x2="600" y2="620" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="200" y1="370" x2="1000" y2="370" stroke="#ddd" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Axis Titles -->
+  <text x="600" y="660" text-anchor="middle" class="axis-title">ERP/IT Maturity</text>
+  <text x="120" y="370" text-anchor="middle" class="axis-title" transform="rotate(-90, 120, 370)">Invoice Volume</text>
+  
+  <!-- Axis Labels -->
+  <text x="300" y="645" text-anchor="middle" class="axis-label">Low</text>
+  <text x="900" y="645" text-anchor="middle" class="axis-label">High</text>
+  <text x="160" y="520" text-anchor="middle" class="axis-label" transform="rotate(-90, 160, 520)">Low</text>
+  <text x="160" y="220" text-anchor="middle" class="axis-label" transform="rotate(-90, 160, 220)">High</text>
+  
+  <!-- Quadrant 1: Bottom Left - Email Connector (Low Maturity, Low Volume) -->
+  <rect x="200" y="370" width="400" height="250" class="email-quadrant"/>
+  <circle cx="350" cy="470" r="25" fill="#2196f3"/>
+  <circle cx="345" cy="465" r="6" fill="white"/>
+  <circle cx="355" cy="465" r="6" fill="white"/>
+  <path d="M340 480 L360 480 L350 485 Z" fill="white"/>
+  <text x="400" y="460" class="solution-title">Email Connector</text>
+  <text x="400" y="480" class="solution-caption">Quickest path, no integration required</text>
+  <text x="400" y="495" class="solution-caption">• Simple email-based submission</text>
+  <text x="400" y="508" class="solution-caption">• Zero ERP dependency</text>
+  <text x="400" y="521" class="solution-caption">• Immediate compliance</text>
+  
+  <!-- Quadrant 2: Top Left - BlueBox (Low Maturity, High Volume) -->
+  <rect x="200" y="120" width="400" height="250" class="bluebox-quadrant"/>
+  <circle cx="350" cy="220" r="25" fill="#ff9800"/>
+  <rect x="340" y="210" width="20" height="20" fill="white"/>
+  <rect x="342" y="212" width="16" height="4" fill="#ff9800"/>
+  <rect x="342" y="218" width="16" height="4" fill="#ff9800"/>
+  <rect x="342" y="224" width="16" height="4" fill="#ff9800"/>
+  <text x="400" y="210" class="solution-title">BlueBox Capture</text>
+  <text x="400" y="230" class="solution-caption">Capture from print or batch without ERP changes</text>
+  <text x="400" y="245" class="solution-caption">• Legacy ERP print capture</text>
+  <text x="400" y="258" class="solution-caption">• File drop automation</text>
+  <text x="400" y="271" class="solution-caption">• Zero ERP modifications</text>
+  
+  <!-- Quadrant 3: Bottom Right - BlueInvoice (High Maturity, Low Volume) -->
+  <rect x="600" y="370" width="400" height="250" class="blueinvoice-quadrant"/>
+  <circle cx="750" cy="470" r="25" fill="#28a745"/>
+  <rect x="735" y="455" width="30" height="20" fill="white" rx="3"/>
+  <rect x="740" y="460" width="20" height="2" fill="#28a745"/>
+  <rect x="740" y="465" width="20" height="2" fill="#28a745"/>
+  <rect x="740" y="470" width="15" height="2" fill="#28a745"/>
+  <text x="800" y="460" class="solution-title">BlueInvoice SaaS</text>
+  <text x="800" y="480" class="solution-caption">SaaS for subsidiaries and standalone entities</text>
+  <text x="800" y="495" class="solution-caption">• Browser-based portal</text>
+  <text x="800" y="508" class="solution-caption">• Built-in compliance</text>
+  <text x="800" y="521" class="solution-caption">• Quick deployment</text>
+  
+  <!-- Quadrant 4: Top Right - SmartAPI (High Maturity, High Volume) -->
+  <rect x="600" y="120" width="400" height="250" class="smartapi-quadrant"/>
+  <circle cx="750" cy="220" r="25" fill="#9c27b0"/>
+  <circle cx="740" cy="210" r="4" fill="white"/>
+  <circle cx="760" cy="210" r="4" fill="white"/>
+  <circle cx="750" cy="230" r="4" fill="white"/>
+  <path d="M740 215 L750 225 L760 215 M745 225 L755 225" stroke="white" stroke-width="2" fill="none"/>
+  <text x="800" y="210" class="solution-title">SmartAPI</text>
+  <text x="800" y="230" class="solution-caption">Deep ERP integration, real-time compliance</text>
+  <text x="800" y="245" class="solution-caption">• Real-time API integration</text>
+  <text x="800" y="258" class="solution-caption">• Enterprise-grade performance</text>
+  <text x="800" y="271" class="solution-caption">• Advanced monitoring</text>
+  
+  <!-- Top Banner -->
+  <rect x="200" y="70" width="800" height="40" class="core-banner" rx="5"/>
+  <text x="600" y="95" text-anchor="middle" class="banner-text">All options converge into SmartAPI Core for compliance, monitoring, and archiving</text>
+  
+  <!-- SmartAPI Core (Central Hub) -->
+  <rect x="550" y="700" width="100" height="60" rx="10" class="smartapi-core"/>
+  <text x="600" y="725" text-anchor="middle" style="font-family: Arial; font-size: 12px; font-weight: bold; fill: white;">SmartAPI</text>
+  <text x="600" y="740" text-anchor="middle" style="font-family: Arial; font-size: 12px; fill: white;">Core</text>
+  <text x="600" y="755" text-anchor="middle" style="font-family: Arial; font-size: 10px; fill: white;">Hub</text>
+  
+  <!-- Convergence Arrows -->
+  <path d="M350 520 Q500 650 550 730" class="convergence-arrow"/>
+  <path d="M350 270 Q500 650 550 730" class="convergence-arrow"/>
+  <path d="M750 520 Q650 650 600 700" class="convergence-arrow"/>
+  <path d="M750 270 Q650 650 600 700" class="convergence-arrow"/>
+  
+  <!-- Migration Path Highlight -->
+  <rect x="250" y="300" width="120" height="20" rx="3" fill="#4caf50"/>
+  <text x="310" y="313" text-anchor="middle" style="font-family: Arial; font-size: 10px; fill: white; font-weight: bold;">Migration-Safe: ECC → S4</text>
+  <path d="M370 310 Q500 310 580 250" stroke="#4caf50" stroke-width="2" fill="none" marker-end="url(#blueArrow)"/>
+  
+  <!-- Coverage Caption -->
+  <text x="700" y="840" text-anchor="middle" class="coverage-text">Flexible options for every ERP landscape, from Excel and Email to SAP S4/HANA</text>
+  
+  <!-- Legend -->
+  <rect x="1050" y="150" width="300" height="200" fill="white" stroke="#ddd" stroke-width="1" rx="5"/>
+  <text x="1200" y="175" text-anchor="middle" style="font-family: Arial; font-size: 14px; font-weight: bold; fill: #2c5aa0;">Solution Features</text>
+  
+  <circle cx="1070" cy="200" r="8" fill="#2196f3"/>
+  <text x="1090" y="205" style="font-family: Arial; font-size: 11px; fill: #333;">Email: Immediate deployment</text>
+  
+  <circle cx="1070" cy="220" r="8" fill="#ff9800"/>
+  <text x="1090" y="225" style="font-family: Arial; font-size: 11px; fill: #333;">BlueBox: Legacy compatibility</text>
+  
+  <circle cx="1070" cy="240" r="8" fill="#28a745"/>
+  <text x="1090" y="245" style="font-family: Arial; font-size: 11px; fill: #333;">BlueInvoice: SaaS convenience</text>
+  
+  <circle cx="1070" cy="260" r="8" fill="#9c27b0"/>
+  <text x="1090" y="265" style="font-family: Arial; font-size: 11px; fill: #333;">SmartAPI: Enterprise integration</text>
+  
+  <rect x="1070" y="285" width="16" height="8" fill="#4caf50"/>
+  <text x="1095" y="292" style="font-family: Arial; font-size: 11px; fill: #333;">All: SmartAPI Core compliance</text>
+</svg>

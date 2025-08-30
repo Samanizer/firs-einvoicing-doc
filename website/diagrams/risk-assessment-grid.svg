@@ -1,0 +1,141 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c5aa0; }
+      .axis-title { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #2c5aa0; }
+      .axis-label { font-family: 'Arial', sans-serif; font-size: 12px; fill: #333; }
+      .grid-label { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .legend-title { font-family: 'Arial', sans-serif; font-size: 12px; font-weight: bold; fill: #2c5aa0; }
+      .legend-text { font-family: 'Arial', sans-serif; font-size: 10px; fill: #333; }
+      .caption-text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #2c5aa0; font-weight: bold; }
+      
+      .grid-low { fill: #d4edda; stroke: #28a745; stroke-width: 1; }
+      .grid-medium { fill: #fff3cd; stroke: #ffc107; stroke-width: 1; }
+      .grid-high { fill: #f8d7da; stroke: #dc3545; stroke-width: 1; }
+      .grid-critical { fill: #721c24; stroke: #721c24; stroke-width: 1; }
+      
+      .grid-border { fill: none; stroke: #666; stroke-width: 2; }
+    </style>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">Risk Assessment Framework: Likelihood vs Impact Grid</text>
+  
+  <!-- Main Grid Container -->
+  <rect x="150" y="100" width="500" height="400" class="grid-border"/>
+  
+  <!-- Grid Cells (5 likelihood levels x 4 impact levels) -->
+  <!-- Rare Row -->
+  <rect x="150" y="100" width="125" height="80" class="grid-low"/>
+  <rect x="275" y="100" width="125" height="80" class="grid-low"/>
+  <rect x="400" y="100" width="125" height="80" class="grid-medium"/>
+  <rect x="525" y="100" width="125" height="80" class="grid-medium"/>
+  
+  <!-- Unlikely Row -->
+  <rect x="150" y="180" width="125" height="80" class="grid-low"/>
+  <rect x="275" y="180" width="125" height="80" class="grid-medium"/>
+  <rect x="400" y="180" width="125" height="80" class="grid-medium"/>
+  <rect x="525" y="180" width="125" height="80" class="grid-high"/>
+  
+  <!-- Possible Row -->
+  <rect x="150" y="260" width="125" height="80" class="grid-medium"/>
+  <rect x="275" y="260" width="125" height="80" class="grid-medium"/>
+  <rect x="400" y="260" width="125" height="80" class="grid-high"/>
+  <rect x="525" y="260" width="125" height="80" class="grid-high"/>
+  
+  <!-- Likely Row -->
+  <rect x="150" y="340" width="125" height="80" class="grid-medium"/>
+  <rect x="275" y="340" width="125" height="80" class="grid-high"/>
+  <rect x="400" y="340" width="125" height="80" class="grid-high"/>
+  <rect x="525" y="340" width="125" height="80" class="grid-critical"/>
+  
+  <!-- Almost Certain Row -->
+  <rect x="150" y="420" width="125" height="80" class="grid-high"/>
+  <rect x="275" y="420" width="125" height="80" class="grid-high"/>
+  <rect x="400" y="420" width="125" height="80" class="grid-critical"/>
+  <rect x="525" y="420" width="125" height="80" class="grid-critical"/>
+  
+  <!-- Grid Lines -->
+  <line x1="150" y1="180" x2="650" y2="180" stroke="#666" stroke-width="1"/>
+  <line x1="150" y1="260" x2="650" y2="260" stroke="#666" stroke-width="1"/>
+  <line x1="150" y1="340" x2="650" y2="340" stroke="#666" stroke-width="1"/>
+  <line x1="150" y1="420" x2="650" y2="420" stroke="#666" stroke-width="1"/>
+  
+  <line x1="275" y1="100" x2="275" y2="500" stroke="#666" stroke-width="1"/>
+  <line x1="400" y1="100" x2="400" y2="500" stroke="#666" stroke-width="1"/>
+  <line x1="525" y1="100" x2="525" y2="500" stroke="#666" stroke-width="1"/>
+  
+  <!-- Axis Titles -->
+  <text x="400" y="550" text-anchor="middle" class="axis-title">Impact</text>
+  <text x="80" y="300" text-anchor="middle" class="axis-title" transform="rotate(-90, 80, 300)">Likelihood</text>
+  
+  <!-- Impact Labels -->
+  <text x="212" y="530" text-anchor="middle" class="axis-label">Low</text>
+  <text x="337" y="530" text-anchor="middle" class="axis-label">Medium</text>
+  <text x="462" y="530" text-anchor="middle" class="axis-label">High</text>
+  <text x="587" y="530" text-anchor="middle" class="axis-label">Critical</text>
+  
+  <!-- Likelihood Labels -->
+  <text x="130" y="145" text-anchor="end" class="axis-label">Rare</text>
+  <text x="130" y="225" text-anchor="end" class="axis-label">Unlikely</text>
+  <text x="130" y="305" text-anchor="end" class="axis-label">Possible</text>
+  <text x="130" y="385" text-anchor="end" class="axis-label">Likely</text>
+  <text x="130" y="465" text-anchor="end" class="axis-label">Almost Certain</text>
+  
+  <!-- Example Risk Plots -->
+  <!-- Minor UI Bug (Rare/Low) -->
+  <circle cx="212" cy="140" r="6" fill="#28a745"/>
+  <text x="212" y="155" text-anchor="middle" class="grid-label">Minor UI Bug</text>
+  
+  <!-- User Training Gap (Possible/Low) -->
+  <circle cx="212" cy="300" r="6" fill="#ffc107"/>
+  <text x="212" y="315" text-anchor="middle" class="grid-label">Training Gap</text>
+  
+  <!-- Data Mapping Error (Possible/Medium) -->
+  <circle cx="337" cy="300" r="6" fill="#ffc107"/>
+  <text x="337" y="315" text-anchor="middle" class="grid-label">Data Mapping</text>
+  
+  <!-- ERP Integration Delay (Likely/Medium) -->
+  <circle cx="337" cy="380" r="6" fill="#dc3545"/>
+  <text x="337" y="395" text-anchor="middle" class="grid-label">ERP Delay</text>
+  
+  <!-- FIRS Spec Change (Likely/High) -->
+  <circle cx="462" cy="380" r="6" fill="#dc3545"/>
+  <text x="462" y="395" text-anchor="middle" class="grid-label">Spec Change</text>
+  
+  <!-- System Downtime (Likely/High) -->
+  <circle cx="462" cy="360" r="6" fill="#dc3545"/>
+  <text x="462" y="350" text-anchor="middle" class="grid-label">Downtime</text>
+  
+  <!-- Security Incident (Almost Certain/Critical) -->
+  <circle cx="587" cy="460" r="8" fill="#721c24"/>
+  <text x="587" y="475" text-anchor="middle" style="font-family: Arial; font-size: 10px; fill: white; font-weight: bold;">Security Risk</text>
+  <text x="587" y="485" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: white;">(if unmanaged)</text>
+  
+  <!-- Legend -->
+  <rect x="700" y="150" width="250" height="200" fill="white" stroke="#666" stroke-width="1" rx="5"/>
+  <text x="825" y="175" text-anchor="middle" class="legend-title">Risk Classification</text>
+  
+  <rect x="720" y="190" width="15" height="15" class="grid-low"/>
+  <text x="750" y="202" class="legend-text">Green: Monitor - Low priority, routine tracking</text>
+  
+  <rect x="720" y="215" width="15" height="15" class="grid-medium"/>
+  <text x="750" y="227" class="legend-text">Amber: Act - Medium priority, mitigation needed</text>
+  
+  <rect x="720" y="240" width="15" height="15" class="grid-high"/>
+  <text x="750" y="252" class="legend-text">Red: Mitigate - High priority, immediate action</text>
+  
+  <rect x="720" y="265" width="15" height="15" class="grid-critical"/>
+  <text x="750" y="277" class="legend-text">Critical: Escalate - Board-level attention</text>
+  
+  <!-- Assessment Scale -->
+  <rect x="720" y="300" width="200" height="40" fill="#f8f9fa" stroke="#ddd" stroke-width="1" rx="3"/>
+  <text x="820" y="318" text-anchor="middle" style="font-family: Arial; font-size: 11px; fill: #333; font-weight: bold;">Assessment Formula</text>
+  <text x="820" y="332" text-anchor="middle" style="font-family: Arial; font-size: 10px; fill: #666;">Risk Score = Likelihood × Impact</text>
+  
+  <!-- Caption -->
+  <text x="500" y="600" text-anchor="middle" class="caption-text">Risks scored by data-driven likelihood and impact assessment</text>
+  
+  <!-- Framework Note -->
+  <text x="500" y="630" text-anchor="middle" style="font-family: Arial; font-size: 11px; fill: #666;">Framework enables consistent risk evaluation and prioritization across all project phases</text>
+</svg>

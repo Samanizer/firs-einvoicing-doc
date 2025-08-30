@@ -1,0 +1,46 @@
+%%{init: { "flowchart": { "htmlLabels": true, "rankSpacing": 60, "nodeSpacing": 30 } }}%%
+flowchart LR
+%% Fixed layout: columns via subgraphs, vertical stacking per column
+
+%% ---------- Styles ----------
+classDef clientStyle fill:#f9f9f9,stroke:#666,stroke-width:2px,color:#333
+classDef coreStyle   fill:#e6f3ff,stroke:#0066cc,stroke-width:3px,color:#003d7a
+classDef firsStyle   fill:#e8f5e8,stroke:#2d5016,stroke-width:2px,color:#2d5016
+
+%% ---------- Column 1: Clients (Left) ----------
+subgraph COL_LEFT[ ]
+  direction TB
+  A1["🏢 SmartAPI<br/>(ERP Integration)<br/><small>Deep ERP Integration</small>"]:::clientStyle
+  A2["☁️ BlueInvoice<br/>(Web Application)<br/><small>Browser-based SaaS</small>"]:::clientStyle
+  A3["📧 Email Connector<br/>(Email-based Submission)<br/><small>Send Invoices by Email</small>"]:::clientStyle
+  A4["🖨️ BlueBox<br/>(Capture Technology)<br/><small>Capture from Print/File</small>"]:::clientStyle
+end
+
+%% ---------- Column 2: Core (Center) ----------
+subgraph COL_CORE[ ]
+  direction TB
+  B1["Bluelight SmartAPI Compliance Core<br/>━━━━━━━━━━━━━━━━━━━━━━━━━━━<br/>🔄 Transformation<br/>✓ Validation<br/>🔐 Signing<br/>📱 QR Generation<br/>📤 Submission<br/>📁 Archiving<br/>📊 Monitoring & Reconciliation"]:::coreStyle
+end
+
+%% ---------- Column 3: FIRS (Right) ----------
+subgraph COL_RIGHT[ ]
+  direction TB
+  C1["🏛️ FIRS MBS Platform<br/>Government Database<br/>& Processing System"]:::firsStyle
+end
+
+%% ---------- Edges ----------
+%% Left to Core
+A1 --> B1
+A2 --> B1
+A3 --> B1
+A4 --> B1
+
+%% Core to FIRS and back
+B1 --> C1
+C1 -->|"Clearance Receipt<br/>IRN | QR Code"| B1
+
+%% Core responses back to Clients
+B1 --> A1
+B1 --> A2
+B1 --> A3
+B1 --> A4

@@ -1,0 +1,95 @@
+<svg viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #2c5aa0; }
+      .role-text { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #2c5aa0; }
+      .desc-text { font-family: 'Arial', sans-serif; font-size: 11px; fill: #666; }
+      .freq-text { font-family: 'Arial', sans-serif; font-size: 10px; fill: #28a745; font-weight: bold; }
+      .escalation-text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #dc3545; font-weight: bold; }
+      .steering-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .pmo-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; }
+      .tda-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; }
+      .cab-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; }
+      .delivery-box { fill: #fafafa; stroke: #607d8b; stroke-width: 2; }
+      .escalation-arrow { stroke: #dc3545; stroke-width: 3; fill: none; marker-end: url(#redArrow); }
+    </style>
+    <marker id="redArrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#dc3545"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" class="title-text">Governance Structure</text>
+  
+  <!-- Top Layer: Steering Committee -->
+  <rect x="300" y="60" width="400" height="100" rx="10" class="steering-box"/>
+  <circle cx="360" cy="95" r="15" fill="#2196f3"/>
+  <path d="M350 85 L360 95 L370 85 M352 95 L358 95 M362 95 L368 95" stroke="white" stroke-width="2" fill="none"/>
+  <text x="500" y="85" text-anchor="middle" class="role-text">Steering Committee</text>
+  <text x="500" y="105" text-anchor="middle" class="desc-text">Client executives + Softrust + Bluelight leadership</text>
+  <text x="350" y="125" class="desc-text">• Strategic decisions</text>
+  <text x="350" y="138" class="desc-text">• Go/no-go approvals</text>
+  <text x="350" y="151" class="desc-text">• Risk oversight</text>
+  <text x="580" y="125" class="freq-text">Meets bi-weekly</text>
+  
+  <!-- Middle Layer -->
+  <!-- PMO -->
+  <rect x="50" y="200" width="280" height="120" rx="8" class="pmo-box"/>
+  <circle cx="100" cy="230" r="12" fill="#9c27b0"/>
+  <rect x="94" y="224" width="12" height="12" fill="white"/>
+  <path d="M96 230 L104 230 M98 226 L102 226 M98 234 L102 234" stroke="#9c27b0" stroke-width="1" fill="none"/>
+  <text x="190" y="235" text-anchor="middle" class="role-text">Project Management Office (PMO)</text>
+  <text x="70" y="255" class="desc-text">• Tracks milestones</text>
+  <text x="70" y="268" class="desc-text">• Manages risks &amp; issues</text>
+  <text x="70" y="281" class="desc-text">• Deliverables oversight</text>
+  <text x="70" y="294" class="desc-text">• Weekly reporting</text>
+  <text x="250" y="310" class="freq-text">Weekly status</text>
+  
+  <!-- TDA -->
+  <rect x="360" y="200" width="280" height="120" rx="8" class="tda-box"/>
+  <circle cx="410" cy="230" r="12" fill="#4caf50"/>
+  <path d="M400 225 L410 240 L420 225 M410 230 L410 240" stroke="white" stroke-width="2" fill="none"/>
+  <text x="500" y="235" text-anchor="middle" class="role-text">Technical Design Authority (TDA)</text>
+  <text x="380" y="255" class="desc-text">• Architectural consistency</text>
+  <text x="380" y="268" class="desc-text">• Security compliance</text>
+  <text x="380" y="281" class="desc-text">• Integration design review</text>
+  <text x="380" y="294" class="desc-text">• Technical standards</text>
+  <text x="560" y="310" class="freq-text">Design reviews</text>
+  
+  <!-- CAB -->
+  <rect x="670" y="200" width="280" height="120" rx="8" class="cab-box"/>
+  <circle cx="720" cy="230" r="12" fill="#ff9800"/>
+  <path d="M710 220 L720 230 L730 220 M710 240 L720 230 L730 240" stroke="white" stroke-width="2" fill="none"/>
+  <text x="810" y="235" text-anchor="middle" class="role-text">Change Advisory Board (CAB)</text>
+  <text x="690" y="255" class="desc-text">• Change request review</text>
+  <text x="690" y="268" class="desc-text">• Scope management</text>
+  <text x="690" y="281" class="desc-text">• Compliance alignment</text>
+  <text x="690" y="294" class="desc-text">• Impact assessment</text>
+  <text x="870" y="310" class="freq-text">As needed</text>
+  
+  <!-- Bottom Layer: Delivery Teams -->
+  <rect x="300" y="360" width="400" height="100" rx="8" class="delivery-box"/>
+  <circle cx="360" cy="395" r="12" fill="#607d8b"/>
+  <circle cx="355" cy="390" r="3" fill="white"/>
+  <circle cx="365" cy="390" r="3" fill="white"/>
+  <circle cx="355" cy="400" r="3" fill="white"/>
+  <circle cx="365" cy="400" r="3" fill="white"/>
+  <text x="500" y="385" text-anchor="middle" class="role-text">Delivery Teams</text>
+  <text x="400" y="405" class="desc-text">Integration Engineers</text>
+  <text x="520" y="405" class="desc-text">Finance Liaisons</text>
+  <text x="400" y="418" class="desc-text">Compliance Specialists</text>
+  <text x="500" y="445" text-anchor="middle" class="desc-text">Execute day-to-day tasks within framework</text>
+  
+  <!-- Escalation Path -->
+  <text x="50" y="520" class="escalation-text">Escalation Path:</text>
+  <text x="50" y="540" class="desc-text">Delivery Teams → PMO/TDA → Steering Committee</text>
+  
+  <!-- Escalation arrows -->
+  <path d="M500 360 L500 320" class="escalation-arrow"/>
+  <path d="M500 200 L500 160" class="escalation-arrow"/>
+  
+  <!-- Connection lines between governance layers -->
+  <path d="M400 160 L190 200" stroke="#666" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M500 160 L500 200" stroke="#666" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+  <path d="M600 160 L810 200" stroke="#666" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
+</svg>

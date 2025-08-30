@@ -1,0 +1,105 @@
+<svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title-text { font-family: 'Arial', sans-serif; font-size: 18px; font-weight: bold; fill: #2c5aa0; }
+      .center-text { font-family: 'Arial', sans-serif; font-size: 16px; font-weight: bold; fill: #2c5aa0; }
+      .step-title { font-family: 'Arial', sans-serif; font-size: 14px; font-weight: bold; fill: #2c5aa0; }
+      .step-desc { font-family: 'Arial', sans-serif; font-size: 10px; fill: #666; }
+      .caption-text { font-family: 'Arial', sans-serif; font-size: 12px; fill: #2c5aa0; font-weight: bold; }
+      
+      .cycle-step { fill: #ffffff; stroke: #2c5aa0; stroke-width: 3; }
+      .step-icon-bg { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; }
+      .center-circle { fill: #f8f9fa; stroke: #2c5aa0; stroke-width: 2; }
+      .flow-arrow { stroke: #28a745; stroke-width: 3; fill: none; marker-end: url(#greenArrow); }
+      .feedback-arrow { stroke: #ff9800; stroke-width: 4; fill: none; marker-end: url(#orangeArrow); stroke-dasharray: "8,4"; }
+    </style>
+    
+    <marker id="greenArrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L10,3 z" fill="#28a745"/>
+    </marker>
+    <marker id="orangeArrow" markerWidth="12" markerHeight="12" refX="10" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L10,3 z" fill="#ff9800"/>
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title-text">Risk Management Cycle</text>
+  
+  <!-- Center Circle -->
+  <circle cx="400" cy="400" r="80" class="center-circle"/>
+  <text x="400" y="390" text-anchor="middle" class="center-text">Continuous Risk</text>
+  <text x="400" y="410" text-anchor="middle" class="center-text">Discipline</text>
+  
+  <!-- Step 1: Identify (Top) -->
+  <circle cx="400" cy="160" r="60" class="cycle-step"/>
+  <circle cx="400" cy="140" r="18" class="step-icon-bg"/>
+  <circle cx="395" cy="135" r="8" fill="#2196f3"/>
+  <path d="M390 140 L405 155 M395 150 L400 155" stroke="#2196f3" stroke-width="2" fill="none"/>
+  <text x="400" y="185" text-anchor="middle" class="step-title">1. Identify</text>
+  <text x="400" y="200" text-anchor="middle" class="step-desc">Detect risks in technology,</text>
+  <text x="400" y="212" text-anchor="middle" class="step-desc">process, and people</text>
+  
+  <!-- Step 2: Assess (Top Right) -->
+  <circle cx="590" cy="240" r="60" class="cycle-step"/>
+  <circle cx="590" cy="220" r="18" class="step-icon-bg"/>
+  <path d="M580 210 L600 210 M590 215 L590 225 M580 230 L600 230" stroke="#17a2b8" stroke-width="2" fill="none"/>
+  <text x="590" y="265" text-anchor="middle" class="step-title">2. Assess</text>
+  <text x="590" y="280" text-anchor="middle" class="step-desc">Score by likelihood</text>
+  <text x="590" y="292" text-anchor="middle" class="step-desc">and impact</text>
+  
+  <!-- Step 3: Mitigate (Bottom Right) -->
+  <circle cx="590" cy="560" r="60" class="cycle-step"/>
+  <circle cx="590" cy="540" r="18" class="step-icon-bg"/>
+  <path d="M580 530 Q590 535 600 530 Q590 545 580 540 Z" fill="#28a745"/>
+  <path d="M585 537 L595 547" stroke="white" stroke-width="2"/>
+  <text x="590" y="585" text-anchor="middle" class="step-title">3. Mitigate</text>
+  <text x="590" y="600" text-anchor="middle" class="step-desc">Implement controls,</text>
+  <text x="590" y="612" text-anchor="middle" class="step-desc">redesign, redundancy</text>
+  
+  <!-- Step 4: Monitor (Bottom) -->
+  <circle cx="400" cy="640" r="60" class="cycle-step"/>
+  <circle cx="400" cy="620" r="18" class="step-icon-bg"/>
+  <circle cx="400" cy="620" r="12" fill="#ffc107"/>
+  <circle cx="395" cy="615" r="2" fill="white"/>
+  <circle cx="405" cy="615" r="2" fill="white"/>
+  <circle cx="400" cy="625" r="2" fill="white"/>
+  <path d="M388 620 Q400 610 412 620" stroke="white" stroke-width="1" fill="none"/>
+  <text x="400" y="665" text-anchor="middle" class="step-title">4. Monitor</text>
+  <text x="400" y="680" text-anchor="middle" class="step-desc">Track indicators,</text>
+  <text x="400" y="692" text-anchor="middle" class="step-desc">dashboards, alerts</text>
+  
+  <!-- Step 5: Review (Bottom Left) -->
+  <circle cx="210" cy="560" r="60" class="cycle-step"/>
+  <circle cx="210" cy="540" r="18" class="step-icon-bg"/>
+  <rect x="195" y="525" width="30" height="25" fill="#e91e63" rx="2"/>
+  <rect x="198" y="528" width="24" height="2" fill="white"/>
+  <rect x="198" y="532" width="24" height="2" fill="white"/>
+  <rect x="198" y="536" width="24" height="2" fill="white"/>
+  <text x="210" y="585" text-anchor="middle" class="step-title">5. Review</text>
+  <text x="210" y="600" text-anchor="middle" class="step-desc">Steering committee</text>
+  <text x="210" y="612" text-anchor="middle" class="step-desc">oversight</text>
+  
+  <!-- Step 6: Improve (Top Left) -->
+  <circle cx="210" cy="240" r="60" class="cycle-step"/>
+  <circle cx="210" cy="220" r="18" class="step-icon-bg"/>
+  <path d="M210 205 L210 235 M200 215 L210 205 L220 215" stroke="#4caf50" stroke-width="3" fill="none"/>
+  <text x="210" y="265" text-anchor="middle" class="step-title">6. Improve</text>
+  <text x="210" y="280" text-anchor="middle" class="step-desc">Feed lessons learned</text>
+  <text x="210" y="292" text-anchor="middle" class="step-desc">into future plans</text>
+  
+  <!-- Flow Arrows (Clockwise) -->
+  <path d="M 450 180 Q 520 160 550 200" class="flow-arrow"/>
+  <path d="M 620 290 Q 650 450 620 510" class="flow-arrow"/>
+  <path d="M 550 590 Q 450 670 450 640" class="flow-arrow"/>
+  <path d="M 350 620 Q 280 650 260 590" class="flow-arrow"/>
+  <path d="M 180 510 Q 150 350 180 290" class="flow-arrow"/>
+  
+  <!-- Special Feedback Arrow (Improve → Identify) -->
+  <path d="M 260 200 Q 330 120 350 140" class="feedback-arrow"/>
+  
+  <!-- Caption -->
+  <text x="400" y="760" text-anchor="middle" class="caption-text">Risk management embedded in delivery and operations</text>
+  
+  <!-- Feedback Loop Label -->
+  <text x="300" y="100" text-anchor="middle" style="font-family: Arial; font-size: 11px; fill: #ff9800; font-weight: bold;">Continuous Feedback Loop</text>
+</svg>

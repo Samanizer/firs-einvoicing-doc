@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 17 - Operations Runbook | FIRS Nigeria E-Invoicing Enablement for Enterprises</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">FIRS Nigeria E-Invoicing Enablement for Enterprises</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Sections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance</a></li>
+                            <li><a class="dropdown-item" href="4.html">4. Systems Architecture Overview</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item" href="6.html">6. Data Mapping and Transformation</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Receipt Processing and Validation</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking and Monitoring</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support and Training</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Detailed Scope of Work</a></li>
+                            <li><a class="dropdown-item" href="13.html">13. Technical Requirements</a></li>
+                            <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item" href="16.html">16. Delivery and Cutover Plan</a></li>
+                            <li><a class="dropdown-item active" href="17.html">17. Operations Runbook</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Service Level Agreements</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Pricing Structure</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Terms and Conditions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-header mb-4">
+                    <h1 class="display-4 text-primary mb-3">17. Operations Runbook</h1>
+                    <p class="lead">Comprehensive operational guidance for steady-state e-invoicing operations with monitoring, incident management, and reconciliation procedures</p>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.1 Purpose of the Runbook</h2>
+                        <p class="card-text">The Operations Runbook provides the <strong>step-by-step guide for running e-invoicing operations in steady state</strong>. It defines monitoring activities, incident handling, reconciliation, and escalation paths. This ensures Finance, IT, and Compliance teams operate seamlessly without dependence on ad hoc support.</p>
+                        
+                        <div class="diagram-placeholder mb-3">
+                            <div class="alert alert-info">
+                                <strong>Operations Cycle Diagram:</strong> Monitor → Detect → Respond → Resolve → Reconcile → Review
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.2 Daily Operations Checklist</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <h4 class="text-secondary">Finance Team</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Review previous day's clearance report</li>
+                                    <li class="list-group-item">Address any rejected invoices (guided error messages provided)</li>
+                                    <li class="list-group-item">Confirm reconciliation counts between ERP, SmartAPI, and FIRS</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <h4 class="text-secondary">IT Team</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Check SmartAPI dashboard for latency and error rates</li>
+                                    <li class="list-group-item">Verify ERP → SmartAPI → FIRS submission queue status</li>
+                                    <li class="list-group-item">Monitor certificate expiry alerts</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <h4 class="text-secondary">Compliance Team</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Review evidence bundles uploaded to archive</li>
+                                    <li class="list-group-item">Confirm audit trail integrity (sample checks)</li>
+                                    <li class="list-group-item">Run daily compliance export for regulators if required</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-success mt-3">
+                            <strong>Deliverable:</strong> Signed Daily Operational Report stored in archive
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.3 Incident Management</h2>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Severity Classification</h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <strong>Sev-1:</strong> Complete outage or clearance blockage
+                                        <span class="badge bg-danger rounded-pill">Critical</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <strong>Sev-2:</strong> High error rate or major latency
+                                        <span class="badge bg-warning rounded-pill">High</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <strong>Sev-3:</strong> Functional defect with limited scope
+                                        <span class="badge bg-info rounded-pill">Medium</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        <strong>Sev-4:</strong> Cosmetic or informational issues
+                                        <span class="badge bg-secondary rounded-pill">Low</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Response Actions</h4>
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item">Incident ticket raised automatically or by user</li>
+                                    <li class="list-group-item">Severity assigned and acknowledged within SLA target</li>
+                                    <li class="list-group-item">SmartAPI correlation ID used to trace and triage issue</li>
+                                    <li class="list-group-item">Resolution team engaged (Finance, IT, or Bluelight Ops)</li>
+                                    <li class="list-group-item">Post-mortem Root Cause Analysis (RCA) delivered within 5 business days for Sev-1/2</li>
+                                </ol>
+                            </div>
+                        </div>
+                        
+                        <div class="diagram-placeholder">
+                            <div class="alert alert-info">
+                                <strong>Incident Workflow:</strong> Detect → Ticket → Classify → Resolve → RCA → Close
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.4 Monitoring and Alerts</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Dashboards</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Invoice clearance rate by company code, TIN, or product</li>
+                                    <li class="list-group-item">Top rejection reasons</li>
+                                    <li class="list-group-item">System health (CPU, memory, latency, throughput)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Alerts</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>Finance:</strong> rejection > 5% in one day</li>
+                                    <li class="list-group-item"><strong>IT:</strong> latency breach (>1.5s P95) or queue backlog</li>
+                                    <li class="list-group-item"><strong>Compliance:</strong> evidence bundle mismatch or archive sync failure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-info mt-3">
+                            Alerts are routed into ServiceNow, Jira, Teams, or client-preferred systems.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.5 Reconciliation Procedures</h2>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Daily Reconciliation</h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Compare ERP invoice counts vs SmartAPI counts vs FIRS receipts</li>
+                                    <li class="list-group-item">Exception queue automatically flagged for mismatches</li>
+                                    <li class="list-group-item">Finance resolves mismatches (e.g., resubmission of rejected invoices)</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Intraday Spot Checks</h4>
+                                <ul class="list-group">
+                                    <li class="list-group-item">High-value invoices reconciled immediately on clearance</li>
+                                    <li class="list-group-item">Random audits run every 4 hours during business day</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-success">
+                            <strong>Monthly Sign-off:</strong> Finance and Compliance issue a signed reconciliation report archived for 10 years.
+                        </div>
+                        
+                        <div class="diagram-placeholder mt-3">
+                            <div class="alert alert-info">
+                                <strong>Reconciliation Loop:</strong> ERP → SmartAPI → FIRS → Exception Queue → Report
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.6 Escalation Matrix</h2>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th>Level</th>
+                                        <th>Team</th>
+                                        <th>Responsibility</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Level 1 (Ops)</strong></td>
+                                        <td>Client IT and Finance analysts</td>
+                                        <td>Ticket creation</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Level 2 (Integration)</strong></td>
+                                        <td>Softrust engineers</td>
+                                        <td>ERP mapping or SmartAPI troubleshooting</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Level 3 (Platform)</strong></td>
+                                        <td>Bluelight Ops team</td>
+                                        <td>SmartAPI infrastructure</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Level 4 (Regulator)</strong></td>
+                                        <td>FIRS technical desk</td>
+                                        <td>Regulator endpoint outage escalation</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="alert alert-warning">
+                            Escalations are time-bound and tracked to SLA targets.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.7 Knowledge Base and Playbooks</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Playbooks Available</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Rejected invoice handling</li>
+                                    <li class="list-group-item">FIRS outage fallback (queue and replay)</li>
+                                    <li class="list-group-item">Certificate expiry renewal</li>
+                                    <li class="list-group-item">Network connectivity failure recovery</li>
+                                    <li class="list-group-item">Audit evidence export process</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h4 class="text-secondary">Knowledge Base</h4>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">User guides for Finance, IT, and Compliance</li>
+                                    <li class="list-group-item">Troubleshooting FAQs</li>
+                                    <li class="list-group-item">Step-by-step guides for monitoring dashboards</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.8 Continuous Improvement</h2>
+                        
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <strong>Quarterly service reviews</strong>
+                                            <div class="text-muted">KPI analysis and performance evaluation</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <strong>Top 5 rejection reasons analyzed</strong>
+                                            <div class="text-muted">Corrected via data mapping updates</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <strong>Latency trends monitored</strong>
+                                            <div class="text-muted">Scaling tuned proactively</div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <strong>Regulatory updates absorbed centrally</strong>
+                                            <div class="text-muted">Pushed as feature-flagged upgrades</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">17.9 Why Clients Can Trust Our Operations</h2>
+                        
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 mb-3">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="display-6 text-success mb-2">✓</div>
+                                    <h5 class="text-primary">Predictable</h5>
+                                    <p class="small">Every action defined and rehearsed</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-3 mb-3">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="display-6 text-success mb-2">🛡️</div>
+                                    <h5 class="text-primary">Defensible</h5>
+                                    <p class="small">Audit evidence available on demand</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-3 mb-3">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="display-6 text-success mb-2">⚡</div>
+                                    <h5 class="text-primary">Responsive</h5>
+                                    <p class="small">Incidents handled within SLA, with RCA transparency</p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-lg-3 mb-3">
+                                <div class="text-center p-3 border rounded">
+                                    <div class="display-6 text-success mb-2">📈</div>
+                                    <h5 class="text-primary">Evolving</h5>
+                                    <p class="small">Continuous improvements ensure long-term compliance and efficiency</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Section navigation">
+                    <ul class="pagination justify-content-between">
+                        <li class="page-item">
+                            <a class="page-link" href="16.html">
+                                <span aria-hidden="true">&laquo;</span> Previous: Delivery and Cutover Plan
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="18.html">
+                                Next: Service Level Agreements <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
