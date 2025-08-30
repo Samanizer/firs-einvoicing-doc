@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="25" text-anchor="middle" style="font-family: Arial; font-size: 16px; font-weight: bold; fill: #2c5aa0;">Operations Cycle: Runbook-Driven Operations</text>
+  
+  <!-- Center Circle -->
+  <circle cx="400" cy="300" r="70" fill="#f8f9fa" stroke="#2c5aa0" stroke-width="2"/>
+  <text x="400" y="295" text-anchor="middle" style="font-family: Arial; font-size: 14px; font-weight: bold; fill: #2c5aa0;">Runbook-Driven</text>
+  <text x="400" y="310" text-anchor="middle" style="font-family: Arial; font-size: 14px; font-weight: bold; fill: #2c5aa0;">Operations</text>
+  
+  <!-- Stage 1: Monitor (Top) -->
+  <circle cx="400" cy="150" r="50" fill="white" stroke="#2c5aa0" stroke-width="2"/>
+  <rect x="385" y="135" width="30" height="20" fill="#17a2b8" rx="3"/>
+  <rect x="388" y="138" width="6" height="4" fill="white"/>
+  <rect x="396" y="138" width="6" height="4" fill="white"/>
+  <rect x="404" y="138" width="6" height="4" fill="white"/>
+  <rect x="388" y="145" width="15" height="2" fill="white"/>
+  <rect x="405" y="145" width="8" height="2" fill="white"/>
+  <text x="400" y="175" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #2c5aa0;">1. Monitor</text>
+  <text x="400" y="190" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: #666;">Dashboards track rates</text>
+  
+  <!-- Stage 2: Detect (Top Right) -->
+  <circle cx="550" cy="225" r="50" fill="white" stroke="#2c5aa0" stroke-width="2"/>
+  <circle cx="550" cy="220" r="12" fill="none" stroke="#28a745" stroke-width="2"/>
+  <circle cx="555" cy="215" r="6" fill="none" stroke="#28a745" stroke-width="2"/>
+  <line x1="561" y1="221" x2="575" y2="235" stroke="#28a745" stroke-width="3"/>
+  <text x="550" y="250" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #2c5aa0;">2. Detect</text>
+  <text x="550" y="265" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: #666;">Alerts identify anomalies</text>
+  
+  <!-- Stage 3: Respond (Bottom Right) -->
+  <circle cx="550" cy="375" r="50" fill="white" stroke="#2c5aa0" stroke-width="2"/>
+  <path d="M545 365 Q550 360 555 365 L555 375 Q555 380 550 380 Q545 380 545 375 Z" fill="#ffc107"/>
+  <circle cx="545" cy="370" r="1.5" fill="white"/>
+  <path d="M543 370 L541 372" stroke="white" stroke-width="1"/>
+  <text x="550" y="400" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #2c5aa0;">3. Respond</text>
+  <text x="550" y="415" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: #666;">Ops team initiates playbook</text>
+  
+  <!-- Stage 4: Resolve (Bottom) -->
+  <circle cx="400" cy="450" r="50" fill="white" stroke="#2c5aa0" stroke-width="2"/>
+  <path d="M390 440 L410 440 L408 445 L402 445 L402 455 L398 455 L398 445 L392 445 Z" fill="#dc3545"/>
+  <text x="400" y="475" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #2c5aa0;">4. Resolve</text>
+  <text x="400" y="490" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: #666;">Fix applied via playbook</text>
+  
+  <!-- Stage 5: Reconcile (Bottom Left) -->
+  <circle cx="250" cy="375" r="50" fill="white" stroke="#2c5aa0" stroke-width="2"/>
+  <rect x="235" y="365" width="30" height="20" fill="none" stroke="#28a745" stroke-width="2" rx="2"/>
+  <line x1="240" y1="375" x2="260" y2="375" stroke="#28a745" stroke-width="2"/>
+  <circle cx="250" cy="375" r="3" fill="#28a745"/>
+  <text x="250" y="400" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #2c5aa0;">5. Reconcile</text>
+  <text x="250" y="415" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: #666;">Finance validates invoices</text>
+  
+  <!-- Stage 6: Review & Improve (Top Left) -->
+  <circle cx="250" cy="225" r="50" fill="white" stroke="#2c5aa0" stroke-width="2"/>
+  <path d="M250 210 L250 240 M240 220 L250 210 L260 220" stroke="#4caf50" stroke-width="3" fill="none"/>
+  <text x="250" y="250" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #2c5aa0;">6. Review</text>
+  <text x="250" y="265" text-anchor="middle" style="font-family: Arial; font-size: 8px; fill: #666;">RCA and improvement</text>
+  
+  <!-- Flow Arrows (Main Cycle) -->
+  <polygon points="450,180 480,200 475,205 445,185" fill="#2c5aa0"/>
+  <polygon points="580,260 580,340 575,335 585,335" fill="#2c5aa0"/>
+  <polygon points="520,405 450,425 455,430 525,410" fill="#2c5aa0"/>
+  <polygon points="350,425 280,405 285,410 355,430" fill="#2c5aa0"/>
+  <polygon points="220,340 220,260 215,265 225,265" fill="#2c5aa0"/>
+  <polygon points="280,195 350,175 345,170 275,190" fill="#2c5aa0"/>
+  
+  <!-- Improvement Feedback Loop (Special) -->
+  <path d="M280 200 Q400 100 520 200" stroke="#4caf50" stroke-width="3" fill="none" stroke-dasharray="8,4"/>
+  <polygon points="520,200 515,195 525,195" fill="#4caf50"/>
+  
+  <!-- Deliverables Labels -->
+  <text x="475" y="190" style="font-family: Arial; font-size: 7px; fill: #666;">Alert ticket</text>
+  <text x="585" y="310" style="font-family: Arial; font-size: 7px; fill: #666;">Fix record</text>
+  <text x="475" y="435" style="font-family: Arial; font-size: 7px; fill: #666;">Reconciliation</text>
+  <text x="280" y="435" style="font-family: Arial; font-size: 7px; fill: #666;">Report</text>
+  <text x="215" y="310" style="font-family: Arial; font-size: 7px; fill: #666;">RCA</text>
+  
+  <!-- Caption -->
+  <text x="400" y="540" text-anchor="middle" style="font-family: Arial; font-size: 12px; font-weight: bold; fill: #2c5aa0;">Every step produces a deliverable: alert ticket, fix record, reconciliation report, RCA</text>
+  
+  <!-- Governance Box -->
+  <rect x="50" y="480" width="700" height="40" fill="#e8f5e8" stroke="#28a745" stroke-width="2" rx="5"/>
+  <text x="400" y="495" text-anchor="middle" style="font-family: Arial; font-size: 11px; font-weight: bold; fill: #28a745;">✓ Governance: Daily Operations Reports • Weekly KPI Reviews • Quarterly Service Reviews</text>
+  <text x="400" y="510" text-anchor="middle" style="font-family: Arial; font-size: 9px; fill: #28a745;">Predictable • Defensible • Responsive • Evolving</text>
+</svg>

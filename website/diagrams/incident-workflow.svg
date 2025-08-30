@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <text x="400" y="20" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#2c5aa0">Incident Management Workflow</text>
+  
+  <rect x="50" y="50" width="100" height="50" fill="#ffffff" stroke="#2c5aa0" stroke-width="2" rx="5"/>
+  <text x="100" y="70" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">1. Detect</text>
+  <text x="100" y="85" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Event triggers</text>
+  
+  <rect x="180" y="50" width="100" height="50" fill="#ffffff" stroke="#2c5aa0" stroke-width="2" rx="5"/>
+  <text x="230" y="70" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">2. Ticket</text>
+  <text x="230" y="85" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">ServiceNow</text>
+  
+  <rect x="310" y="50" width="100" height="50" fill="#ffffff" stroke="#2c5aa0" stroke-width="2" rx="5"/>
+  <text x="360" y="70" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">3. Classify</text>
+  <text x="360" y="85" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Severity</text>
+  
+  <rect x="440" y="50" width="100" height="50" fill="#ffffff" stroke="#2c5aa0" stroke-width="2" rx="5"/>
+  <text x="490" y="70" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">4. Resolve</text>
+  <text x="490" y="85" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Playbook</text>
+  
+  <rect x="570" y="50" width="100" height="50" fill="#ffffff" stroke="#2c5aa0" stroke-width="2" rx="5"/>
+  <text x="620" y="70" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">5. RCA</text>
+  <text x="620" y="85" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Root cause</text>
+  
+  <line x1="150" y1="75" x2="180" y2="75" stroke="#2c5aa0" stroke-width="2"/>
+  <line x1="280" y1="75" x2="310" y2="75" stroke="#2c5aa0" stroke-width="2"/>
+  <line x1="410" y1="75" x2="440" y2="75" stroke="#2c5aa0" stroke-width="2"/>
+  <line x1="540" y1="75" x2="570" y2="75" stroke="#2c5aa0" stroke-width="2"/>
+  
+  <rect x="50" y="130" width="100" height="20" fill="#dc3545" rx="3"/>
+  <text x="100" y="142" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Sev-1: Critical</text>
+  
+  <rect x="180" y="130" width="100" height="20" fill="#ff9800" rx="3"/>
+  <text x="230" y="142" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Sev-2: Major</text>
+  
+  <rect x="310" y="130" width="100" height="20" fill="#ffc107" rx="3"/>
+  <text x="360" y="142" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Sev-3: Minor</text>
+  
+  <rect x="440" y="130" width="100" height="20" fill="#28a745" rx="3"/>
+  <text x="490" y="142" text-anchor="middle" font-family="Arial" font-size="8" fill="white">Sev-4: Info</text>
+  
+  <rect x="50" y="180" width="620" height="60" fill="#f8f9fa" stroke="#6c757d" stroke-width="1" rx="5"/>
+  <text x="360" y="200" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#2c5aa0">Available Playbooks</text>
+  <text x="70" y="215" font-family="Arial" font-size="8" fill="#666">• Rejected invoice handling</text>
+  <text x="70" y="225" font-family="Arial" font-size="8" fill="#666">• FIRS outage fallback</text>
+  <text x="250" y="215" font-family="Arial" font-size="8" fill="#666">• Network connectivity recovery</text>
+  <text x="250" y="225" font-family="Arial" font-size="8" fill="#666">• Certificate expiry renewal</text>
+  <text x="450" y="215" font-family="Arial" font-size="8" fill="#666">• ERP mapping troubleshooting</text>
+  <text x="450" y="225" font-family="Arial" font-size="8" fill="#666">• Queue backlog remediation</text>
+  
+  <text x="400" y="270" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#28a745">Every incident is logged, traceable, and tied to an SLA</text>
+</svg>

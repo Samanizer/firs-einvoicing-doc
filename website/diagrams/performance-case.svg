@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="350" viewBox="0 0 900 350" xmlns="http://www.w3.org/2000/svg">
+  <text x="450" y="20" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c5aa0">High-Throughput Performance Case</text>
+  
+  <!-- Input: Enterprise ERP -->
+  <rect x="50" y="80" width="120" height="80" fill="#e3f2fd" stroke="#2196f3" stroke-width="2" rx="5"/>
+  <rect x="100" y="95" width="20" height="15" fill="#2196f3" rx="2"/>
+  <text x="110" y="105" text-anchor="middle" font-family="Arial" font-size="7" fill="white" font-weight="bold">ERP</text>
+  <text x="110" y="125" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">Enterprise ERPs</text>
+  <text x="110" y="140" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745" font-weight="bold">Millions per month</text>
+  <text x="110" y="155" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Multi-site operations</text>
+  
+  <!-- Processing: SmartAPI Core -->
+  <rect x="250" y="60" width="180" height="120" fill="#fff3cd" stroke="#ffc107" stroke-width="3" rx="5"/>
+  <rect x="320" y="75" width="40" height="20" fill="#ffc107" rx="3"/>
+  <text x="340" y="87" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">SmartAPI</text>
+  <text x="340" y="105" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#2c5aa0">Processing Core</text>
+  
+  <!-- KPI Metrics -->
+  <text x="260" y="125" font-family="Arial" font-size="8" fill="#495057" font-weight="bold">Performance KPIs:</text>
+  <text x="260" y="140" font-family="Arial" font-size="8" fill="#28a745">• Latency P95 &lt; 500ms</text>
+  <text x="260" y="150" font-family="Arial" font-size="8" fill="#28a745">• Throughput 1M+ /day</text>
+  <text x="260" y="160" font-family="Arial" font-size="8" fill="#28a745">• Availability 99.95%</text>
+  <text x="260" y="170" font-family="Arial" font-size="8" fill="#28a745">• Auto-scaling enabled</text>
+  
+  <!-- Output: FIRS MBS -->
+  <rect x="510" y="80" width="120" height="80" fill="#d4edda" stroke="#28a745" stroke-width="2" rx="5"/>
+  <rect x="560" y="95" width="20" height="15" fill="#28a745" rx="2"/>
+  <text x="570" y="105" text-anchor="middle" font-family="Arial" font-size="7" fill="white" font-weight="bold">FIRS</text>
+  <text x="570" y="125" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">FIRS MBS</text>
+  <text x="570" y="140" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745" font-weight="bold">Cleared + IRN + QR</text>
+  <text x="570" y="155" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Real-time receipts</text>
+  
+  <!-- Flow Arrows -->
+  <line x1="170" y1="120" x2="250" y2="120" stroke="#2c5aa0" stroke-width="3"/>
+  <polygon points="250,120 240,115 240,125" fill="#2c5aa0"/>
+  <text x="210" y="115" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">High Volume</text>
+  
+  <line x1="430" y1="120" x2="510" y2="120" stroke="#28a745" stroke-width="3"/>
+  <polygon points="510,120 500,115 500,125" fill="#28a745"/>
+  <text x="470" y="115" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">Compliant</text>
+  
+  <!-- Return Receipt Flow -->
+  <line x1="510" y1="140" x2="430" y2="140" stroke="#6c757d" stroke-width="2" stroke-dasharray="4,2"/>
+  <polygon points="430,140 440,135 440,145" fill="#6c757d"/>
+  <text x="470" y="155" text-anchor="middle" font-family="Arial" font-size="8" fill="#6c757d">Receipts</text>
+  
+  <!-- Monitoring Dashboard (Above) -->
+  <rect x="250" y="20" width="180" height="30" fill="#f8f9fa" stroke="#6c757d" stroke-width="1" rx="3"/>
+  <rect x="310" y="27" width="20" height="12" fill="#17a2b8" rx="2"/>
+  <text x="320" y="35" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">MON</text>
+  <text x="340" y="37" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Real-time Dashboards</text>
+  <text x="260" y="47" font-family="Arial" font-size="7" fill="#666">Queue &lt; 0.5% • Rejection &lt; 1%</text>
+  
+  <line x1="340" y1="50" x2="340" y2="60" stroke="#6c757d" stroke-width="1"/>
+  
+  <!-- Archive (Below) -->
+  <rect x="250" y="190" width="180" height="30" fill="#343a40" rx="3"/>
+  <rect x="310" y="197" width="20" height="12" fill="#ffffff" rx="2"/>
+  <text x="320" y="205" text-anchor="middle" font-family="Arial" font-size="6" fill="#343a40" font-weight="bold">ARC</text>
+  <text x="340" y="207" font-family="Arial" font-size="9" fill="white" font-weight="bold">WORM Archive</text>
+  <text x="260" y="217" font-family="Arial" font-size="7" fill="white">Evidence bundles • 10-year retention</text>
+  
+  <line x1="340" y1="180" x2="340" y2="190" stroke="#343a40" stroke-width="1"/>
+  
+  <!-- Performance Badges -->
+  <rect x="700" y="60" width="150" height="100" fill="#e8f5e8" stroke="#28a745" stroke-width="2" rx="5"/>
+  <text x="775" y="80" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#28a745">SLA Compliance</text>
+  <text x="775" y="95" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745">✓ Millisecond processing</text>
+  <text x="775" y="108" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745">✓ National-scale proven</text>
+  <text x="775" y="121" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745">✓ 24x7 operations</text>
+  <text x="775" y="134" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745">✓ Telecom-grade SLAs</text>
+  <text x="775" y="147" text-anchor="middle" font-family="Arial" font-size="9" fill="#28a745">✓ Auto-scaling ready</text>
+  
+  <!-- Industry Examples -->
+  <rect x="50" y="200" width="580" height="50" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="340" y="215" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#2c5aa0">Proven Industries</text>
+  <text x="80" y="230" font-family="Arial" font-size="8" fill="#666">Manufacturing (SAP, Oracle) • Telecom (millions monthly) • Utilities (strict SLAs)</text>
+  <text x="80" y="242" font-family="Arial" font-size="8" fill="#666">Financial Services • Hospitality • Distribution • Retail</text>
+  
+  <!-- Caption -->
+  <text x="450" y="290" text-anchor="middle" font-family="Arial" font-size="12" font-weight="bold" fill="#2c5aa0">Performance proven under national-scale workloads</text>
+  
+  <!-- Status Bar -->
+  <rect x="100" y="310" width="700" height="25" fill="#e8f5e8" stroke="#28a745" stroke-width="2" rx="5"/>
+  <text x="450" y="325" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#28a745">Battle-tested at telecom and utility transaction volumes • SLAs consistently exceeded</text>
+</svg>

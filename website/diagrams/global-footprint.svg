@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="400" viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg">
+  <text x="450" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#2c5aa0">Global E-Invoicing Footprint</text>
+  
+  <!-- World Map Background -->
+  <rect x="50" y="50" width="800" height="300" fill="#f8f9fa" stroke="#dee2e6" stroke-width="2" rx="10"/>
+  
+  <!-- Africa -->
+  <rect x="400" y="150" width="120" height="140" fill="#e9ecef" stroke="#adb5bd" stroke-width="1" rx="5"/>
+  <text x="460" y="175" text-anchor="middle" font-family="Arial" font-size="10" fill="#6c757d">Africa</text>
+  
+  <!-- Middle East -->
+  <rect x="520" y="120" width="100" height="80" fill="#e9ecef" stroke="#adb5bd" stroke-width="1" rx="5"/>
+  <text x="570" y="145" text-anchor="middle" font-family="Arial" font-size="10" fill="#6c757d">Middle East</text>
+  
+  <!-- Country Deployments with Pins -->
+  
+  <!-- Saudi Arabia -->
+  <circle cx="580" cy="160" r="8" fill="#2196f3"/>
+  <text x="580" y="165" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">SA</text>
+  <text x="610" y="165" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Saudi Arabia</text>
+  
+  <!-- UAE -->
+  <circle cx="590" cy="170" r="8" fill="#2196f3"/>
+  <text x="590" y="175" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">AE</text>
+  <text x="620" y="175" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">UAE</text>
+  
+  <!-- Egypt -->
+  <circle cx="430" cy="160" r="8" fill="#2196f3"/>
+  <text x="430" y="165" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">EG</text>
+  <text x="360" y="165" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Egypt</text>
+  
+  <!-- Kenya -->
+  <circle cx="480" cy="210" r="8" fill="#2196f3"/>
+  <text x="480" y="215" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">KE</text>
+  <text x="510" y="215" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Kenya</text>
+  
+  <!-- Tanzania -->
+  <circle cx="470" cy="230" r="8" fill="#2196f3"/>
+  <text x="470" y="235" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">TZ</text>
+  <text x="500" y="235" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Tanzania</text>
+  
+  <!-- Malawi -->
+  <circle cx="460" cy="250" r="8" fill="#2196f3"/>
+  <text x="460" y="255" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">MW</text>
+  <text x="380" y="255" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Malawi</text>
+  
+  <!-- Zimbabwe -->
+  <circle cx="450" cy="270" r="8" fill="#2196f3"/>
+  <text x="450" y="275" text-anchor="middle" font-family="Arial" font-size="6" fill="white" font-weight="bold">ZW</text>
+  <text x="370" y="275" font-family="Arial" font-size="9" fill="#2c5aa0" font-weight="bold">Zimbabwe</text>
+  
+  <!-- Nigeria - Highlighted -->
+  <circle cx="410" cy="190" r="12" fill="#28a745" stroke="#ffffff" stroke-width="2"/>
+  <text x="410" y="196" text-anchor="middle" font-family="Arial" font-size="8" fill="white" font-weight="bold">NG</text>
+  <rect x="320" y="180" width="80" height="20" fill="#28a745" rx="3"/>
+  <text x="360" y="192" text-anchor="middle" font-family="Arial" font-size="9" fill="white" font-weight="bold">Nigeria - FIRS</text>
+  
+  <!-- Arrows pointing to Nigeria -->
+  <line x1="580" y1="160" x2="422" y2="190" stroke="#ffc107" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="590" y1="170" x2="422" y2="190" stroke="#ffc107" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="430" y1="160" x2="415" y2="185" stroke="#ffc107" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="480" y1="210" x2="415" y2="195" stroke="#ffc107" stroke-width="2" stroke-dasharray="4,2"/>
+  
+  <!-- Legend -->
+  <rect x="660" y="80" width="180" height="120" fill="#ffffff" stroke="#dee2e6" stroke-width="1" rx="5"/>
+  <text x="750" y="100" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#2c5aa0">Deployment Status</text>
+  
+  <circle cx="680" cy="120" r="6" fill="#2196f3"/>
+  <text x="700" y="125" font-family="Arial" font-size="9" fill="#495057">Live Deployments</text>
+  
+  <circle cx="680" cy="140" r="8" fill="#28a745" stroke="#ffffff" stroke-width="2"/>
+  <text x="700" y="145" font-family="Arial" font-size="9" fill="#495057">Current Focus - FIRS</text>
+  
+  <line x1="680" y1="160" x2="695" y2="160" stroke="#ffc107" stroke-width="2" stroke-dasharray="4,2"/>
+  <text x="700" y="165" font-family="Arial" font-size="9" fill="#495057">Global Expertise</text>
+  
+  <!-- Statistics Box -->
+  <rect x="80" y="320" width="740" height="40" fill="#e8f5e8" stroke="#28a745" stroke-width="2" rx="5"/>
+  <text x="450" y="335" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#28a745">8+ Countries • National Revenue Authorities • Hundreds of Thousands of Taxpayers</text>
+  <text x="450" y="350" text-anchor="middle" font-family="Arial" font-size="10" fill="#28a745">Proven across jurisdictions, trusted by regulators and enterprises alike</text>
+</svg>

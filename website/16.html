@@ -1,426 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delivery and Cutover Plan - FIRS Nigeria E-Invoicing Enablement for Enterprises</title>
+    <title>Delivery and Cutover Plan - FIRS Nigeria E-Invoicing Enablement for Enterprises | Bluelight</title>
+    <meta name="description" content="Mission control approach to cutover with orchestrated sequence, rehearsed execution, and rollback safety nets ensuring zero-disruption transition to compliance operations.">
+    
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="assets/css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-    <header class="header-section">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">FIRS Nigeria E-Invoicing Enablement for Enterprises</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="sectionsDropdown" role="button" data-bs-toggle="dropdown">
-                                All Sections
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
-                                <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
-                                <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance Assurance</a></li>
-                                <li><a class="dropdown-item" href="4.html">4. Systems Requirements and Compatibility</a></li>
-                                <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
-                                <li><a class="dropdown-item" href="6.html">6. Data Mapping and Schema</a></li>
-                                <li><a class="dropdown-item" href="7.html">7. Integration Capabilities and Methods</a></li>
-                                <li><a class="dropdown-item" href="8.html">8. Methods of Receipt Processing and Submission to FIRS</a></li>
-                                <li><a class="dropdown-item" href="9.html">9. Tracking, Monitoring, and Audit</a></li>
-                                <li><a class="dropdown-item" href="10.html">10. Onboarding Support</a></li>
-                                <li><a class="dropdown-item" href="11.html">11. Delivery and Implementation Methodology</a></li>
-                                <li><a class="dropdown-item" href="12.html">12. Scope of Work</a></li>
-                                <li><a class="dropdown-item" href="13.html">13. Key Technical Requirements Coverage</a></li>
-                                <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
-                                <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
-                                <li><a class="dropdown-item active" href="16.html">16. Delivery and Cutover Plan</a></li>
-                                <li><a class="dropdown-item" href="17.html">17. Technology Evolution and Roadmap</a></li>
-                                <li><a class="dropdown-item" href="18.html">18. Partnership and Ecosystem</a></li>
-                                <li><a class="dropdown-item" href="19.html">19. Case Studies and References</a></li>
-                                <li><a class="dropdown-item" href="20.html">20. Conclusion and Next Steps</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-file-invoice-dollar me-2"></i>
+                FIRS Nigeria E-Invoicing Enablement
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-list me-2"></i>Document Sections
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">1. Executive Summary</a></li>
+                            <li><a class="dropdown-item" href="2.html">2. Product Suite Overview</a></li>
+                            <li><a class="dropdown-item" href="3.html">3. Regulatory Context and Compliance</a></li>
+                            <li><a class="dropdown-item" href="4.html">4. Systems Architecture Overview</a></li>
+                            <li><a class="dropdown-item" href="5.html">5. Security Architecture</a></li>
+                            <li><a class="dropdown-item" href="6.html">6. Data Mapping and Transformation</a></li>
+                            <li><a class="dropdown-item" href="7.html">7. Integration Methods</a></li>
+                            <li><a class="dropdown-item" href="8.html">8. Receipt Processing and Validation</a></li>
+                            <li><a class="dropdown-item" href="9.html">9. Tracking and Monitoring</a></li>
+                            <li><a class="dropdown-item" href="10.html">10. Onboarding Support and Training</a></li>
+                            <li><a class="dropdown-item" href="11.html">11. Implementation Methodology</a></li>
+                            <li><a class="dropdown-item" href="12.html">12. Detailed Scope of Work</a></li>
+                            <li><a class="dropdown-item" href="13.html">13. Key Technical Requirements Coverage</a></li>
+                            <li><a class="dropdown-item" href="14.html">14. Systems Requirements by Option</a></li>
+                            <li><a class="dropdown-item" href="15.html">15. Risk Management Approach</a></li>
+                            <li><a class="dropdown-item active" href="16.html">16. Delivery and Cutover Plan</a></li>
+                            <li><a class="dropdown-item" href="17.html">17. Operations Runbook</a></li>
+                            <li><a class="dropdown-item" href="18.html">18. Case Studies</a></li>
+                            <li><a class="dropdown-item" href="19.html">19. Proposal Requirements Mapping</a></li>
+                            <li><a class="dropdown-item" href="20.html">20. Appendices</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main class="main-content">
-        <div class="hero-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="hero-content text-center">
-                            <h1 class="hero-title">Delivery and Cutover Plan</h1>
-                            <p class="hero-subtitle">Mission control rigor: rehearsed, monitored, reversible, and supported in real time</p>
-                        </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">16. Delivery and Cutover Plan</h1>
+                    <p class="lead">Mission control approach to cutover with orchestrated sequence, rehearsed execution, and rollback safety nets ensuring zero-disruption transition to compliance operations.</p>
+                    <div class="mt-4">
+                        <a href="#cutover-philosophy" class="btn btn-light btn-lg me-3">
+                            <i class="fas fa-rocket me-2"></i>
+                            Cutover Philosophy
+                        </a>
+                        <a href="#execution-steps" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-tasks me-2"></i>
+                            Execution Steps
+                        </a>
                     </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-rocket fa-8x text-white opacity-75"></i>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="content-section">
-            <div class="container">
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Cutover Philosophy Section -->
+            <section id="cutover-philosophy" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-rocket text-primary me-3"></i>16.1 Cutover Philosophy</h2>
+                    <p class="section-subtitle">Cutover is not a single event — it is a carefully orchestrated sequence designed for zero-disruption transition with mission control rigor</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-satellite-dish fa-2x text-primary mb-3"></i>
+                            <h5>Mission Control Approach</h5>
+                            <p>Rehearsed, monitored, reversible, and supported in real time with the same precision as aerospace operations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-shield-alt fa-2x text-success mb-3"></i>
+                            <h5>Zero-Disruption Guarantee</h5>
+                            <p>Orchestrated sequence moves organizations from old processes to new compliance workflows without operational disruption.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cutover Timeline Diagram -->
+                <div class="diagram-container mt-5">
+                    <div class="diagram-title">
+                        <i class="fas fa-timeline me-2"></i>
+                        Cutover Timeline: Mission Control Execution
+                    </div>
+                    <img src="diagrams/cutover-timeline.svg" alt="Cutover Timeline showing 5-phase mission control approach with safeguards" class="img-fluid">
+                    <p class="diagram-subtitle">Controlled, reversible process with rehearsed execution and real-time safety nets</p>
+                </div>
+            </section>
+
+            <!-- Pre-Cutover Readiness Section -->
+            <section id="pre-cutover" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-clipboard-check text-primary me-3"></i>16.2 Pre-Cutover Readiness</h2>
+                    <p class="section-subtitle">Comprehensive preparation phase ensuring all prerequisites are met before go-live execution</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-book fa-2x text-info mb-3"></i>
+                            <h5>Cutover Runbook</h5>
+                            <p>Prepared with task-by-task activities, owners, and precise timings for every cutover step.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-vial fa-2x text-warning mb-3"></i>
+                            <h5>Dry-Run Rehearsal</h5>
+                            <p>Conducted in UAT environment, simulating real invoice flow and clearance validation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-undo fa-2x text-danger mb-3"></i>
+                            <h5>Rollback Plan</h5>
+                            <p>Defined and tested — ERP can continue using existing invoice processes if critical issues arise.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="feature-card">
+                            <i class="fas fa-check-circle fa-2x text-success mb-3"></i>
+                            <h5>Approval Gate</h5>
+                            <p>Steering Committee reviews readiness checklist and formally authorizes go-live execution.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cutover Execution Steps Section -->
+            <section id="execution-steps" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tasks text-primary me-3"></i>16.3 Cutover Execution Steps</h2>
+                    <p class="section-subtitle">Seven-step execution sequence with validation checkpoints and real-time monitoring</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-6 mb-4">
+                        <div class="feature-card h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">1</span>
+                                </div>
+                                <h5 class="mb-0">Freeze Window</h5>
+                            </div>
+                            <p>ERP integration changes frozen 48 hours before go-live to establish stable baseline.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="feature-card h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">2</span>
+                                </div>
+                                <h5 class="mb-0">Final Data Validation</h5>
+                            </div>
+                            <p>Confirm master data (TINs, HS codes, tax codes) loaded and reconciled before switch.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="feature-card h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">3</span>
+                                </div>
+                                <h5 class="mb-0">Switch Integration</h5>
+                            </div>
+                            <p>Reroute ERP outputs to SmartAPI production tenant with immediate connectivity validation.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="feature-card h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-warning text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">4</span>
+                                </div>
+                                <h5 class="mb-0">Pilot Batch</h5>
+                            </div>
+                            <p>Submit first set of live invoices (typically 50–100), validate clearance with FIRS.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="feature-card h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">5</span>
+                                </div>
+                                <h5 class="mb-0">Validation</h5>
+                            </div>
+                            <p>Confirm IRNs and QRs received, archive entries created, Finance reconciliation matches.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="feature-card h-100">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">6</span>
+                                </div>
+                                <h5 class="mb-0">Scale-Up</h5>
+                            </div>
+                            <p>Expand to full invoice volume with continuous throughput and clearance monitoring.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 mb-4">
+                        <div class="feature-card">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="step-number bg-dark text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                                    <span class="fw-bold">7</span>
+                                </div>
+                                <h5 class="mb-0">Monitoring</h5>
+                            </div>
+                            <p>Real-time dashboards active with IT and Finance on standby during first 48 hours of production operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hypercare and Rollback Section -->
+            <section id="hypercare-rollback" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-headset text-primary me-3"></i>16.4 Hypercare Support & Rollback Plan</h2>
+                    <p class="section-subtitle">24x7 intensive support with automated rollback triggers ensuring operational continuity</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-clock fa-2x text-info mb-3"></i>
+                            <h5>Hypercare Duration</h5>
+                            <p><strong>Coverage:</strong> Two weeks post go-live (extendable by client request)</p>
+                            <p><strong>Support:</strong> 24x7 incident response, daily checkpoint calls with Finance, IT, and Compliance</p>
+                            <p><strong>Focus:</strong> Clearance rate monitoring, rejection handling, reconciliation, and system performance</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="benefit-card">
+                            <i class="fas fa-shield-alt fa-2x text-danger mb-3"></i>
+                            <h5>Rollback Plan</h5>
+                            <p><strong>Triggers:</strong> Clearance rates drop below threshold, critical ERP disruption, FIRS outage > 12 hours</p>
+                            <p><strong>Actions:</strong> ERP outputs redirected to legacy processes, SmartAPI queues paused (no data loss), pending invoices replayed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 text-center mt-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-percentage fa-2x text-success mb-3"></i>
+                            <div class="stat-number">>99%</div>
+                            <div class="stat-label">Clearance rate exit criteria</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-calendar-day fa-2x text-info mb-3"></i>
+                            <div class="stat-number">3 Days</div>
+                            <div class="stat-label">Consecutive stable operations required</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="stat-card">
+                            <i class="fas fa-ban fa-2x text-warning mb-3"></i>
+                            <div class="stat-number">Zero</div>
+                            <div class="stat-label">Sev-1 incidents for hypercare exit</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transition and Benefits Section -->
+            <section id="transition-benefits" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-trophy text-primary me-3"></i>16.6 Transition to Steady State & Benefits</h2>
+                    <p class="section-subtitle">Seamless handover with continuous improvement and executive confidence</p>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-handshake fa-2x text-success mb-3"></i>
+                            <h5>Knowledge Transfer</h5>
+                            <p>Runbooks, playbooks, and dashboards handed over to client IT and Finance teams.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-cog fa-2x text-info mb-3"></i>
+                            <h5>Governance Setup</h5>
+                            <p>Quarterly service review cadence initiated for ongoing performance management.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-card">
+                            <i class="fas fa-arrow-up fa-2x text-warning mb-3"></i>
+                            <h5>Continuous Improvement</h5>
+                            <p>Improvement backlog from hypercare fed into product roadmap for enhancements.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-points">
+                    <h4><i class="fas fa-star me-2"></i>Benefits of Our Approach</h4>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="benefit-card">
+                                <i class="fas fa-eye fa-2x text-primary mb-3"></i>
+                                <h5>No Surprises</h5>
+                                <p>Rehearsals eliminate uncertainty with comprehensive dry-run validation and risk mitigation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="benefit-card">
+                                <i class="fas fa-server fa-2x text-success mb-3"></i>
+                                <h5>No Downtime</h5>
+                                <p>Rollback safety net protects Finance operations with seamless fallback mechanisms.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="benefit-card">
+                                <i class="fas fa-file-invoice fa-2x text-info mb-3"></i>
+                                <h5>No Invoice Loss</h5>
+                                <p>SmartAPI queues guarantee delivery once FIRS resumes with zero data loss assurance.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="benefit-card">
+                                <i class="fas fa-handshake fa-2x text-warning mb-3"></i>
+                                <h5>Executive Confidence</h5>
+                                <p>CFOs and CIOs can sign off knowing every risk has been identified and mitigated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation -->
+            <div class="section-navigation">
                 <div class="row">
-                    <div class="col-lg-10 mx-auto">
-
-                        <!-- Section 16.1 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.1 Cutover Philosophy</h2>
-                            <div class="content-box">
-                                <p>Cutover is not a single event — it is a carefully orchestrated sequence of steps designed to move an organization from old processes to new compliance workflows without disruption. Softrust and Bluelight approach cutover with the rigor of a <strong>mission control operation</strong>: rehearsed, monitored, reversible, and supported in real time.</p>
-                                
-                                <div class="diagram-placeholder">
-                                    <div class="diagram-header">
-                                        <i class="fas fa-rocket me-2"></i>
-                                        Cutover Timeline
-                                    </div>
-                                    <div class="diagram-content">
-                                        <div class="cutover-timeline">
-                                            <div class="timeline-phase">Pre-cutover readiness</div>
-                                            <div class="timeline-arrow">→</div>
-                                            <div class="timeline-phase">Dry-run</div>
-                                            <div class="timeline-arrow">→</div>
-                                            <div class="timeline-phase">Go-live window</div>
-                                            <div class="timeline-arrow">→</div>
-                                            <div class="timeline-phase">Validation</div>
-                                            <div class="timeline-arrow">→</div>
-                                            <div class="timeline-phase">Hypercare</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 16.2 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.2 Pre-Cutover Readiness</h2>
-                            <div class="content-box">
-                                <div class="readiness-checklist">
-                                    <div class="checklist-item">
-                                        <div class="checklist-icon">
-                                            <i class="fas fa-book"></i>
-                                        </div>
-                                        <div class="checklist-content">
-                                            <h5>Cutover Runbook</h5>
-                                            <p>Prepared with task-by-task activities, owners, and timings</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="checklist-item">
-                                        <div class="checklist-icon">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                        <div class="checklist-content">
-                                            <h5>Dry-Run Rehearsal</h5>
-                                            <p>Conducted in UAT, simulating real invoice flow and clearance</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="checklist-item">
-                                        <div class="checklist-icon">
-                                            <i class="fas fa-undo"></i>
-                                        </div>
-                                        <div class="checklist-content">
-                                            <h5>Rollback Plan</h5>
-                                            <p>Defined and tested — ERP can continue using existing invoice processes if a critical issue arises</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="checklist-item">
-                                        <div class="checklist-icon">
-                                            <i class="fas fa-check-circle"></i>
-                                        </div>
-                                        <div class="checklist-content">
-                                            <h5>Approval Gate</h5>
-                                            <p>Steering Committee reviews readiness checklist and authorizes go-live</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 16.3 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.3 Cutover Execution Steps</h2>
-                            <div class="content-box">
-                                <div class="execution-steps">
-                                    <div class="execution-step">
-                                        <div class="step-number">1</div>
-                                        <div class="step-content">
-                                            <h5>Freeze Window</h5>
-                                            <p>ERP integration changes frozen 48 hours before go-live</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="execution-step">
-                                        <div class="step-number">2</div>
-                                        <div class="step-content">
-                                            <h5>Final Data Validation</h5>
-                                            <p>Confirm master data (TINs, HS codes, tax codes) loaded and reconciled</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="execution-step">
-                                        <div class="step-number">3</div>
-                                        <div class="step-content">
-                                            <h5>Switch Integration</h5>
-                                            <p>Reroute ERP outputs to SmartAPI production tenant</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="execution-step">
-                                        <div class="step-number">4</div>
-                                        <div class="step-content">
-                                            <h5>Pilot Batch</h5>
-                                            <p>Submit first set of live invoices (typically 50–100), validate clearance with FIRS</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="execution-step">
-                                        <div class="step-number">5</div>
-                                        <div class="step-content">
-                                            <h5>Validation</h5>
-                                            <p>Confirm IRNs and QRs received, archive entries created, Finance reconciliation matches</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="execution-step">
-                                        <div class="step-number">6</div>
-                                        <div class="step-content">
-                                            <h5>Scale-Up</h5>
-                                            <p>Expand to full invoice volume</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="execution-step">
-                                        <div class="step-number">7</div>
-                                        <div class="step-content">
-                                            <h5>Monitoring</h5>
-                                            <p>Real-time dashboards, IT, and Finance on standby during first 48 hours</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 16.4 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.4 Hypercare Support</h2>
-                            <div class="content-box">
-                                <div class="hypercare-details">
-                                    <div class="hypercare-item">
-                                        <div class="hypercare-icon duration-bg">
-                                            <i class="fas fa-clock"></i>
-                                        </div>
-                                        <div class="hypercare-content">
-                                            <h5>Duration</h5>
-                                            <p>Two weeks post go-live (extendable by client request)</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="hypercare-item">
-                                        <div class="hypercare-icon coverage-bg">
-                                            <i class="fas fa-headset"></i>
-                                        </div>
-                                        <div class="hypercare-content">
-                                            <h5>Coverage</h5>
-                                            <p>24x7 incident response, daily checkpoint calls with Finance, IT, and Compliance</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="hypercare-item">
-                                        <div class="hypercare-icon focus-bg">
-                                            <i class="fas fa-crosshairs"></i>
-                                        </div>
-                                        <div class="hypercare-content">
-                                            <h5>Focus Areas</h5>
-                                            <p>Clearance rate monitoring, rejection handling, reconciliation, and system performance</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="hypercare-item">
-                                        <div class="hypercare-icon exit-bg">
-                                            <i class="fas fa-flag-checkered"></i>
-                                        </div>
-                                        <div class="hypercare-content">
-                                            <h5>Exit Criteria</h5>
-                                            <p>Three consecutive business days of stable operations (clearance rates > 99%, no Sev-1 incidents)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 16.5 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.5 Rollback Plan</h2>
-                            <div class="content-box">
-                                <div class="rollback-components">
-                                    <div class="rollback-section">
-                                        <h5>Trigger Points</h5>
-                                        <ul class="trigger-list">
-                                            <li>Clearance rates drop below threshold</li>
-                                            <li>Critical ERP disruption</li>
-                                            <li>FIRS outage lasting > 12 hours</li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <div class="rollback-section">
-                                        <h5>Rollback Actions</h5>
-                                        <ul class="action-list">
-                                            <li>ERP outputs redirected to legacy invoice processes</li>
-                                            <li>SmartAPI queues paused (no data loss)</li>
-                                            <li>Pending invoices replayed once issues resolved</li>
-                                        </ul>
-                                    </div>
-                                    
-                                    <div class="rollback-section">
-                                        <h5>Communication</h5>
-                                        <ul class="communication-list">
-                                            <li>Incident declared</li>
-                                            <li>Steering Committee notified</li>
-                                            <li>Finance advised to continue with fallback until resumption</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 16.6 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.6 Transition to Steady State</h2>
-                            <div class="content-box">
-                                <div class="transition-activities">
-                                    <div class="transition-item">
-                                        <div class="transition-icon">
-                                            <i class="fas fa-handshake"></i>
-                                        </div>
-                                        <div class="transition-content">
-                                            <h5>Knowledge Transfer</h5>
-                                            <p>Runbooks, playbooks, and dashboards handed over to client IT and Finance</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transition-item">
-                                        <div class="transition-icon">
-                                            <i class="fas fa-cogs"></i>
-                                        </div>
-                                        <div class="transition-content">
-                                            <h5>Governance Setup</h5>
-                                            <p>Quarterly service review cadence initiated</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="transition-item">
-                                        <div class="transition-icon">
-                                            <i class="fas fa-chart-line"></i>
-                                        </div>
-                                        <div class="transition-content">
-                                            <h5>Continuous Improvement</h5>
-                                            <p>Improvement backlog from hypercare fed into roadmap</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Section 16.7 -->
-                        <div class="mb-5">
-                            <h2 class="section-title">16.7 Benefits of Our Approach</h2>
-                            <div class="content-box">
-                                <div class="cutover-benefits">
-                                    <div class="benefit-item no-surprises">
-                                        <div class="benefit-icon">
-                                            <i class="fas fa-eye"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h5>No Surprises</h5>
-                                            <p>Rehearsals eliminate uncertainty</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="benefit-item no-downtime">
-                                        <div class="benefit-icon">
-                                            <i class="fas fa-shield-alt"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h5>No Downtime</h5>
-                                            <p>Rollback safety net protects Finance operations</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="benefit-item no-loss">
-                                        <div class="benefit-icon">
-                                            <i class="fas fa-save"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h5>No Invoice Loss</h5>
-                                            <p>SmartAPI queues guarantee delivery once FIRS resumes</p>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="benefit-item confidence">
-                                        <div class="benefit-icon">
-                                            <i class="fas fa-handshake"></i>
-                                        </div>
-                                        <div class="benefit-content">
-                                            <h5>Confidence</h5>
-                                            <p>CFOs and CIOs can sign off knowing every risk has been mitigated</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="cutover-summary">
-                                    <div class="summary-content">
-                                        <h4>Mission Control Excellence</h4>
-                                        <p>Professional cutover management with rehearsals, rollback protection, and 24x7 hypercare ensuring seamless transition from legacy processes to compliant operations.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Navigation -->
-                        <div class="section-nav">
-                            <div class="row">
-                                <div class="col-6">
-                                    <a href="15.html" class="btn btn-outline-primary">
-                                        <i class="fas fa-chevron-left me-2"></i>Previous: Risk Management Approach
-                                    </a>
-                                </div>
-                                <div class="col-6 text-end">
-                                    <a href="17.html" class="btn btn-primary">
-                                        Next: Technology Evolution and Roadmap<i class="fas fa-chevron-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class="col-6">
+                        <a href="15.html" class="btn btn-outline-primary">
+                            <i class="fas fa-chevron-left me-2"></i>Previous: Risk Management Approach
+                        </a>
+                    </div>
+                    <div class="col-6 text-end">
+                        <a href="17.html" class="btn btn-primary">
+                            Next: Operations Runbook<i class="fas fa-chevron-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p>&copy; 2025 Bluelight Consulting Limited. All rights reserved. | FIRS Nigeria E-Invoicing Enablement for Enterprises</p>
+                    <p>&copy; 2024 Bluelight Consulting Limited. All rights reserved. | FIRS Nigeria E-Invoicing Enablement for Enterprises</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
 </body>
-
 </html>

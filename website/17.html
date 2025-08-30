@@ -8,7 +8,7 @@
     <link href="assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">FIRS Nigeria E-Invoicing Enablement for Enterprises</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -48,28 +48,54 @@
         </div>
     </nav>
 
-    <div class="container mt-4">
+    <!-- Hero Section -->
+    <div class="hero-section bg-gradient-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">17. Operations Runbook</h1>
+                    <p class="lead mb-4">Comprehensive operational guidance for steady-state e-invoicing operations with monitoring, incident management, and reconciliation procedures</p>
+                    <div class="d-flex gap-3">
+                        <div class="badge bg-light text-primary px-3 py-2">
+                            <i class="bi bi-gear-fill me-2"></i>Runbook-Driven
+                        </div>
+                        <div class="badge bg-light text-primary px-3 py-2">
+                            <i class="bi bi-shield-check me-2"></i>SLA Compliance
+                        </div>
+                        <div class="badge bg-light text-primary px-3 py-2">
+                            <i class="bi bi-graph-up me-2"></i>Continuous Improvement
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <h3 class="display-6 fw-bold">24/7</h3>
+                            <p class="mb-0">Operations Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <div class="section-header mb-4">
-                    <h1 class="display-4 text-primary mb-3">17. Operations Runbook</h1>
-                    <p class="lead">Comprehensive operational guidance for steady-state e-invoicing operations with monitoring, incident management, and reconciliation procedures</p>
-                </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.1 Purpose of the Runbook</h2>
                         <p class="card-text">The Operations Runbook provides the <strong>step-by-step guide for running e-invoicing operations in steady state</strong>. It defines monitoring activities, incident handling, reconciliation, and escalation paths. This ensures Finance, IT, and Compliance teams operate seamlessly without dependence on ad hoc support.</p>
                         
-                        <div class="diagram-placeholder mb-3">
-                            <div class="alert alert-info">
-                                <strong>Operations Cycle Diagram:</strong> Monitor → Detect → Respond → Resolve → Reconcile → Review
-                            </div>
+                        <div class="text-center mb-4">
+                            <img src="diagrams/operations-cycle.svg" alt="Operations Cycle Diagram" class="img-fluid border rounded" style="max-height: 500px;">
+                            <div class="mt-2 text-muted small">Operations Cycle: Monitor → Detect → Respond → Resolve → Reconcile → Review</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.2 Daily Operations Checklist</h2>
                         
@@ -108,7 +134,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.3 Incident Management</h2>
                         
@@ -147,15 +173,14 @@
                             </div>
                         </div>
                         
-                        <div class="diagram-placeholder">
-                            <div class="alert alert-info">
-                                <strong>Incident Workflow:</strong> Detect → Ticket → Classify → Resolve → RCA → Close
-                            </div>
+                        <div class="text-center mb-4">
+                            <img src="diagrams/incident-workflow.svg" alt="Incident Management Workflow" class="img-fluid border rounded" style="max-height: 450px;">
+                            <div class="mt-2 text-muted small">Incident Workflow: Detect → Ticket → Classify → Resolve → RCA → Close</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.4 Monitoring and Alerts</h2>
                         
@@ -185,7 +210,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.5 Reconciliation Procedures</h2>
                         
@@ -212,15 +237,14 @@
                             <strong>Monthly Sign-off:</strong> Finance and Compliance issue a signed reconciliation report archived for 10 years.
                         </div>
                         
-                        <div class="diagram-placeholder mt-3">
-                            <div class="alert alert-info">
-                                <strong>Reconciliation Loop:</strong> ERP → SmartAPI → FIRS → Exception Queue → Report
-                            </div>
+                        <div class="text-center mb-4">
+                            <img src="diagrams/reconciliation-loop.svg" alt="Daily Reconciliation Loop" class="img-fluid border rounded" style="max-height: 450px;">
+                            <div class="mt-2 text-muted small">Reconciliation Loop: ERP → SmartAPI → FIRS → Exception Queue → Report</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.6 Escalation Matrix</h2>
                         
@@ -264,7 +288,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.7 Knowledge Base and Playbooks</h2>
                         
@@ -292,7 +316,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.8 Continuous Improvement</h2>
                         
@@ -329,7 +353,7 @@
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card shadow mb-4">
                     <div class="card-body">
                         <h2 class="card-title text-primary">17.9 Why Clients Can Trust Our Operations</h2>
                         
