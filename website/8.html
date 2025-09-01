@@ -102,57 +102,60 @@
                     </div>
                 </div>
 
-                <div class="diagram-container">
-                    <div class="diagram-title">
-                        <i class="fas fa-flow-chart me-2"></i>
-                        Invoice Processing Pipeline
-                    </div>
-                    <div class="row g-3 text-center mt-3">
-                        <div class="col-md-2">
-                            <div class="feature-card">
-                                <i class="fas fa-upload card-icon"></i>
-                                <h6>Receipt</h6>
-                                <p class="small">SmartAPI receives invoice data</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-12">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary"><i class="fas fa-flow-chart me-2"></i>Invoice Processing Pipeline</h4>
+                                <div class="row g-3 text-center mt-3">
+                                    <div class="col-lg-2 col-md-4 col-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-upload card-icon"></i>
+                                            <h6>Receipt</h6>
+                                            <p class="small">SmartAPI receives invoice data</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-check-circle card-icon"></i>
+                                            <h6>Pre-Validation</h6>
+                                            <p class="small">Schema and business rule checks</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-exchange-alt card-icon"></i>
+                                            <h6>Transform</h6>
+                                            <p class="small">Convert to FIRS format</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-signature card-icon"></i>
+                                            <h6>Sign</h6>
+                                            <p class="small">Digital signature applied</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-paper-plane card-icon"></i>
+                                            <h6>Submit</h6>
+                                            <p class="small">Send to FIRS MBS</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-certificate card-icon"></i>
+                                            <h6>Receipt</h6>
+                                            <p class="small">IRN and QR returned</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <small class="text-muted">Complete processing typically occurs within 2-5 seconds for real-time API submissions</small>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <div class="feature-card">
-                                <i class="fas fa-check-circle card-icon"></i>
-                                <h6>Pre-Validation</h6>
-                                <p class="small">Schema and business rule checks</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="feature-card">
-                                <i class="fas fa-exchange-alt card-icon"></i>
-                                <h6>Transform</h6>
-                                <p class="small">Convert to FIRS format</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="feature-card">
-                                <i class="fas fa-signature card-icon"></i>
-                                <h6>Sign</h6>
-                                <p class="small">Digital signature applied</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="feature-card">
-                                <i class="fas fa-paper-plane card-icon"></i>
-                                <h6>Submit</h6>
-                                <p class="small">Send to FIRS MBS</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="feature-card">
-                                <i class="fas fa-certificate card-icon"></i>
-                                <h6>Receipt</h6>
-                                <p class="small">IRN and QR returned</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="diagram-description">
-                        Complete processing typically occurs within 2-5 seconds for real-time API submissions
                     </div>
                 </div>
             </section>
@@ -219,48 +222,80 @@
                 
                 <div class="row g-4">
                     <div class="col-lg-6">
-                        <h4><i class="fas fa-cogs text-accent me-2"></i>Integration Features</h4>
-                        <ul class="benefits-list">
-                            <li>Real-time API connectivity to FIRS MBS</li>
-                            <li>Automatic retry logic for network issues</li>
-                            <li>Load balancing across multiple FIRS endpoints</li>
-                            <li>Circuit breaker protection during outages</li>
-                            <li>Comprehensive logging and monitoring</li>
-                        </ul>
+                        <div class="card shadow h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary"><i class="fas fa-cogs me-2"></i>Integration Features</h4>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Real-time API connectivity to FIRS MBS</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Automatic retry logic for network issues</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Load balancing across multiple FIRS endpoints</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Circuit breaker protection during outages</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Comprehensive logging and monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <h4><i class="fas fa-certificate text-accent me-2"></i>Clearance Response</h4>
-                        <div class="feature-card">
-                            <i class="fas fa-qrcode fa-2x text-primary mb-2"></i>
-                            <h6>IRN + QR Code</h6>
-                            <p class="small">Unique Invoice Reference Number and machine-readable QR code for verification</p>
-                        </div>
-                        <div class="feature-card">
-                            <i class="fas fa-file-signature fa-2x text-success mb-2"></i>
-                            <h6>Digital Signature</h6>
-                            <p class="small">FIRS digital signature ensuring authenticity and non-repudiation</p>
+                        <div class="card shadow h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary"><i class="fas fa-certificate me-2"></i>Clearance Response</h4>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <div class="feature-card">
+                                            <i class="fas fa-qrcode fa-2x text-primary mb-2"></i>
+                                            <h6>IRN + QR Code</h6>
+                                            <p class="small">Unique Invoice Reference Number and machine-readable QR code for verification</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="feature-card">
+                                            <i class="fas fa-file-signature fa-2x text-success mb-2"></i>
+                                            <h6>Digital Signature</h6>
+                                            <p class="small">FIRS digital signature ensuring authenticity and non-repudiation</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="diagram-container mt-4">
-                    <div class="diagram-title">FIRS MBS Communication Flow</div>
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <i class="fas fa-lock fa-2x text-success mb-2"></i>
-                            <p class="small">TLS 1.3 Encrypted Connection</p>
-                        </div>
-                        <div class="col-md-3">
-                            <i class="fas fa-key fa-2x text-warning mb-2"></i>
-                            <p class="small">mTLS Certificate Authentication</p>
-                        </div>
-                        <div class="col-md-3">
-                            <i class="fas fa-sync fa-2x text-info mb-2"></i>
-                            <p class="small">Real-time Status Updates</p>
-                        </div>
-                        <div class="col-md-3">
-                            <i class="fas fa-archive fa-2x text-primary mb-2"></i>
-                            <p class="small">Response Archiving</p>
+                <div class="row g-4 mt-4">
+                    <div class="col-12">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">FIRS MBS Communication Flow</h5>
+                                <div class="row g-3 text-center">
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-lock fa-2x text-success mb-2"></i>
+                                            <h6>TLS 1.3</h6>
+                                            <p class="small">Encrypted Connection</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-key fa-2x text-warning mb-2"></i>
+                                            <h6>mTLS</h6>
+                                            <p class="small">Certificate Authentication</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-sync fa-2x text-info mb-2"></i>
+                                            <h6>Real-time</h6>
+                                            <p class="small">Status Updates</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6">
+                                        <div class="feature-card">
+                                            <i class="fas fa-archive fa-2x text-primary mb-2"></i>
+                                            <h6>Response</h6>
+                                            <p class="small">Archiving</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,65 +309,78 @@
                 </div>
                 
                 <div class="row g-4">
-                    <div class="col-md-6">
-                        <h4><i class="fas fa-paper-plane text-accent me-2"></i>Delivery Channels</h4>
-                        <div class="row g-2">
-                            <div class="col-12">
-                                <div class="feature-card">
-                                    <i class="fas fa-api text-primary"></i>
-                                    <h6 class="mt-2">API Response</h6>
-                                    <small>Real-time return for API integrations</small>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="feature-card">
-                                    <i class="fas fa-envelope text-success"></i>
-                                    <h6 class="mt-2">Email Delivery</h6>
-                                    <small>PDF receipts to designated addresses</small>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="feature-card">
-                                    <i class="fas fa-download text-info"></i>
-                                    <h6 class="mt-2">SFTP Download</h6>
-                                    <small>Batch receipt files for file-based integrations</small>
+                    <div class="col-lg-6">
+                        <div class="card shadow h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary"><i class="fas fa-paper-plane me-2"></i>Delivery Channels</h4>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <div class="feature-card">
+                                            <i class="fas fa-api text-primary"></i>
+                                            <h6 class="mt-2">API Response</h6>
+                                            <small>Real-time return for API integrations</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="feature-card">
+                                            <i class="fas fa-envelope text-success"></i>
+                                            <h6 class="mt-2">Email Delivery</h6>
+                                            <small>PDF receipts to designated addresses</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="feature-card">
+                                            <i class="fas fa-download text-info"></i>
+                                            <h6 class="mt-2">SFTP Download</h6>
+                                            <small>Batch receipt files for file-based integrations</small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h4><i class="fas fa-file-alt text-accent me-2"></i>Receipt Formats</h4>
-                        <div class="row g-2">
-                            <div class="col-6">
-                                <div class="feature-card text-center">
-                                    <i class="fas fa-file-code text-warning"></i>
-                                    <small class="d-block mt-1">JSON</small>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="feature-card text-center">
-                                    <i class="fas fa-file-alt text-danger"></i>
-                                    <small class="d-block mt-1">PDF</small>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="feature-card text-center">
-                                    <i class="fas fa-file-excel text-success"></i>
-                                    <small class="d-block mt-1">Excel</small>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="feature-card text-center">
-                                    <i class="fas fa-file-csv text-primary"></i>
-                                    <small class="d-block mt-1">CSV</small>
+                    <div class="col-lg-6">
+                        <div class="card shadow h-100">
+                            <div class="card-body">
+                                <h4 class="card-title text-primary"><i class="fas fa-file-alt me-2"></i>Receipt Formats</h4>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="feature-card text-center">
+                                            <i class="fas fa-file-code text-warning"></i>
+                                            <small class="d-block mt-1">JSON</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="feature-card text-center">
+                                            <i class="fas fa-file-alt text-danger"></i>
+                                            <small class="d-block mt-1">PDF</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="feature-card text-center">
+                                            <i class="fas fa-file-excel text-success"></i>
+                                            <small class="d-block mt-1">Excel</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="feature-card text-center">
+                                            <i class="fas fa-file-csv text-primary"></i>
+                                            <small class="d-block mt-1">CSV</small>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="feature-card text-center mt-3">
-                            <i class="fas fa-qrcode fa-2x text-primary mb-2"></i>
-                            <h6>QR Code Integration</h6>
-                            <p class="small mb-0">All receipts include machine-readable QR codes for instant verification</p>
+                    </div>
+                </div>
+
+                <div class="row g-4 mt-4">
+                    <div class="col-12">
+                        <div class="card shadow">
+                            <div class="card-body text-center">
+                                <h4 class="card-title text-primary"><i class="fas fa-qrcode me-2"></i>QR Code Integration</h4>
+                                <p class="card-text">All receipts include machine-readable QR codes for instant verification and compliance validation</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -372,29 +420,29 @@
                     </div>
                 </div>
 
-                <div class="key-points">
-                    <h4><i class="fas fa-search me-2"></i>Audit and Compliance Features</h4>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="feature-card text-center">
-                                <i class="fas fa-fingerprint fa-2x text-success mb-2"></i>
-                                <h6>Immutable Records</h6>
-                                <small>Tamper-proof storage with digital signatures</small>
-                            </div>
+                <div class="row g-4">
+                    <div class="col-12">
+                        <h4><i class="fas fa-search me-2"></i>Audit and Compliance Features</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card text-center h-100">
+                            <i class="fas fa-fingerprint fa-2x text-success mb-2"></i>
+                            <h6>Immutable Records</h6>
+                            <p class="small">Tamper-proof storage with digital signatures</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="feature-card text-center">
-                                <i class="fas fa-search-plus fa-2x text-primary mb-2"></i>
-                                <h6>Instant Retrieval</h6>
-                                <small>Fast search and download of evidence bundles</small>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-card text-center h-100">
+                            <i class="fas fa-search-plus fa-2x text-primary mb-2"></i>
+                            <h6>Instant Retrieval</h6>
+                            <p class="small">Fast search and download of evidence bundles</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="feature-card text-center">
-                                <i class="fas fa-file-export fa-2x text-info mb-2"></i>
-                                <h6>Audit Reports</h6>
-                                <small>Pre-formatted compliance reports for regulators</small>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="feature-card text-center h-100">
+                            <i class="fas fa-file-export fa-2x text-info mb-2"></i>
+                            <h6>Audit Reports</h6>
+                            <p class="small">Pre-formatted compliance reports for regulators</p>
                         </div>
                     </div>
                 </div>
@@ -443,6 +491,40 @@
 
         </div>
     </main>
+
+    <!-- Section Navigation -->
+    <div class="section-navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="7.html" class="btn btn-outline-primary btn-lg w-100">
+                        <i class="fas fa-chevron-left me-2"></i>Previous: Integration Methods
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="9.html" class="btn btn-primary btn-lg w-100">
+                        Next: Tracking and Monitoring<i class="fas fa-chevron-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="mb-1 fw-bold">FIRS Nigeria E-Invoicing Enablement for Enterprises</p>
+                    <p class="mb-0 text-light small">Professional e-invoicing compliance solutions by Softrust & Bluelight Consulting</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-1 small text-light">&copy; 2025 All rights reserved</p>
+                    <p class="mb-0 small text-light">Powered by SmartAPI Platform</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
